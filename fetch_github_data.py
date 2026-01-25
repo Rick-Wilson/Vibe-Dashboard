@@ -303,6 +303,38 @@ class LocalRepoScanner:
 
         return result
 
+    def get_releases(self, repo_path: Path, limit: int = 10) -> list:
+        """Get releases (git tags) with dates, sorted by date descending."""
+        # Get tags with their dates using for-each-ref
+        result = self._run_git(repo_path, [
+            "for-each-ref",
+            "--sort=-creatordate",
+            "--format=%(refname:short)|%(creatordate:iso-strict)|%(subject)",
+            "refs/tags",
+            f"--count={limit}"
+        ])
+
+        if not result:
+            return []
+
+        releases = []
+        repo_name = repo_path.name
+        for line in result.strip().split("\n"):
+            if line and "|" in line:
+                parts = line.split("|", 2)
+                if len(parts) >= 2:
+                    tag = parts[0]
+                    date = parts[1]
+                    message = parts[2] if len(parts) > 2 else ""
+                    releases.append({
+                        "tag": tag,
+                        "date": date,
+                        "message": message,
+                        "repo": repo_name
+                    })
+
+        return releases
+
     def _run_git(self, repo_path: Path, args: list) -> Optional[str]:
         """Run a git command and return output."""
         try:
@@ -379,6 +411,9 @@ def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path) -> dict
     # Monthly LOC changes for history
     monthly_loc_changes = scanner.get_monthly_loc_changes(repo_path)
 
+    # Get releases (tags)
+    releases = scanner.get_releases(repo_path)
+
     # Determine primary language from LOC
     primary_language = max(loc.keys(), key=lambda k: loc[k]) if loc else "Unknown"
 
@@ -401,6 +436,7 @@ def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path) -> dict
         "commit_history": commit_history,
         "code_changes": code_changes,
         "monthly_loc_changes": monthly_loc_changes,
+        "releases": releases,
         "progress": 0,
         "goals": [],
         "completed_goals": [],
@@ -436,7 +472,7 @@ def count_lines_of_code(repo_path: str, tool: str = "scc") -> dict:
             if result.returncode == 0:
                 data = json.loads(result.stdout)
                 return {lang: info.get("code", 0) for lang, info in data.items()
-                        if lang not in ("Total", "HTML") and isinstance(info, dict) and info.get("code", 0) > 0}
+                        if lang not in ("Total", "HTML", "SVG") and isinstance(info, dict) and info.get("code", 0) > 0}
         
         elif tool == "cloc":
             result = subprocess.run(
@@ -445,8 +481,8 @@ def count_lines_of_code(repo_path: str, tool: str = "scc") -> dict:
             )
             if result.returncode == 0:
                 data = json.loads(result.stdout)
-                return {lang: info.get("code", 0) for lang, info in data.items() 
-                        if lang not in ("header", "SUM") and isinstance(info, dict)}
+                return {lang: info.get("code", 0) for lang, info in data.items()
+                        if lang not in ("header", "SUM", "SVG") and isinstance(info, dict)}
     
     except FileNotFoundError:
         print(f"   ⚠️  {tool} not found. Install it for accurate LOC counting.")
@@ -997,7 +1033,14 @@ def main():
     
     # Load todos
     todos = load_todos()
-    
+
+    # Aggregate releases from all projects, sorted by date
+    all_releases = []
+    for p in projects:
+        all_releases.extend(p.get("releases", []))
+    # Sort by date descending
+    all_releases.sort(key=lambda r: r.get("date", ""), reverse=True)
+
     # Build final output
     output = {
         "generated_at": datetime.now().isoformat(),
@@ -1018,6 +1061,7 @@ def main():
             "repos": loc_history["repos"]
         },
         "projects": projects,
+        "releases": all_releases,
         "todos": todos,
     }
     
