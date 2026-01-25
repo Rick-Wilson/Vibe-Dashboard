@@ -324,8 +324,18 @@
         function populateRepoFilter() {
             const select = document.getElementById('repo-filter');
             const projects = dashboardData.projects || [];
-            select.innerHTML = '<option value="all">All Repos</option>' +
-                projects.map(p => `<option value="${p.name}">${p.name}</option>`).join('');
+            const nonForks = projects.filter(p => !p.is_fork);
+            const forks = projects.filter(p => p.is_fork);
+
+            let options = '<option value="all">All Repos</option>';
+            options += nonForks.map(p => `<option value="${p.name}">${p.name}</option>`).join('');
+
+            if (forks.length > 0) {
+                options += '<option disabled>── Forks (no LOC) ──</option>';
+                options += forks.map(p => `<option value="${p.name}">${p.name}</option>`).join('');
+            }
+
+            select.innerHTML = options;
 
             // Apply URL params after populating (only on first load)
             const urlParams = getUrlParams();
