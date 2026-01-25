@@ -584,6 +584,7 @@
                             },
                             tooltip: {
                                 mode: 'index',
+                                filter: (item) => item.parsed.y > 0,
                                 callbacks: {
                                     footer: (items) => {
                                         const total = items.reduce((sum, item) => sum + item.parsed.y, 0);
