@@ -884,6 +884,7 @@ def main():
     parser.add_argument("--path", help="Path to directory containing local repositories (used with --local)")
     parser.add_argument("--author", help="Filter commits by author name or email (used with --local)")
     parser.add_argument("--owner", help="Only include repos owned by this GitHub user (used with --local)")
+    parser.add_argument("--exclude", help="Comma-separated list of repo names to exclude (used with --local)")
     parser.add_argument("--clone", action="store_true", help="Clone repos for accurate LOC counting")
     parser.add_argument("--output", default=CONFIG["output_file"], help="Output JSON file")
     parser.add_argument("--token", help="GitHub token (or set GITHUB_TOKEN env var)")
@@ -916,6 +917,12 @@ def main():
                 if info.get("owner", "").lower() == args.owner.lower():
                     filtered_repos.append(repo_path)
             repos = filtered_repos
+
+        # Filter out excluded repos
+        if args.exclude:
+            excluded = [x.strip().lower() for x in args.exclude.split(",")]
+            print(f"🚫 Excluding repos: {', '.join(excluded)}")
+            repos = [r for r in repos if r.name.lower() not in excluded]
 
         if not repos:
             print("❌ No git repositories found in the specified path")
