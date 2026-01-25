@@ -39,8 +39,8 @@ jobs:
           mkdir -p repos
           cd repos
 
-          # Clone all repos owned by Rick-Wilson (non-forks, non-archived)
-          gh repo list Rick-Wilson --limit 100 --no-archived --source --json name \
+          # Clone all repos owned by Rick-Wilson (including forks, excluding archived)
+          gh repo list Rick-Wilson --limit 100 --no-archived --json name \
             --jq '.[].name' | while read repo_name; do
               echo "Cloning $repo_name..."
               gh repo clone "Rick-Wilson/$repo_name" "$repo_name" 2>/dev/null || echo "  Failed to clone $repo_name"
