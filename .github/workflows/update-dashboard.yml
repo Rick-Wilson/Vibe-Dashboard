@@ -37,11 +37,10 @@ jobs:
           cd repos
 
           # Clone all repos owned by Rick-Wilson (non-forks, non-archived)
-          gh repo list Rick-Wilson --limit 100 --no-archived --source --json name,sshUrl \
-            --jq '.[] | .sshUrl' | while read url; do
-              repo_name=$(basename "$url" .git)
+          gh repo list Rick-Wilson --limit 100 --no-archived --source --json name \
+            --jq '.[].name' | while read repo_name; do
               echo "Cloning $repo_name..."
-              git clone "$url" "$repo_name" 2>/dev/null || echo "  Failed to clone $repo_name"
+              gh repo clone "Rick-Wilson/$repo_name" "$repo_name" -- --depth 1 2>/dev/null || echo "  Failed to clone $repo_name"
           done
 
           echo "Cloned $(ls -1 | wc -l) repositories"
