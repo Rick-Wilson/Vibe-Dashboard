@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-01-25T18:30:53.385269",
+  "generated_at": "2026-01-25T18:31:20.421313",
   "stats": {
-    "total_loc": 57134,
-    "total_commits": 361,
-    "avg_progress": 66,
+    "total_loc": 53876,
+    "total_commits": 362,
+    "avg_progress": 65,
     "this_week_commits": 33,
     "last_week_commits": 12,
     "week_trend": 21,
     "project_count": 9
   },
   "languages": {
-    "JSON": 13754,
+    "JSON": 10496,
     "JavaScript": 1391,
     "Vue": 57,
     "Rust": 39546,
@@ -566,51 +566,51 @@
   "loc_history": [
     {
       "month": "Feb",
-      "loc": 5713
+      "loc": 5387
     },
     {
       "month": "Mar",
-      "loc": 5713
+      "loc": 5387
     },
     {
       "month": "Apr",
-      "loc": 5713
+      "loc": 5387
     },
     {
       "month": "May",
-      "loc": 5713
+      "loc": 5387
     },
     {
       "month": "Jun",
-      "loc": 5713
+      "loc": 5387
     },
     {
       "month": "Jul",
-      "loc": 5713
+      "loc": 5387
     },
     {
       "month": "Aug",
-      "loc": 5713
+      "loc": 5387
     },
     {
       "month": "Sep",
-      "loc": 5713
+      "loc": 5387
     },
     {
       "month": "Oct",
-      "loc": 5713
+      "loc": 5387
     },
     {
       "month": "Nov",
-      "loc": 5713
+      "loc": 5387
     },
     {
       "month": "Dec",
-      "loc": 5713
+      "loc": 5387
     },
     {
       "month": "Jan",
-      "loc": 57134
+      "loc": 53876
     }
   ],
   "loc_history_by_repo": {
@@ -677,7 +677,7 @@
           0,
           0,
           0,
-          11440
+          8182
         ]
       },
       {
@@ -786,7 +786,7 @@
   },
   "projects": [
     {
-      "id": 3130021658,
+      "id": 1778340962,
       "name": "acbl-proxy",
       "full_name": "Rick-Wilson/acbl-proxy",
       "description": "Repository: acbl-proxy",
@@ -1500,7 +1500,7 @@
       "completed_goals": []
     },
     {
-      "id": 1837402760,
+      "id": 2529148284,
       "name": "Bridge-Dealer-Scripts",
       "full_name": "Rick-Wilson/Bridge-Dealer-Scripts",
       "description": "Bridge-Dealer-Scripts",
@@ -2213,7 +2213,7 @@
       "completed_goals": []
     },
     {
-      "id": 3012100263,
+      "id": 1562183594,
       "name": "Bridge-Offline-Practice",
       "full_name": "Rick-Wilson/Bridge-Offline-Practice",
       "description": "Bridge Bidding Practice",
@@ -2928,7 +2928,7 @@
       "completed_goals": []
     },
     {
-      "id": 3956568407,
+      "id": 4103044383,
       "name": "Bridge-Parsers",
       "full_name": "Rick-Wilson/Bridge-Parsers",
       "description": "Repository: Bridge-Parsers",
@@ -3642,7 +3642,7 @@
       "completed_goals": []
     },
     {
-      "id": 1422575289,
+      "id": 4022795549,
       "name": "bridge-wrangler",
       "full_name": "Rick-Wilson/bridge-wrangler",
       "description": "bridge-wrangler",
@@ -4356,7 +4356,7 @@
       "completed_goals": []
     },
     {
-      "id": 3475230314,
+      "id": 242265520,
       "name": "Dealer3",
       "full_name": "Rick-Wilson/Dealer3",
       "description": "dealer3",
@@ -5100,7 +5100,7 @@
       "completed_goals": []
     },
     {
-      "id": 2032653348,
+      "id": 3793769309,
       "name": "pbn-to-pdf",
       "full_name": "Rick-Wilson/pbn-to-pdf",
       "description": "pbn-to-pdf",
@@ -5833,7 +5833,7 @@
       "completed_goals": []
     },
     {
-      "id": 3144420528,
+      "id": 667493690,
       "name": "pdf-handouts",
       "full_name": "Rick-Wilson/pdf-handouts",
       "description": "PDF Handouts",
@@ -6566,7 +6566,7 @@
       "completed_goals": []
     },
     {
-      "id": 4082612296,
+      "id": 4286360170,
       "name": "Vibe-Dashboard",
       "full_name": "Rick-Wilson/Vibe-Dashboard",
       "description": "Repository: Vibe-Dashboard",
@@ -6575,14 +6575,14 @@
       "forks": 0,
       "open_issues": 0,
       "loc": {
-        "JSON": 10604,
+        "JSON": 7346,
         "Python": 836
       },
-      "commits": 8,
+      "commits": 9,
       "recent_commits": 0,
-      "last_commit": "2026-01-25T10:29:48-08:00",
-      "created_at": "2026-01-25T10:29:48-08:00",
-      "updated_at": "2026-01-25T10:29:48-08:00",
+      "last_commit": "2026-01-25T10:30:57-08:00",
+      "created_at": "2026-01-25T10:30:57-08:00",
+      "updated_at": "2026-01-25T10:30:57-08:00",
       "url": "https://github.com/Rick-Wilson/Vibe-Dashboard",
       "commit_history": [
         {
@@ -7184,7 +7184,7 @@
         },
         {
           "date": "2026-01-18",
-          "additions": 19602,
+          "additions": 19603,
           "deletions": 662
         }
       ],
@@ -7269,13 +7269,13 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 19602,
+          "additions": 19603,
           "deletions": 662,
-          "net": 18940
+          "net": 18941
         }
       ],
       "releases": [],
-      "progress": 75,
+      "progress": 65,
       "goals": [],
       "completed_goals": []
     }
