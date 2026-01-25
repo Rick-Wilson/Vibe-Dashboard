@@ -54,6 +54,7 @@ jobs:
             --local \
             --path ./repos \
             --owner Rick-Wilson \
+            --author "Rick Wilson" \
             --output dashboard_data.json
 
       - name: Commit and push if changed
