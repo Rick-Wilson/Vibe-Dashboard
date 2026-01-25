@@ -1,40 +1,25 @@
 {
-  "generated_at": "2026-01-25T07:59:33.777048",
+  "generated_at": "2026-01-25T18:14:47.010055",
   "stats": {
-    "total_loc": 107189,
-    "total_commits": 208,
-    "avg_progress": 68,
-    "this_week_commits": 44,
-    "last_week_commits": 39,
-    "week_trend": 5,
-    "project_count": 13
+    "total_loc": 56744,
+    "total_commits": 9,
+    "avg_progress": 61,
+    "this_week_commits": 6,
+    "last_week_commits": 0,
+    "week_trend": 6,
+    "project_count": 9
   },
   "languages": {
-    "CSS": 1044,
-    "INI": 78,
-    "PowerShell": 283,
-    "Python": 14645,
-    "Shell": 1953,
-    "Batch": 6,
-    "C#": 2711,
-    "JSON": 11667,
-    "MSBuild": 63,
-    "Rust": 40190,
-    "TOML": 289,
-    "VBScript": 3,
-    "Visual Basic": 331,
-    "JavaScript": 9748,
-    "TeX": 1876,
-    "SQL": 47,
-    "SVG": 13520,
+    "JSON": 13364,
+    "JavaScript": 1391,
     "Vue": 57,
-    "C++": 5294,
-    "Makefile": 38,
-    "C": 2182,
-    "C Header": 288,
-    "Happy": 637,
-    "Lex": 109,
-    "Pest": 130
+    "Rust": 39546,
+    "TOML": 200,
+    "C": 50,
+    "Pest": 130,
+    "PowerShell": 82,
+    "Python": 1400,
+    "Shell": 524
   },
   "commit_history": [
     {
@@ -105,7 +90,7 @@
     },
     {
       "date": "2025-11-07",
-      "commits": 0,
+      "commits": 1,
       "additions": 0,
       "deletions": 0
     },
@@ -417,31 +402,31 @@
     },
     {
       "date": "2025-12-29",
-      "commits": 7,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2025-12-30",
-      "commits": 15,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2025-12-31",
-      "commits": 4,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-01",
-      "commits": 17,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-02",
-      "commits": 5,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
@@ -453,55 +438,55 @@
     },
     {
       "date": "2026-01-04",
-      "commits": 21,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-05",
-      "commits": 3,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-06",
-      "commits": 1,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-07",
-      "commits": 14,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-08",
-      "commits": 2,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-09",
-      "commits": 5,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-10",
-      "commits": 29,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-11",
-      "commits": 21,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-12",
-      "commits": 3,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
@@ -513,7 +498,7 @@
     },
     {
       "date": "2026-01-14",
-      "commits": 1,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
@@ -525,7 +510,7 @@
     },
     {
       "date": "2026-01-16",
-      "commits": 14,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
@@ -537,43 +522,43 @@
     },
     {
       "date": "2026-01-18",
-      "commits": 9,
+      "commits": 1,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-19",
-      "commits": 3,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-20",
-      "commits": 4,
+      "commits": 1,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-21",
-      "commits": 2,
+      "commits": 1,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-22",
-      "commits": 5,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-23",
-      "commits": 15,
+      "commits": 1,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-24",
-      "commits": 6,
+      "commits": 2,
       "additions": 0,
       "deletions": 0
     }
@@ -581,51 +566,51 @@
   "loc_history": [
     {
       "month": "Feb",
-      "loc": 23376
+      "loc": 5674
     },
     {
       "month": "Mar",
-      "loc": 23376
+      "loc": 5674
     },
     {
       "month": "Apr",
-      "loc": 23376
+      "loc": 5674
     },
     {
       "month": "May",
-      "loc": 23376
+      "loc": 5674
     },
     {
       "month": "Jun",
-      "loc": 23376
+      "loc": 5674
     },
     {
       "month": "Jul",
-      "loc": 23376
+      "loc": 5674
     },
     {
       "month": "Aug",
-      "loc": 23376
+      "loc": 5674
     },
     {
       "month": "Sep",
-      "loc": 23376
+      "loc": 5674
     },
     {
       "month": "Oct",
-      "loc": 23376
+      "loc": 5674
     },
     {
       "month": "Nov",
-      "loc": 23376
+      "loc": 5674
     },
     {
       "month": "Dec",
-      "loc": 31471
+      "loc": 5674
     },
     {
       "month": "Jan",
-      "loc": 107189
+      "loc": 56744
     }
   ],
   "loc_history_by_repo": {
@@ -645,6 +630,23 @@
     ],
     "repos": [
       {
+        "name": "Dealer3",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14927
+        ]
+      },
+      {
         "name": "pbn-to-pdf",
         "data": [
           0,
@@ -658,24 +660,7 @@
           0,
           0,
           0,
-          26033
-        ]
-      },
-      {
-        "name": "dealer3",
-        "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          8095,
-          14927
+          12516
         ]
       },
       {
@@ -692,41 +677,7 @@
           0,
           0,
           0,
-          11135
-        ]
-      },
-      {
-        "name": "bbo-pbs",
-        "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          11004
-        ]
-      },
-      {
-        "name": "Baker-Bridge",
-        "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          7480
+          11050
         ]
       },
       {
@@ -743,41 +694,7 @@
           0,
           0,
           0,
-          7072
-        ]
-      },
-      {
-        "name": "bridge-solver-xray",
-        "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          5618
-        ]
-      },
-      {
-        "name": "BBA-CLI",
-        "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          5505
+          7065
         ]
       },
       {
@@ -794,24 +711,7 @@
           0,
           0,
           0,
-          5043
-        ]
-      },
-      {
-        "name": "Dealer-cleanup",
-        "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          3169
+          5169
         ]
       },
       {
@@ -828,7 +728,7 @@
           0,
           0,
           0,
-          1985
+          4432
         ]
       },
       {
@@ -845,11 +745,28 @@
           0,
           0,
           0,
-          1456
+          1419
         ]
       },
       {
-        "name": "bridge-bots",
+        "name": "acbl-proxy",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          52,
+          52,
+          44
+        ]
+      },
+      {
+        "name": "Bridge-Dealer-Scripts",
         "data": [
           0,
           0,
@@ -869,1464 +786,24 @@
   },
   "projects": [
     {
-      "id": 1083563234,
-      "name": "Baker-Bridge",
-      "full_name": "Rick-Wilson/Baker-Bridge",
-      "description": "Baker Bridge",
-      "language": "Python",
-      "stars": 0,
-      "forks": 0,
-      "open_issues": 0,
-      "loc": {
-        "CSS": 1040,
-        "INI": 78,
-        "PowerShell": 201,
-        "Python": 5252,
-        "Shell": 909
-      },
-      "commits": 3,
-      "recent_commits": 3,
-      "last_commit": "2026-01-23T15:05:55-08:00",
-      "created_at": "2026-01-23T15:05:55-08:00",
-      "updated_at": "2026-01-23T15:05:55-08:00",
-      "url": "git@github.com:Rick-Wilson/Baker-Bridge",
-      "commit_history": [
-        {
-          "date": "2025-10-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-31",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-31",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-23",
-          "commits": 3,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        }
-      ],
-      "code_changes": [
-        {
-          "date": "2025-11-02",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-09",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-16",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-23",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-30",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-07",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-14",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-21",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-28",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-04",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-11",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-18",
-          "additions": 4364953,
-          "deletions": 1240533
-        }
-      ],
-      "monthly_loc_changes": [
-        {
-          "month": "Feb 2025",
-          "month_short": "Feb",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Mar 2025",
-          "month_short": "Mar",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Apr 2025",
-          "month_short": "Apr",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "May 2025",
-          "month_short": "May",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jun 2025",
-          "month_short": "Jun",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jul 2025",
-          "month_short": "Jul",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Aug 2025",
-          "month_short": "Aug",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Sep 2025",
-          "month_short": "Sep",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Oct 2025",
-          "month_short": "Oct",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Nov 2025",
-          "month_short": "Nov",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Dec 2025",
-          "month_short": "Dec",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jan 2026",
-          "month_short": "Jan",
-          "additions": 4364953,
-          "deletions": 1240533,
-          "net": 3124420
-        }
-      ],
-      "progress": 65,
-      "goals": [],
-      "completed_goals": []
-    },
-    {
-      "id": 3535420834,
-      "name": "BBA-CLI",
-      "full_name": "Rick-Wilson/BBA-CLI",
-      "description": "BBA-CLI",
-      "language": "C#",
-      "stars": 0,
-      "forks": 0,
-      "open_issues": 0,
-      "loc": {
-        "Batch": 3,
-        "C#": 2711,
-        "JSON": 42,
-        "MSBuild": 63,
-        "Python": 1369,
-        "Rust": 763,
-        "Shell": 188,
-        "TOML": 32,
-        "VBScript": 3,
-        "Visual Basic": 331
-      },
-      "commits": 42,
-      "recent_commits": 42,
-      "last_commit": "2026-01-20T16:47:44-08:00",
-      "created_at": "2026-01-20T16:47:44-08:00",
-      "updated_at": "2026-01-20T16:47:44-08:00",
-      "url": "git@github.com:Rick-Wilson/BBA-CLI",
-      "commit_history": [
-        {
-          "date": "2025-10-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-31",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-31",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-10",
-          "commits": 22,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-11",
-          "commits": 11,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-12",
-          "commits": 2,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-16",
-          "commits": 2,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-18",
-          "commits": 4,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-20",
-          "commits": 1,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        }
-      ],
-      "code_changes": [
-        {
-          "date": "2025-11-02",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-09",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-16",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-23",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-30",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-07",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-14",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-21",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-28",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-04",
-          "additions": 22131,
-          "deletions": 1259
-        },
-        {
-          "date": "2026-01-11",
-          "additions": 66346,
-          "deletions": 78196
-        },
-        {
-          "date": "2026-01-18",
-          "additions": 1,
-          "deletions": 1
-        }
-      ],
-      "monthly_loc_changes": [
-        {
-          "month": "Feb 2025",
-          "month_short": "Feb",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Mar 2025",
-          "month_short": "Mar",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Apr 2025",
-          "month_short": "Apr",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "May 2025",
-          "month_short": "May",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jun 2025",
-          "month_short": "Jun",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jul 2025",
-          "month_short": "Jul",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Aug 2025",
-          "month_short": "Aug",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Sep 2025",
-          "month_short": "Sep",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Oct 2025",
-          "month_short": "Oct",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Nov 2025",
-          "month_short": "Nov",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Dec 2025",
-          "month_short": "Dec",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jan 2026",
-          "month_short": "Jan",
-          "additions": 88478,
-          "deletions": 79456,
-          "net": 9022
-        }
-      ],
-      "progress": 80,
-      "goals": [],
-      "completed_goals": []
-    },
-    {
-      "id": 2211746290,
-      "name": "bbo-pbs",
-      "full_name": "Rick-Wilson/bbo-pbs",
-      "description": "BBOalert",
+      "id": 768618233,
+      "name": "acbl-proxy",
+      "full_name": "Rick-Wilson/acbl-proxy",
+      "description": "Repository: acbl-proxy",
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
       "loc": {
-        "CSS": 4,
-        "JavaScript": 9048,
-        "JSON": 67,
-        "Shell": 9,
-        "TeX": 1876
+        "JSON": 13,
+        "JavaScript": 31
       },
-      "commits": 16,
-      "recent_commits": 16,
-      "last_commit": "2026-01-24T18:20:54-08:00",
-      "created_at": "2026-01-24T18:20:54-08:00",
-      "updated_at": "2026-01-24T18:20:54-08:00",
-      "url": "git@github.com:Rick-Wilson/bbo-pbs",
+      "commits": 1,
+      "recent_commits": 1,
+      "last_commit": "2025-11-07T17:45:00Z",
+      "created_at": "2025-11-07T17:45:00Z",
+      "updated_at": "2025-11-07T17:45:00Z",
+      "url": "https://github.com/Rick-Wilson/acbl-proxy",
       "commit_history": [
         {
           "date": "2025-10-27",
@@ -2396,7 +873,7 @@
         },
         {
           "date": "2025-11-07",
-          "commits": 0,
+          "commits": 1,
           "additions": 0,
           "deletions": 0
         },
@@ -2816,7 +1293,7 @@
         },
         {
           "date": "2026-01-16",
-          "commits": 12,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
@@ -2864,7 +1341,7 @@
         },
         {
           "date": "2026-01-24",
-          "commits": 4,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         }
@@ -2872,7 +1349,7 @@
       "code_changes": [
         {
           "date": "2025-11-02",
-          "additions": 0,
+          "additions": 52,
           "deletions": 0
         },
         {
@@ -2922,13 +1399,13 @@
         },
         {
           "date": "2026-01-11",
-          "additions": 523,
-          "deletions": 51
+          "additions": 0,
+          "deletions": 0
         },
         {
           "date": "2026-01-18",
-          "additions": 160,
-          "deletions": 61
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "monthly_loc_changes": [
@@ -2998,9 +1475,9 @@
         {
           "month": "Nov 2025",
           "month_short": "Nov",
-          "additions": 0,
+          "additions": 52,
           "deletions": 0,
-          "net": 0
+          "net": 52
         },
         {
           "month": "Dec 2025",
@@ -3012,35 +1489,34 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 683,
-          "deletions": 112,
-          "net": 571
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
         }
       ],
-      "progress": 80,
+      "releases": [],
+      "progress": 45,
       "goals": [],
       "completed_goals": []
     },
     {
-      "id": 3240115176,
-      "name": "bridge-bots",
-      "full_name": "Rick-Wilson/bridge-bots",
-      "description": "bridge-bots",
-      "language": "Python",
+      "id": 2010254899,
+      "name": "Bridge-Dealer-Scripts",
+      "full_name": "Rick-Wilson/Bridge-Dealer-Scripts",
+      "description": "Bridge-Dealer-Scripts",
+      "language": "JavaScript",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
       "loc": {
-        "Python": 6658,
-        "SQL": 47,
-        "TOML": 57
+        "JavaScript": 122
       },
-      "commits": 0,
+      "commits": 1,
       "recent_commits": 0,
-      "last_commit": "2023-05-03T22:05:08-07:00",
-      "created_at": "2023-05-03T22:05:08-07:00",
-      "updated_at": "2023-05-03T22:05:08-07:00",
-      "url": "https://github.com/Rick-Wilson/bridge-bots",
+      "last_commit": "2024-03-04T08:36:15-08:00",
+      "created_at": "2024-03-04T08:36:15-08:00",
+      "updated_at": "2024-03-04T08:36:15-08:00",
+      "url": "https://github.com/Rick-Wilson/Bridge-Dealer-Scripts",
       "commit_history": [
         {
           "date": "2025-10-27",
@@ -3731,31 +2207,31 @@
           "net": 0
         }
       ],
-      "progress": 65,
+      "releases": [],
+      "progress": 45,
       "goals": [],
       "completed_goals": []
     },
     {
-      "id": 4196520048,
+      "id": 1911135051,
       "name": "Bridge-Offline-Practice",
       "full_name": "Rick-Wilson/Bridge-Offline-Practice",
-      "description": "App for solo practice of bridge bidding and cardplay",
+      "description": "Bridge Bidding Practice",
       "language": "JSON",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
       "loc": {
-        "JavaScript": 700,
-        "JSON": 1225,
-        "SVG": 3,
+        "JSON": 3137,
+        "JavaScript": 1238,
         "Vue": 57
       },
-      "commits": 2,
+      "commits": 1,
       "recent_commits": 1,
-      "last_commit": "2026-01-14T11:55:40-08:00",
-      "created_at": "2026-01-14T11:55:40-08:00",
-      "updated_at": "2026-01-14T11:55:40-08:00",
-      "url": "git@github.com:Rick-Wilson/Bridge-Offline-Practice",
+      "last_commit": "2026-01-18T16:20:44-08:00",
+      "created_at": "2026-01-18T16:20:44-08:00",
+      "updated_at": "2026-01-18T16:20:44-08:00",
+      "url": "https://github.com/Rick-Wilson/Bridge-Offline-Practice",
       "commit_history": [
         {
           "date": "2025-10-27",
@@ -4233,7 +2709,7 @@
         },
         {
           "date": "2026-01-14",
-          "commits": 1,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
@@ -4257,7 +2733,7 @@
         },
         {
           "date": "2026-01-18",
-          "commits": 0,
+          "commits": 1,
           "additions": 0,
           "deletions": 0
         },
@@ -4351,12 +2827,12 @@
         },
         {
           "date": "2026-01-11",
-          "additions": 4607,
+          "additions": 0,
           "deletions": 0
         },
         {
           "date": "2026-01-18",
-          "additions": 0,
+          "additions": 7826,
           "deletions": 0
         }
       ],
@@ -4441,40 +2917,35 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 4607,
+          "additions": 7826,
           "deletions": 0,
-          "net": 4607
+          "net": 7826
         }
       ],
+      "releases": [],
       "progress": 55,
-      "goals": [
-        "Goal 1",
-        "Goal 2",
-        "Goal 3"
-      ],
-      "completed_goals": [
-        "Goal 1"
-      ]
+      "goals": [],
+      "completed_goals": []
     },
     {
-      "id": 1244082392,
+      "id": 325748216,
       "name": "Bridge-Parsers",
       "full_name": "Rick-Wilson/Bridge-Parsers",
-      "description": "Parsers for common file formats related to the game of Bridge, including PBN, LIN and BWS files.",
+      "description": "Repository: Bridge-Parsers",
       "language": "Rust",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
       "loc": {
-        "Rust": 7041,
+        "Rust": 7034,
         "TOML": 31
       },
-      "commits": 5,
-      "recent_commits": 5,
+      "commits": 1,
+      "recent_commits": 1,
       "last_commit": "2026-01-23T14:32:02-08:00",
       "created_at": "2026-01-23T14:32:02-08:00",
       "updated_at": "2026-01-23T14:32:02-08:00",
-      "url": "git@github.com:Rick-Wilson/Bridge-Parsers",
+      "url": "https://github.com/Rick-Wilson/Bridge-Parsers",
       "commit_history": [
         {
           "date": "2025-10-27",
@@ -4922,7 +3393,7 @@
         },
         {
           "date": "2026-01-09",
-          "commits": 1,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
@@ -5000,7 +3471,7 @@
         },
         {
           "date": "2026-01-22",
-          "commits": 3,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
@@ -5065,7 +3536,7 @@
         },
         {
           "date": "2026-01-04",
-          "additions": 24,
+          "additions": 0,
           "deletions": 0
         },
         {
@@ -5075,8 +3546,8 @@
         },
         {
           "date": "2026-01-18",
-          "additions": 13830,
-          "deletions": 594
+          "additions": 13260,
+          "deletions": 0
         }
       ],
       "monthly_loc_changes": [
@@ -5160,755 +3631,35 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 13854,
-          "deletions": 594,
+          "additions": 13260,
+          "deletions": 0,
           "net": 13260
         }
       ],
+      "releases": [],
       "progress": 65,
-      "goals": [
-        "Goal 1",
-        "Goal 2",
-        "Goal 3"
-      ],
-      "completed_goals": [
-        "Goal 1"
-      ]
-    },
-    {
-      "id": 1094606855,
-      "name": "bridge-solver-xray",
-      "full_name": "Rick-Wilson/bridge-solver-xray",
-      "description": "Bridge Solver X-ray",
-      "language": "C++",
-      "stars": 0,
-      "forks": 0,
-      "open_issues": 0,
-      "loc": {
-        "C++": 5294,
-        "Makefile": 38,
-        "Shell": 286
-      },
-      "commits": 8,
-      "recent_commits": 8,
-      "last_commit": "2026-01-04T16:33:57-08:00",
-      "created_at": "2026-01-04T16:33:57-08:00",
-      "updated_at": "2026-01-04T16:33:57-08:00",
-      "url": "git@github.com:Rick-Wilson/bridge-solver-xray",
-      "commit_history": [
-        {
-          "date": "2025-10-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-31",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-31",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-04",
-          "commits": 8,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        }
-      ],
-      "code_changes": [
-        {
-          "date": "2025-11-02",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-09",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-16",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-23",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-30",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-07",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-14",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-21",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-28",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-04",
-          "additions": 5684,
-          "deletions": 177
-        },
-        {
-          "date": "2026-01-11",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-18",
-          "additions": 0,
-          "deletions": 0
-        }
-      ],
-      "monthly_loc_changes": [
-        {
-          "month": "Feb 2025",
-          "month_short": "Feb",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Mar 2025",
-          "month_short": "Mar",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Apr 2025",
-          "month_short": "Apr",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "May 2025",
-          "month_short": "May",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jun 2025",
-          "month_short": "Jun",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jul 2025",
-          "month_short": "Jul",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Aug 2025",
-          "month_short": "Aug",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Sep 2025",
-          "month_short": "Sep",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Oct 2025",
-          "month_short": "Oct",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Nov 2025",
-          "month_short": "Nov",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Dec 2025",
-          "month_short": "Dec",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jan 2026",
-          "month_short": "Jan",
-          "additions": 5684,
-          "deletions": 177,
-          "net": 5507
-        }
-      ],
-      "progress": 70,
       "goals": [],
       "completed_goals": []
     },
     {
-      "id": 2018315903,
+      "id": 205015633,
       "name": "bridge-wrangler",
       "full_name": "Rick-Wilson/bridge-wrangler",
-      "description": "A CLI with utility functions to manage large sets of bridge hands",
+      "description": "bridge-wrangler",
       "language": "Rust",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
       "loc": {
         "Rust": 1399,
-        "Shell": 37,
         "TOML": 20
       },
-      "commits": 5,
-      "recent_commits": 5,
+      "commits": 1,
+      "recent_commits": 1,
       "last_commit": "2026-01-24T12:24:11-08:00",
       "created_at": "2026-01-24T12:24:11-08:00",
       "updated_at": "2026-01-24T12:24:11-08:00",
-      "url": "git@github.com:Rick-Wilson/bridge-wrangler",
+      "url": "https://github.com/Rick-Wilson/bridge-wrangler",
       "commit_history": [
         {
           "date": "2025-10-27",
@@ -6440,7 +4191,7 @@
         },
         {
           "date": "2026-01-23",
-          "commits": 4,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
@@ -6509,8 +4260,8 @@
         },
         {
           "date": "2026-01-18",
-          "additions": 9129,
-          "deletions": 97
+          "additions": 9032,
+          "deletions": 0
         }
       ],
       "monthly_loc_changes": [
@@ -6594,741 +4345,20 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 9129,
-          "deletions": 97,
+          "additions": 9032,
+          "deletions": 0,
           "net": 9032
         }
       ],
-      "progress": 55,
-      "goals": [
-        "Goal 1",
-        "Goal 2",
-        "Goal 3"
-      ],
-      "completed_goals": [
-        "Goal 1"
-      ]
-    },
-    {
-      "id": 3128208733,
-      "name": "Dealer-cleanup",
-      "full_name": "Rick-Wilson/Dealer-cleanup",
-      "description": "Dealer by Hans van Staveren",
-      "language": "C",
-      "stars": 0,
-      "forks": 0,
-      "open_issues": 0,
-      "loc": {
-        "Batch": 3,
-        "C": 2132,
-        "C Header": 288,
-        "Happy": 637,
-        "Lex": 109
-      },
-      "commits": 4,
-      "recent_commits": 4,
-      "last_commit": "2026-01-07T12:58:43-08:00",
-      "created_at": "2026-01-07T12:58:43-08:00",
-      "updated_at": "2026-01-07T12:58:43-08:00",
-      "url": "git@github.com:Rick-Wilson/Dealer-cleanup",
-      "commit_history": [
-        {
-          "date": "2025-10-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-31",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-31",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-07",
-          "commits": 4,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        }
-      ],
-      "code_changes": [
-        {
-          "date": "2025-11-02",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-09",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-16",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-23",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-30",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-07",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-14",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-21",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-28",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-04",
-          "additions": 136,
-          "deletions": 21
-        },
-        {
-          "date": "2026-01-11",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-18",
-          "additions": 0,
-          "deletions": 0
-        }
-      ],
-      "monthly_loc_changes": [
-        {
-          "month": "Feb 2025",
-          "month_short": "Feb",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Mar 2025",
-          "month_short": "Mar",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Apr 2025",
-          "month_short": "Apr",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "May 2025",
-          "month_short": "May",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jun 2025",
-          "month_short": "Jun",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jul 2025",
-          "month_short": "Jul",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Aug 2025",
-          "month_short": "Aug",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Sep 2025",
-          "month_short": "Sep",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Oct 2025",
-          "month_short": "Oct",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Nov 2025",
-          "month_short": "Nov",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Dec 2025",
-          "month_short": "Dec",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jan 2026",
-          "month_short": "Jan",
-          "additions": 136,
-          "deletions": 21,
-          "net": 115
-        }
-      ],
+      "releases": [],
       "progress": 55,
       "goals": [],
       "completed_goals": []
     },
     {
-      "id": 1185183819,
-      "name": "dealer3",
-      "full_name": "Rick-Wilson/dealer3",
+      "id": 1496122767,
+      "name": "Dealer3",
+      "full_name": "Rick-Wilson/Dealer3",
       "description": "dealer3",
       "language": "Rust",
       "stars": 0,
@@ -7343,12 +4373,12 @@
         "Shell": 524,
         "TOML": 112
       },
-      "commits": 76,
-      "recent_commits": 76,
+      "commits": 1,
+      "recent_commits": 1,
       "last_commit": "2026-01-21T10:33:56-08:00",
       "created_at": "2026-01-21T10:33:56-08:00",
       "updated_at": "2026-01-21T10:33:56-08:00",
-      "url": "git@github.com:Rick-Wilson/Dealer3",
+      "url": "https://github.com/Rick-Wilson/Dealer3",
       "commit_history": [
         {
           "date": "2025-10-27",
@@ -7730,31 +4760,31 @@
         },
         {
           "date": "2025-12-29",
-          "commits": 7,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
         {
           "date": "2025-12-30",
-          "commits": 15,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
         {
           "date": "2025-12-31",
-          "commits": 4,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
         {
           "date": "2026-01-01",
-          "commits": 17,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
         {
           "date": "2026-01-02",
-          "commits": 5,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
@@ -7766,25 +4796,25 @@
         },
         {
           "date": "2026-01-04",
-          "commits": 13,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
         {
           "date": "2026-01-05",
-          "commits": 3,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
         {
           "date": "2026-01-06",
-          "commits": 1,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
         {
           "date": "2026-01-07",
-          "commits": 8,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
@@ -7802,7 +4832,7 @@
         },
         {
           "date": "2026-01-10",
-          "commits": 1,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
@@ -7868,7 +4898,7 @@
         },
         {
           "date": "2026-01-21",
-          "commits": 2,
+          "commits": 1,
           "additions": 0,
           "deletions": 0
         },
@@ -7934,13 +4964,13 @@
         },
         {
           "date": "2025-12-28",
-          "additions": 16304,
-          "deletions": 1152
+          "additions": 0,
+          "deletions": 0
         },
         {
           "date": "2026-01-04",
-          "additions": 21913,
-          "deletions": 9688
+          "additions": 0,
+          "deletions": 0
         },
         {
           "date": "2026-01-11",
@@ -7949,8 +4979,8 @@
         },
         {
           "date": "2026-01-18",
-          "additions": 3088,
-          "deletions": 31
+          "additions": 30434,
+          "deletions": 0
         }
       ],
       "monthly_loc_changes": [
@@ -8027,761 +5057,49 @@
         {
           "month": "Dec 2025",
           "month_short": "Dec",
-          "additions": 8311,
-          "deletions": 216,
-          "net": 8095
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
         },
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 31142,
-          "deletions": 10447,
-          "net": 20695
+          "additions": 30434,
+          "deletions": 0,
+          "net": 30434
         }
       ],
-      "progress": 100,
+      "releases": [
+        {
+          "tag": "v0.4.0",
+          "date": "2026-01-21T10:34:04-08:00",
+          "message": "Release v0.4.0",
+          "repo": "Dealer3"
+        }
+      ],
+      "progress": 75,
       "goals": [],
       "completed_goals": []
     },
     {
-      "id": 1766027014,
+      "id": 3120752900,
       "name": "pbn-to-pdf",
       "full_name": "Rick-Wilson/pbn-to-pdf",
-      "description": "Repository: pbn-to-pdf",
-      "language": "SVG",
-      "stars": 0,
-      "forks": 0,
-      "open_issues": 0,
-      "loc": {
-        "Rust": 12501,
-        "SVG": 13517,
-        "TOML": 15
-      },
-      "commits": 32,
-      "recent_commits": 32,
-      "last_commit": "2026-01-24T10:23:05-08:00",
-      "created_at": "2026-01-24T10:23:05-08:00",
-      "updated_at": "2026-01-24T10:23:05-08:00",
-      "url": "git@github.com:Rick-Wilson/pbn-to-pdf",
-      "commit_history": [
-        {
-          "date": "2025-10-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-10-31",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-31",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-10",
-          "commits": 2,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-11",
-          "commits": 10,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-18",
-          "commits": 5,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-19",
-          "commits": 3,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-20",
-          "commits": 2,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-22",
-          "commits": 2,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-23",
-          "commits": 7,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-24",
-          "commits": 1,
-          "additions": 0,
-          "deletions": 0
-        }
-      ],
-      "code_changes": [
-        {
-          "date": "2025-11-02",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-09",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-16",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-23",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-30",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-07",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-14",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-21",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-28",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-04",
-          "additions": 8735,
-          "deletions": 643
-        },
-        {
-          "date": "2026-01-11",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-18",
-          "additions": 33662,
-          "deletions": 1915
-        }
-      ],
-      "monthly_loc_changes": [
-        {
-          "month": "Feb 2025",
-          "month_short": "Feb",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Mar 2025",
-          "month_short": "Mar",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Apr 2025",
-          "month_short": "Apr",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "May 2025",
-          "month_short": "May",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jun 2025",
-          "month_short": "Jun",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jul 2025",
-          "month_short": "Jul",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Aug 2025",
-          "month_short": "Aug",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Sep 2025",
-          "month_short": "Sep",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Oct 2025",
-          "month_short": "Oct",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Nov 2025",
-          "month_short": "Nov",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Dec 2025",
-          "month_short": "Dec",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jan 2026",
-          "month_short": "Jan",
-          "additions": 42397,
-          "deletions": 2558,
-          "net": 39839
-        }
-      ],
-      "progress": 90,
-      "goals": [
-        "Goal 1",
-        "Goal 2",
-        "Goal 3"
-      ],
-      "completed_goals": [
-        "Goal 1"
-      ]
-    },
-    {
-      "id": 3760572364,
-      "name": "pdf-handouts",
-      "full_name": "Rick-Wilson/pdf-handouts",
-      "description": "read list of pdfs, image files; merge-> handouts, with headers and footers",
+      "description": "pbn-to-pdf",
       "language": "Rust",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
       "loc": {
-        "Rust": 5021,
-        "TOML": 22
+        "Rust": 12501,
+        "TOML": 15
       },
-      "commits": 14,
-      "recent_commits": 14,
-      "last_commit": "2026-01-20T16:38:40-08:00",
-      "created_at": "2026-01-20T16:38:40-08:00",
-      "updated_at": "2026-01-20T16:38:40-08:00",
-      "url": "git@github.com:Rick-Wilson/pdf-handouts",
+      "commits": 1,
+      "recent_commits": 1,
+      "last_commit": "2026-01-24T10:23:05-08:00",
+      "created_at": "2026-01-24T10:23:05-08:00",
+      "updated_at": "2026-01-24T10:23:05-08:00",
+      "url": "https://github.com/Rick-Wilson/pbn-to-pdf",
       "commit_history": [
         {
           "date": "2025-10-27",
@@ -9217,25 +5535,25 @@
         },
         {
           "date": "2026-01-07",
-          "commits": 2,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
         {
           "date": "2026-01-08",
-          "commits": 2,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
         {
           "date": "2026-01-09",
-          "commits": 4,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
         {
           "date": "2026-01-10",
-          "commits": 4,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
@@ -9247,7 +5565,721 @@
         },
         {
           "date": "2026-01-12",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-14",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-15",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-16",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-17",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-18",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-19",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-20",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-21",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-22",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-23",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-24",
           "commits": 1,
+          "additions": 0,
+          "deletions": 0
+        }
+      ],
+      "code_changes": [
+        {
+          "date": "2025-11-02",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-09",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-16",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-23",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-30",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-07",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-14",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-21",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-28",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-04",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-11",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-18",
+          "additions": 39839,
+          "deletions": 0
+        }
+      ],
+      "monthly_loc_changes": [
+        {
+          "month": "Feb 2025",
+          "month_short": "Feb",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Mar 2025",
+          "month_short": "Mar",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Apr 2025",
+          "month_short": "Apr",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "May 2025",
+          "month_short": "May",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Jun 2025",
+          "month_short": "Jun",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Jul 2025",
+          "month_short": "Jul",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Aug 2025",
+          "month_short": "Aug",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Sep 2025",
+          "month_short": "Sep",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Oct 2025",
+          "month_short": "Oct",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Nov 2025",
+          "month_short": "Nov",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Dec 2025",
+          "month_short": "Dec",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Jan 2026",
+          "month_short": "Jan",
+          "additions": 39839,
+          "deletions": 0,
+          "net": 39839
+        }
+      ],
+      "releases": [],
+      "progress": 75,
+      "goals": [],
+      "completed_goals": []
+    },
+    {
+      "id": 83320985,
+      "name": "pdf-handouts",
+      "full_name": "Rick-Wilson/pdf-handouts",
+      "description": "PDF Handouts",
+      "language": "Rust",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "loc": {
+        "Rust": 5147,
+        "TOML": 22
+      },
+      "commits": 1,
+      "recent_commits": 1,
+      "last_commit": "2026-01-20T16:38:40-08:00",
+      "created_at": "2026-01-20T16:38:40-08:00",
+      "updated_at": "2026-01-20T16:38:40-08:00",
+      "url": "https://github.com/Rick-Wilson/pdf-handouts",
+      "commit_history": [
+        {
+          "date": "2025-10-27",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-10-28",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-10-29",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-10-30",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-10-31",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-01",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-02",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-03",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-04",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-05",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-06",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-07",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-08",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-09",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-10",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-11",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-12",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-14",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-15",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-16",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-17",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-18",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-19",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-20",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-21",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-22",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-23",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-24",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-25",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-26",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-27",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-28",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-29",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-30",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-01",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-02",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-03",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-04",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-05",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-06",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-07",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-08",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-09",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-10",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-11",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-12",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-14",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-15",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-16",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-17",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-18",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-19",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-20",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-21",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-22",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-23",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-24",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-25",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-26",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-27",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-28",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-29",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-30",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-31",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-01",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-02",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-03",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-04",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-05",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-06",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-07",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-08",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-09",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-10",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-11",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-12",
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
@@ -9372,18 +6404,18 @@
         },
         {
           "date": "2026-01-04",
-          "additions": 11198,
-          "deletions": 826
+          "additions": 0,
+          "deletions": 0
         },
         {
           "date": "2026-01-11",
-          "additions": 257,
-          "deletions": 19
+          "additions": 0,
+          "deletions": 0
         },
         {
           "date": "2026-01-18",
-          "additions": 28,
-          "deletions": 13
+          "additions": 10625,
+          "deletions": 0
         }
       ],
       "monthly_loc_changes": [
@@ -9467,39 +6499,41 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 11483,
-          "deletions": 858,
+          "additions": 10625,
+          "deletions": 0,
           "net": 10625
         }
       ],
-      "progress": 60,
-      "goals": [
-        "Goal 1",
-        "Goal 2",
-        "Goal 3"
+      "releases": [
+        {
+          "tag": "v0.3.0",
+          "date": "2026-01-20T16:38:40-08:00",
+          "message": "Fix image loss when adding headers/footers to PDFs with XObject references",
+          "repo": "pdf-handouts"
+        }
       ],
-      "completed_goals": [
-        "Goal 1"
-      ]
+      "progress": 65,
+      "goals": [],
+      "completed_goals": []
     },
     {
-      "id": 4275122922,
+      "id": 1638390445,
       "name": "Vibe-Dashboard",
       "full_name": "Rick-Wilson/Vibe-Dashboard",
-      "description": "Track status and history of my github projects. Use To-do list to project forward activity",
+      "description": "Repository: Vibe-Dashboard",
       "language": "JSON",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
       "loc": {
-        "JSON": 10333,
-        "Python": 802
+        "JSON": 10214,
+        "Python": 836
       },
       "commits": 1,
       "recent_commits": 0,
-      "last_commit": "2026-01-25T07:00:07-08:00",
-      "created_at": "2026-01-25T07:00:07-08:00",
-      "updated_at": "2026-01-25T07:00:07-08:00",
+      "last_commit": "2026-01-25T10:14:30-08:00",
+      "created_at": "2026-01-25T10:14:30-08:00",
+      "updated_at": "2026-01-25T10:14:30-08:00",
       "url": "https://github.com/Rick-Wilson/Vibe-Dashboard",
       "commit_history": [
         {
@@ -10101,7 +7135,7 @@
         },
         {
           "date": "2026-01-18",
-          "additions": 24,
+          "additions": 12327,
           "deletions": 0
         }
       ],
@@ -10186,29 +7220,30 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 24,
+          "additions": 12327,
           "deletions": 0,
-          "net": 24
+          "net": 12327
         }
       ],
-      "progress": 45,
-      "goals": [
-        "Goal 1",
-        "Goal 2",
-        "Goal 3"
-      ],
-      "completed_goals": [
-        "Goal 1"
-      ]
+      "releases": [],
+      "progress": 75,
+      "goals": [],
+      "completed_goals": []
     }
   ],
-  "todos": [
+  "releases": [
     {
-      "id": 1,
-      "text": "Example task - edit todos.json to customize",
-      "project": "Vibe-Dashboard",
-      "priority": "medium",
-      "done": false
+      "tag": "v0.4.0",
+      "date": "2026-01-21T10:34:04-08:00",
+      "message": "Release v0.4.0",
+      "repo": "Dealer3"
+    },
+    {
+      "tag": "v0.3.0",
+      "date": "2026-01-20T16:38:40-08:00",
+      "message": "Fix image loss when adding headers/footers to PDFs with XObject references",
+      "repo": "pdf-handouts"
     }
-  ]
+  ],
+  "todos": []
 }
