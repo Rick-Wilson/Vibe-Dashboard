@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BridgeDev Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'JetBrains Mono', monospace; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #020617 50%, #0f172a 100%); }
+        .grid-pattern {
+            background-image: linear-gradient(rgba(16, 185, 129, 0.03) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(16, 185, 129, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+        .loading { animation: pulse 2s ease-in-out infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    </style>
+</head>
+<body class="gradient-bg text-slate-100 min-h-screen">
+    <div class="grid-pattern fixed inset-0 pointer-events-none"></div>
+    
+    <!-- Loading State -->
+    <div id="loading" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950">
+        <div class="text-center">
+            <div class="w-12 h-12 border-4 border-emerald-500/30 border-t-emerald-500 rounded-full animate-spin mx-auto mb-4"></div>
+            <p class="text-slate-400 loading">Loading dashboard data...</p>
+        </div>
+    </div>
+    
+    <!-- Error State -->
+    <div id="error" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950 hidden">
+        <div class="text-center max-w-md p-8">
+            <div class="text-6xl mb-4">📊</div>
+            <h2 class="text-xl font-bold text-slate-200 mb-2">No Data Found</h2>
+            <p class="text-slate-400 mb-4" id="error-message">Could not load dashboard_data.json</p>
+            <div class="bg-slate-800/50 rounded-lg p-4 text-left text-sm">
+                <p class="text-slate-300 mb-2">To generate data, run:</p>
+                <code class="text-emerald-400 block bg-slate-900 p-2 rounded">python fetch_github_data.py --user YOUR_USERNAME</code>
+            </div>
+            <button onclick="loadDemoData()" class="mt-4 px-4 py-2 bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 rounded-lg hover:bg-emerald-500/30 transition-all text-sm">
+                Load Demo Data Instead
+            </button>
+        </div>
+    </div>
+    
+    <div id="app" class="relative z-10 hidden">
+        <!-- Header -->
+        <header class="border-b border-slate-800/50 backdrop-blur-sm bg-slate-950/80 sticky top-0 z-20">
+            <div class="max-w-7xl mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="p-2 bg-emerald-500/10 rounded-lg border border-emerald-500/20">
+                            <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold tracking-tight">
+                                <span class="text-emerald-400">Bridge</span><span class="text-slate-400">Dev</span><span class="text-slate-600">.dashboard</span>
+                            </h1>
+                            <p class="text-xs text-slate-500 mt-0.5">Project Analytics & Progress Tracker</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-4">
+                        <span class="text-xs text-slate-500" id="last-updated"></span>
+                        <select id="repo-filter" onchange="applyFilters()" class="bg-slate-900/50 border border-slate-800/50 rounded-lg px-3 py-2 text-sm text-slate-300 focus:outline-none focus:border-emerald-500/50">
+                            <option value="all">All Repos</option>
+                        </select>
+                        <nav class="flex gap-1 bg-slate-900/50 p-1 rounded-lg border border-slate-800/50">
+                            <button onclick="showTab('overview')" class="tab-btn px-4 py-2 rounded-md text-sm transition-all active" data-tab="overview">Overview</button>
+                            <button onclick="showTab('projects')" class="tab-btn px-4 py-2 rounded-md text-sm transition-all" data-tab="projects">Projects</button>
+                            <button onclick="showTab('activity')" class="tab-btn px-4 py-2 rounded-md text-sm transition-all" data-tab="activity">Activity</button>
+                            <button onclick="showTab('todos')" class="tab-btn px-4 py-2 rounded-md text-sm transition-all" data-tab="todos">Todos</button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="max-w-7xl mx-auto px-6 py-8">
+            <!-- Overview Tab -->
+            <div id="tab-overview" class="tab-content space-y-8">
+                <div class="grid grid-cols-4 gap-4" id="stats-grid"></div>
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="col-span-2 bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-sm font-medium text-slate-400">Commit Activity</h3>
+                            <select id="commit-timeframe" onchange="applyFilters()" class="bg-slate-800/50 border border-slate-700/50 rounded-lg px-2 py-1 text-xs text-slate-400 focus:outline-none focus:border-emerald-500/50">
+                                <option value="30">30 days</option>
+                                <option value="60">60 days</option>
+                                <option value="90" selected>90 days</option>
+                            </select>
+                        </div>
+                        <canvas id="commitChart" height="100"></canvas>
+                    </div>
+                    <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
+                        <h3 class="text-sm font-medium text-slate-400 mb-4">Language Distribution</h3>
+                        <canvas id="languageChart" height="200"></canvas>
+                    </div>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-sm font-medium text-slate-400">Codebase Growth</h3>
+                        <select id="growth-timeframe" onchange="applyFilters()" class="bg-slate-800/50 border border-slate-700/50 rounded-lg px-2 py-1 text-xs text-slate-400 focus:outline-none focus:border-emerald-500/50">
+                            <option value="3">3 months</option>
+                            <option value="6">6 months</option>
+                            <option value="12" selected>12 months</option>
+                        </select>
+                    </div>
+                    <canvas id="growthChart" height="80"></canvas>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium text-slate-400 mb-4">Project Progress</h3>
+                    <div class="grid grid-cols-2 gap-4" id="project-cards"></div>
+                </div>
+            </div>
+
+            <!-- Projects Tab -->
+            <div id="tab-projects" class="tab-content hidden space-y-6">
+                <div id="projects-list" class="space-y-4"></div>
+                <div id="project-detail" class="hidden"></div>
+            </div>
+
+            <!-- Activity Tab -->
+            <div id="tab-activity" class="tab-content hidden space-y-6">
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
+                    <h3 class="text-sm font-medium text-slate-400 mb-4">Contribution Calendar (90 days)</h3>
+                    <div id="contribution-calendar" class="flex flex-wrap gap-1"></div>
+                    <div class="flex items-center gap-2 mt-4 text-xs text-slate-500">
+                        <span>Less</span>
+                        <div class="w-3 h-3 rounded-sm bg-slate-800"></div>
+                        <div class="w-3 h-3 rounded-sm bg-emerald-900"></div>
+                        <div class="w-3 h-3 rounded-sm bg-emerald-700"></div>
+                        <div class="w-3 h-3 rounded-sm bg-emerald-500"></div>
+                        <div class="w-3 h-3 rounded-sm bg-emerald-400"></div>
+                        <span>More</span>
+                    </div>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
+                    <h3 class="text-sm font-medium text-slate-400 mb-4">Recent Project Activity</h3>
+                    <div id="recent-activity" class="space-y-3"></div>
+                </div>
+            </div>
+
+            <!-- Todos Tab -->
+            <div id="tab-todos" class="tab-content hidden space-y-6">
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
+                    <h3 class="text-sm font-medium text-slate-400 mb-4">Add New Task</h3>
+                    <div class="flex gap-3">
+                        <input type="text" id="new-todo-text" placeholder="What needs to be done?" 
+                               class="flex-1 bg-slate-800/50 border border-slate-700/50 rounded-lg px-4 py-2.5 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500/50">
+                        <select id="new-todo-project" class="bg-slate-800/50 border border-slate-700/50 rounded-lg px-3 py-2.5 text-sm text-slate-300 focus:outline-none"></select>
+                        <select id="new-todo-priority" class="bg-slate-800/50 border border-slate-700/50 rounded-lg px-3 py-2.5 text-sm text-slate-300 focus:outline-none">
+                            <option value="high">High</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                        <button onclick="addTodo()" class="px-4 py-2.5 bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 rounded-lg hover:bg-emerald-500/30 transition-all text-sm font-medium">Add Task</button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-4" id="todo-stats"></div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
+                    <h3 class="text-sm font-medium text-slate-400 mb-4">Task List</h3>
+                    <div id="todo-list" class="space-y-2"></div>
+                </div>
+                <div class="bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border border-emerald-500/20 rounded-xl p-6">
+                    <h3 class="text-sm font-medium text-emerald-400 mb-3">Progress Projection</h3>
+                    <p class="text-slate-300 text-sm" id="projection-text"></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Global state
+        let dashboardData = null;
+        let todos = [];
+        let charts = {};
+        let currentFilters = {
+            repo: 'all',
+            commitDays: 90,
+            growthMonths: 12
+        };
+
+        // URL parameter helpers
+        function getUrlParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                repo: params.get('repo') || 'all',
+                commitDays: parseInt(params.get('days')) || 90,
+                growthMonths: parseInt(params.get('months')) || 12,
+                tab: params.get('tab') || 'overview'
+            };
+        }
+
+        function updateUrlParams(tab = null) {
+            const params = new URLSearchParams();
+            if (currentFilters.repo !== 'all') params.set('repo', currentFilters.repo);
+            if (currentFilters.commitDays !== 90) params.set('days', currentFilters.commitDays);
+            if (currentFilters.growthMonths !== 12) params.set('months', currentFilters.growthMonths);
+            if (tab && tab !== 'overview') params.set('tab', tab);
+
+            const newUrl = params.toString()
+                ? `${window.location.pathname}?${params.toString()}`
+                : window.location.pathname;
+            history.replaceState(null, '', newUrl);
+        }
+
+        function initFiltersFromUrl() {
+            const urlParams = getUrlParams();
+            currentFilters.repo = urlParams.repo;
+            currentFilters.commitDays = urlParams.commitDays;
+            currentFilters.growthMonths = urlParams.growthMonths;
+
+            // Set dropdown values
+            document.getElementById('commit-timeframe').value = currentFilters.commitDays;
+            document.getElementById('growth-timeframe').value = currentFilters.growthMonths;
+
+            // Set tab from URL (will be applied after data loads)
+            if (urlParams.tab && ['overview', 'projects', 'activity', 'todos'].includes(urlParams.tab)) {
+                setTimeout(() => showTab(urlParams.tab), 0);
+            }
+        }
+        
+        const LANG_COLORS = {
+            Python: '#3776ab', TypeScript: '#3178c6', JavaScript: '#f7df1e',
+            'C#': '#68217a', Java: '#b07219', Go: '#00ADD8', Rust: '#dea584',
+            Ruby: '#701516', PHP: '#4F5D95', HTML: '#e34c26', CSS: '#264de4',
+            Markdown: '#083fa1', Shell: '#89e051', 'C++': '#f34b7d', C: '#555555',
+            JSON: '#5a9e6f', SVG: '#ff6600', TOML: '#9c4121', YAML: '#cb171e',
+            SQL: '#e38c00', Vue: '#41b883', TeX: '#3d6117', Lua: '#000080',
+            Kotlin: '#A97BFF', Swift: '#F05138', Dart: '#00B4AB', Scala: '#c22d40',
+            R: '#198CE7', Perl: '#0298c3', Haskell: '#5e5086', Elixir: '#6e4a7e',
+            Lex: '#DBCA00', Happy: '#5e5086', Pest: '#646464', INI: '#d1dbe0',
+            PowerShell: '#012456', Batch: '#C1F12E', VBScript: '#15dcdc',
+            'Visual Basic': '#945db7', 'C Header': '#438eff', MSBuild: '#178600',
+            Makefile: '#427819'
+        };
+
+        // Load data from JSON file
+        async function loadData() {
+            try {
+                const response = await fetch('dashboard_data.json');
+                if (!response.ok) throw new Error('File not found');
+                dashboardData = await response.json();
+                todos = dashboardData.todos || [];
+                showApp();
+            } catch (error) {
+                console.log('Could not load dashboard_data.json:', error);
+                showError(error.message);
+            }
+        }
+
+        function loadDemoData() {
+            // Generate demo data
+            dashboardData = generateDemoData();
+            todos = dashboardData.todos;
+            document.getElementById('error').classList.add('hidden');
+            showApp();
+        }
+
+        function generateDemoData() {
+            const projects = [
+                { id: 1, name: 'bridge-bidding-trainer', full_name: 'user/bridge-bidding-trainer', description: 'Interactive bidding practice with AI opponents', language: 'Python', stars: 12, progress: 75, goals: ['Core bidding engine', 'AI opponent logic', 'Web interface', 'Hand generation'], completed_goals: ['Core bidding engine', 'AI opponent logic', 'Hand generation'], loc: { Python: 4200, JavaScript: 1800, HTML: 450, CSS: 320 }, commits: 127, last_commit: new Date(Date.now() - 2*86400000).toISOString(), url: '#' },
+                { id: 2, name: 'deal-analyzer', full_name: 'user/deal-analyzer', description: 'Post-mortem analysis of bridge deals', language: 'TypeScript', stars: 8, progress: 45, goals: ['PBN parser', 'Double dummy solver', 'Visualization', 'Export reports'], completed_goals: ['PBN parser', 'Double dummy solver'], loc: { TypeScript: 3100, JavaScript: 890, CSS: 280 }, commits: 89, last_commit: new Date(Date.now() - 86400000).toISOString(), url: '#' },
+                { id: 3, name: 'tournament-manager', full_name: 'user/tournament-manager', description: 'Swiss and round-robin tournament scoring', language: 'C#', stars: 5, progress: 30, goals: ['Scoring algorithms', 'Pairing engine', 'Results display', 'BridgeMate integration', 'Web dashboard'], completed_goals: ['Scoring algorithms'], loc: { 'C#': 2800, JavaScript: 1200, HTML: 380, CSS: 190 }, commits: 64, last_commit: new Date(Date.now() - 5*86400000).toISOString(), url: '#' },
+                { id: 4, name: 'pdf-handout', full_name: 'user/pdf-handout', description: 'Add headers/footers to PDF bridge handouts', language: 'Python', stars: 3, progress: 85, goals: ['PDF parsing', 'Header/footer injection', 'Remove existing headers', 'CLI interface'], completed_goals: ['PDF parsing', 'Header/footer injection', 'Remove existing headers', 'CLI interface'], loc: { Python: 1450, Markdown: 120 }, commits: 42, last_commit: new Date(Date.now() - 3*3600000).toISOString(), url: '#' }
+            ];
+
+            const commitHistory = [];
+            for (let i = 89; i >= 0; i--) {
+                const date = new Date(Date.now() - i * 86400000);
+                const dayOfWeek = date.getDay();
+                const base = dayOfWeek === 0 || dayOfWeek === 6 ? 1 : 3;
+                const commits = Math.floor(Math.random() * base * 2);
+                commitHistory.push({ date: date.toISOString().split('T')[0], commits, additions: commits * 40, deletions: commits * 10 });
+            }
+
+            const locHistory = [];
+            let totalLoc = 8000;
+            for (let i = 11; i >= 0; i--) {
+                const date = new Date();
+                date.setMonth(date.getMonth() - i);
+                totalLoc += Math.floor(Math.random() * 800 + 200);
+                locHistory.push({ month: date.toLocaleString('default', { month: 'short' }), loc: totalLoc });
+            }
+
+            const languages = {};
+            projects.forEach(p => Object.entries(p.loc).forEach(([l, v]) => languages[l] = (languages[l] || 0) + v));
+
+            const thisWeek = commitHistory.slice(-7).reduce((s, d) => s + d.commits, 0);
+            const lastWeek = commitHistory.slice(-14, -7).reduce((s, d) => s + d.commits, 0);
+
+            return {
+                generated_at: new Date().toISOString(),
+                stats: {
+                    total_loc: Object.values(languages).reduce((a, b) => a + b, 0),
+                    total_commits: projects.reduce((s, p) => s + p.commits, 0),
+                    avg_progress: Math.round(projects.reduce((s, p) => s + p.progress, 0) / projects.length),
+                    this_week_commits: thisWeek,
+                    last_week_commits: lastWeek,
+                    week_trend: thisWeek - lastWeek,
+                    project_count: projects.length
+                },
+                languages,
+                commit_history: commitHistory,
+                loc_history: locHistory,
+                projects,
+                todos: [
+                    { id: 1, text: 'Implement rubber bridge scoring mode', project: 'tournament-manager', priority: 'high', done: false },
+                    { id: 2, text: 'Add SAYC convention support', project: 'bridge-bidding-trainer', priority: 'medium', done: false },
+                    { id: 3, text: 'Fix PDF page rotation handling', project: 'pdf-handout', priority: 'high', done: true },
+                    { id: 4, text: 'Create API documentation', project: 'deal-analyzer', priority: 'low', done: false },
+                ]
+            };
+        }
+
+        function showError(message) {
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('error-message').textContent = message || 'Could not load dashboard_data.json';
+            document.getElementById('error').classList.remove('hidden');
+        }
+
+        function showApp() {
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('error').classList.add('hidden');
+            document.getElementById('app').classList.remove('hidden');
+            
+            if (dashboardData.generated_at) {
+                const date = new Date(dashboardData.generated_at);
+                document.getElementById('last-updated').textContent = `Updated: ${date.toLocaleDateString()} ${date.toLocaleTimeString()}`;
+            }
+            
+            renderAll();
+        }
+
+        function renderAll() {
+            populateRepoFilter();
+            renderStats();
+            renderCharts();
+            renderProjectCards();
+            renderProjectsList();
+            renderCalendar();
+            renderActivity();
+            populateProjectSelect();
+            renderTodos();
+            updateProjection();
+        }
+
+        function populateRepoFilter() {
+            const select = document.getElementById('repo-filter');
+            const projects = dashboardData.projects || [];
+            select.innerHTML = '<option value="all">All Repos</option>' +
+                projects.map(p => `<option value="${p.name}">${p.name}</option>`).join('');
+
+            // Apply URL params after populating (only on first load)
+            const urlParams = getUrlParams();
+            if (urlParams.repo !== 'all') {
+                // Verify the repo exists in the data
+                const repoExists = projects.some(p => p.name === urlParams.repo);
+                if (repoExists) {
+                    select.value = urlParams.repo;
+                    currentFilters.repo = urlParams.repo;
+                }
+            }
+        }
+
+        function applyFilters() {
+            currentFilters.repo = document.getElementById('repo-filter').value;
+            currentFilters.commitDays = parseInt(document.getElementById('commit-timeframe').value);
+            currentFilters.growthMonths = parseInt(document.getElementById('growth-timeframe').value);
+            // Preserve current tab in URL
+            const activeTab = [...document.querySelectorAll('.tab-btn')].find(b => b.classList.contains('text-emerald-400'));
+            updateUrlParams(activeTab?.dataset.tab || 'overview');
+            renderStats();
+            renderCharts();
+            renderProjectCards();
+            renderCalendar();
+        }
+
+        function getFilteredProjects() {
+            const projects = dashboardData.projects || [];
+            if (currentFilters.repo === 'all') return projects;
+            return projects.filter(p => p.name === currentFilters.repo);
+        }
+
+        function getFilteredCommitHistory() {
+            const allHistory = dashboardData.commit_history || [];
+            const filtered = allHistory.slice(-currentFilters.commitDays);
+
+            if (currentFilters.repo === 'all') return filtered;
+
+            // Filter by repo - need to use per-project commit history
+            const project = dashboardData.projects.find(p => p.name === currentFilters.repo);
+            if (!project || !project.commit_history) return filtered;
+
+            // Match project's commit history to the date range
+            const projectHist = project.commit_history || [];
+            const dates = filtered.map(d => d.date);
+            return dates.map(date => {
+                const match = projectHist.find(h => h.date === date);
+                return match || { date, commits: 0, additions: 0, deletions: 0 };
+            });
+        }
+
+        function getFilteredLanguages() {
+            if (currentFilters.repo === 'all') {
+                return dashboardData.languages || {};
+            }
+            const project = dashboardData.projects.find(p => p.name === currentFilters.repo);
+            return project ? (project.loc || {}) : {};
+        }
+
+        function getFilteredLocHistory() {
+            const locByRepo = dashboardData.loc_history_by_repo;
+            if (!locByRepo || !locByRepo.repos) return null;
+
+            const monthsToShow = currentFilters.growthMonths;
+            const startIdx = 12 - monthsToShow;
+
+            let repos = locByRepo.repos;
+            if (currentFilters.repo !== 'all') {
+                repos = repos.filter(r => r.name === currentFilters.repo);
+            }
+
+            return {
+                months: locByRepo.months.slice(startIdx),
+                repos: repos.map(r => ({
+                    name: r.name,
+                    data: r.data.slice(startIdx)
+                }))
+            };
+        }
+
+        function renderStats() {
+            const projects = getFilteredProjects();
+            const langs = getFilteredLanguages();
+            const commitHist = getFilteredCommitHistory();
+
+            const total_loc = Object.values(langs).reduce((a, b) => a + b, 0);
+            const total_commits = projects.reduce((sum, p) => sum + (p.commits || 0), 0);
+            const avg_progress = projects.length > 0
+                ? Math.round(projects.reduce((sum, p) => sum + (p.progress || 0), 0) / projects.length)
+                : 0;
+            const this_week_commits = commitHist.slice(-7).reduce((sum, d) => sum + (d.commits || 0), 0);
+            const last_week_commits = commitHist.slice(-14, -7).reduce((sum, d) => sum + (d.commits || 0), 0);
+            const week_trend = this_week_commits - last_week_commits;
+            const project_count = projects.length;
+
+            document.getElementById('stats-grid').innerHTML = `
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-emerald-500/30 transition-all">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">Total Lines</p>
+                    <p class="text-3xl font-bold mt-1 text-emerald-400">${total_loc.toLocaleString()}</p>
+                    <p class="text-xs text-slate-600 mt-1">${project_count} project${project_count !== 1 ? 's' : ''}</p>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-cyan-500/30 transition-all">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">Total Commits</p>
+                    <p class="text-3xl font-bold mt-1 text-cyan-400">${total_commits}</p>
+                    <p class="text-xs text-slate-600 mt-1">+${this_week_commits} this week</p>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-violet-500/30 transition-all">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">Avg Progress</p>
+                    <p class="text-3xl font-bold mt-1 text-violet-400">${avg_progress}%</p>
+                    <p class="text-xs text-slate-600 mt-1">${currentFilters.repo === 'all' ? 'across all projects' : currentFilters.repo}</p>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-${week_trend >= 0 ? 'emerald' : 'rose'}-500/30 transition-all">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">Week Trend</p>
+                    <p class="text-3xl font-bold mt-1 text-${week_trend >= 0 ? 'emerald' : 'rose'}-400">${week_trend >= 0 ? '+' : ''}${week_trend}</p>
+                    <p class="text-xs text-slate-600 mt-1">vs last week</p>
+                </div>
+            `;
+        }
+
+        function renderCharts() {
+            // Destroy existing charts
+            Object.values(charts).forEach(c => c.destroy());
+            charts = {};
+
+            const hist = getFilteredCommitHistory();
+
+            // Commit Activity
+            charts.commit = new Chart(document.getElementById('commitChart'), {
+                type: 'line',
+                data: {
+                    labels: hist.map(d => d.date.slice(5)),
+                    datasets: [{ label: 'Commits', data: hist.map(d => d.commits), borderColor: '#10b981', backgroundColor: 'rgba(16, 185, 129, 0.1)', fill: true, tension: 0.4 }]
+                },
+                options: { responsive: true, plugins: { legend: { display: false } }, scales: { x: { ticks: { color: '#475569', maxTicksLimit: 15 } }, y: { ticks: { color: '#475569' } } } }
+            });
+
+            // Language Distribution - group small languages into "Other"
+            const langs = getFilteredLanguages();
+            const langEntries = Object.entries(langs).sort((a, b) => b[1] - a[1]);
+            const totalLoc = langEntries.reduce((sum, [, v]) => sum + v, 0);
+            const threshold = 0.03; // 3% threshold for grouping into "Other"
+
+            const mainLangs = [];
+            const otherLangs = [];
+            let otherTotal = 0;
+
+            langEntries.forEach(([lang, loc]) => {
+                const pct = loc / totalLoc;
+                if (pct >= threshold) {
+                    mainLangs.push([lang, loc]);
+                } else {
+                    otherLangs.push([lang, loc, (pct * 100).toFixed(1)]);
+                    otherTotal += loc;
+                }
+            });
+
+            // Add "Other" category if there are small languages
+            const chartData = [...mainLangs];
+            if (otherLangs.length > 0) {
+                chartData.push(['Other', otherTotal]);
+            }
+
+            charts.language = new Chart(document.getElementById('languageChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: chartData.map(([l]) => l),
+                    datasets: [{
+                        data: chartData.map(([, v]) => v),
+                        backgroundColor: chartData.map(([l]) => l === 'Other' ? '#4b5563' : (LANG_COLORS[l] || '#6b7280'))
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'bottom', labels: { color: '#94a3b8', font: { size: 10 } } },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label;
+                                    const value = context.parsed;
+                                    const pct = ((value / totalLoc) * 100).toFixed(1);
+
+                                    if (label === 'Other' && otherLangs.length > 0) {
+                                        // Show breakdown for "Other"
+                                        const lines = [`Other: ${value.toLocaleString()} (${pct}%)`];
+                                        otherLangs.forEach(([lang, loc, langPct]) => {
+                                            lines.push(`  ${lang}: ${loc.toLocaleString()} (${langPct}%)`);
+                                        });
+                                        return lines;
+                                    }
+                                    return `${label}: ${value.toLocaleString()} (${pct}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Growth Chart - Stacked by repo
+            const locByRepo = getFilteredLocHistory();
+            const REPO_COLORS = [
+                '#8b5cf6', '#10b981', '#f59e0b', '#ef4444', '#3b82f6',
+                '#ec4899', '#14b8a6', '#f97316', '#6366f1', '#84cc16',
+                '#06b6d4', '#a855f7', '#22c55e', '#eab308'
+            ];
+
+            if (locByRepo && locByRepo.repos && locByRepo.repos.length > 0) {
+                const datasets = locByRepo.repos.map((repo, idx) => ({
+                    label: repo.name,
+                    data: repo.data,
+                    backgroundColor: REPO_COLORS[idx % REPO_COLORS.length] + '80',
+                    borderColor: REPO_COLORS[idx % REPO_COLORS.length],
+                    borderWidth: 1,
+                    fill: true,
+                    tension: 0.4
+                }));
+
+                charts.growth = new Chart(document.getElementById('growthChart'), {
+                    type: 'line',
+                    data: {
+                        labels: locByRepo.months,
+                        datasets: datasets
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: currentFilters.repo === 'all',
+                                position: 'bottom',
+                                labels: { color: '#94a3b8', font: { size: 9 }, boxWidth: 12 }
+                            },
+                            tooltip: {
+                                mode: 'index',
+                                callbacks: {
+                                    footer: (items) => {
+                                        const total = items.reduce((sum, item) => sum + item.parsed.y, 0);
+                                        return `Total: ${total.toLocaleString()} LOC`;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: { stacked: true, ticks: { color: '#475569' } },
+                            y: {
+                                stacked: true,
+                                ticks: { color: '#475569', callback: v => (v/1000).toFixed(0) + 'k' }
+                            }
+                        }
+                    }
+                });
+            } else {
+                // Fallback to simple line chart if no per-repo data
+                const locHist = dashboardData.loc_history || [];
+                const monthsToShow = currentFilters.growthMonths;
+                const filteredLocHist = locHist.slice(-monthsToShow);
+                charts.growth = new Chart(document.getElementById('growthChart'), {
+                    type: 'line',
+                    data: {
+                        labels: filteredLocHist.map(d => d.month),
+                        datasets: [{ label: 'LOC', data: filteredLocHist.map(d => d.loc), borderColor: '#8b5cf6', backgroundColor: 'rgba(139, 92, 246, 0.1)', fill: true, tension: 0.4 }]
+                    },
+                    options: { responsive: true, plugins: { legend: { display: false } }, scales: { x: { ticks: { color: '#475569' } }, y: { ticks: { color: '#475569', callback: v => (v/1000).toFixed(0) + 'k' } } } }
+                });
+            }
+        }
+
+        function renderProjectCards() {
+            const projects = getFilteredProjects();
+            document.getElementById('project-cards').innerHTML = projects.map(p => {
+                const totalLoc = Object.values(p.loc || {}).reduce((a, b) => a + b, 0);
+                const color = LANG_COLORS[p.language] || '#6b7280';
+                return `
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-emerald-500/30 transition-all cursor-pointer" onclick="showProjectDetail('${p.name}')">
+                    <div class="flex items-start justify-between mb-3">
+                        <div>
+                            <h4 class="font-medium text-slate-200 hover:text-emerald-400 transition-colors">${p.name}</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">${p.description || ''}</p>
+                        </div>
+                        <span class="text-xs px-2 py-1 rounded-full" style="background: ${color}20; color: ${color}">${p.language}</span>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="text-slate-500">Progress</span>
+                            <span class="text-emerald-400">${p.progress || 0}%</span>
+                        </div>
+                        <div class="h-1.5 bg-slate-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full" style="width: ${p.progress || 0}%"></div>
+                        </div>
+                        <div class="flex items-center justify-between text-xs text-slate-600 pt-1">
+                            <span>${p.commits || 0} commits</span>
+                            <span>${totalLoc.toLocaleString()} lines</span>
+                        </div>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        function renderProjectsList() {
+            const projects = dashboardData.projects || [];
+            document.getElementById('projects-list').innerHTML = projects.map(p => {
+                const totalLoc = Object.values(p.loc || {}).reduce((a, b) => a + b, 0);
+                const color = LANG_COLORS[p.language] || '#6b7280';
+                return `
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6 hover:border-emerald-500/30 transition-all cursor-pointer" onclick="showProjectDetail('${p.name}')">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: ${color}15">
+                                <svg class="w-6 h-6" style="color: ${color}" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-slate-200">${p.name}</h3>
+                                <p class="text-sm text-slate-500">${p.description || ''}</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-8">
+                            <div class="text-right"><p class="text-2xl font-bold text-emerald-400">${p.progress || 0}%</p><p class="text-xs text-slate-500">progress</p></div>
+                            <div class="text-right"><p class="text-lg font-medium text-slate-300">${p.commits || 0}</p><p class="text-xs text-slate-500">commits</p></div>
+                            <div class="text-right"><p class="text-lg font-medium text-slate-300">${totalLoc.toLocaleString()}</p><p class="text-xs text-slate-500">lines</p></div>
+                        </div>
+                    </div>
+                    <div class="mt-4"><div class="h-1.5 bg-slate-800 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full" style="width: ${p.progress || 0}%"></div></div></div>
+                </div>`;
+            }).join('');
+        }
+
+        function showProjectDetail(name) {
+            const p = dashboardData.projects.find(x => x.name === name);
+            if (!p) return;
+            
+            const detail = document.getElementById('project-detail');
+            const list = document.getElementById('projects-list');
+            const totalLoc = Object.values(p.loc || {}).reduce((a, b) => a + b, 0);
+            const color = LANG_COLORS[p.language] || '#6b7280';
+            const goals = p.goals || [];
+            const completedGoals = p.completed_goals || [];
+            
+            detail.innerHTML = `
+                <button onclick="hideProjectDetail()" class="text-sm text-slate-500 hover:text-emerald-400 transition-colors mb-4">← Back to all projects</button>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-8">
+                    <div class="flex items-start justify-between mb-6">
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-100">${p.name}</h2>
+                            <p class="text-slate-400 mt-1">${p.description || ''}</p>
+                            ${p.url ? `<a href="${p.url}" target="_blank" class="text-xs text-emerald-400 hover:underline mt-2 inline-block">View on GitHub →</a>` : ''}
+                        </div>
+                        <span class="text-xs px-3 py-1.5 rounded-full" style="background: ${color}20; color: ${color}">${p.language}</span>
+                    </div>
+                    <div class="grid grid-cols-3 gap-6 mb-8">
+                        <div class="bg-slate-800/30 rounded-lg p-4"><p class="text-xs text-slate-500 uppercase">Progress</p><p class="text-3xl font-bold text-emerald-400 mt-1">${p.progress || 0}%</p></div>
+                        <div class="bg-slate-800/30 rounded-lg p-4"><p class="text-xs text-slate-500 uppercase">Commits</p><p class="text-3xl font-bold text-cyan-400 mt-1">${p.commits || 0}</p></div>
+                        <div class="bg-slate-800/30 rounded-lg p-4"><p class="text-xs text-slate-500 uppercase">Lines of Code</p><p class="text-3xl font-bold text-violet-400 mt-1">${totalLoc.toLocaleString()}</p></div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-sm font-medium text-slate-400 mb-4">Project Goals</h3>
+                            <div class="space-y-2">
+                                ${goals.length ? goals.map(g => {
+                                    const done = completedGoals.includes(g);
+                                    return `<div class="flex items-center gap-3 p-3 rounded-lg ${done ? 'bg-emerald-500/10 border border-emerald-500/20' : 'bg-slate-800/30'}">
+                                        <div class="w-4 h-4 rounded-full flex items-center justify-center ${done ? 'bg-emerald-500' : 'border border-slate-600'}">${done ? '<span class="text-white text-xs">✓</span>' : ''}</div>
+                                        <span class="${done ? 'text-emerald-300' : 'text-slate-400'}">${g}</span>
+                                    </div>`;
+                                }).join('') : '<p class="text-slate-500 text-sm">No goals defined. Edit projects_config.json to add goals.</p>'}
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-medium text-slate-400 mb-4">Code Breakdown</h3>
+                            <div class="space-y-3">
+                                ${Object.entries(p.loc || {}).sort((a, b) => b[1] - a[1]).map(([lang, lines]) => {
+                                    const pct = totalLoc > 0 ? (lines / totalLoc * 100).toFixed(1) : 0;
+                                    const langColor = LANG_COLORS[lang] || '#6b7280';
+                                    return `<div>
+                                        <div class="flex items-center justify-between text-sm mb-1"><span class="text-slate-300">${lang}</span><span class="text-slate-500">${lines.toLocaleString()} (${pct}%)</span></div>
+                                        <div class="h-2 bg-slate-800 rounded-full overflow-hidden"><div class="h-full rounded-full" style="width: ${pct}%; background: ${langColor}"></div></div>
+                                    </div>`;
+                                }).join('')}
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            list.classList.add('hidden');
+            detail.classList.remove('hidden');
+        }
+
+        function hideProjectDetail() {
+            document.getElementById('projects-list').classList.remove('hidden');
+            document.getElementById('project-detail').classList.add('hidden');
+        }
+
+        function renderCalendar() {
+            const hist = getFilteredCommitHistory();
+            document.getElementById('contribution-calendar').innerHTML = hist.map(d => {
+                const commits = d.commits || 0;
+                const colors = ['bg-slate-800', 'bg-emerald-900', 'bg-emerald-700', 'bg-emerald-500', 'bg-emerald-400'];
+                const intensity = commits === 0 ? 0 : commits <= 2 ? 1 : commits <= 4 ? 2 : commits <= 6 ? 3 : 4;
+                return `<div class="w-3 h-3 rounded-sm ${colors[intensity]} hover:ring-1 hover:ring-emerald-400 cursor-pointer" title="${d.date}: ${commits} commits"></div>`;
+            }).join('');
+        }
+
+        function renderActivity() {
+            const projects = dashboardData.projects || [];
+            document.getElementById('recent-activity').innerHTML = projects.map(p => {
+                const lastCommit = p.last_commit ? new Date(p.last_commit) : null;
+                const timeAgo = lastCommit ? formatTimeAgo(lastCommit) : 'Unknown';
+                return `
+                <div class="flex items-center justify-between p-3 bg-slate-800/30 rounded-lg">
+                    <div class="flex items-center gap-3">
+                        <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+                        <span class="text-slate-300">${p.name}</span>
+                    </div>
+                    <div class="flex items-center gap-4 text-sm text-slate-500">
+                        <span>${timeAgo}</span>
+                        <span class="text-emerald-400">${p.commits || 0} commits</span>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        function formatTimeAgo(date) {
+            const seconds = Math.floor((new Date() - date) / 1000);
+            if (seconds < 60) return 'just now';
+            if (seconds < 3600) return `${Math.floor(seconds / 60)} min ago`;
+            if (seconds < 86400) return `${Math.floor(seconds / 3600)} hours ago`;
+            if (seconds < 604800) return `${Math.floor(seconds / 86400)} days ago`;
+            return date.toLocaleDateString();
+        }
+
+        function populateProjectSelect() {
+            const select = document.getElementById('new-todo-project');
+            const projects = dashboardData.projects || [];
+            select.innerHTML = projects.map(p => `<option value="${p.name}">${p.name}</option>`).join('');
+        }
+
+        function renderTodos() {
+            document.getElementById('todo-list').innerHTML = todos.map(t => `
+                <div class="flex items-center justify-between p-4 rounded-lg transition-all ${t.done ? 'bg-slate-800/20' : 'bg-slate-800/40 hover:bg-slate-800/60'}">
+                    <div class="flex items-center gap-4">
+                        <button onclick="toggleTodo(${t.id})" class="w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all ${t.done ? 'bg-emerald-500 border-emerald-500' : 'border-slate-600 hover:border-emerald-500'}">
+                            ${t.done ? '<span class="text-white text-xs">✓</span>' : ''}
+                        </button>
+                        <div>
+                            <p class="text-sm ${t.done ? 'text-slate-500 line-through' : 'text-slate-200'}">${t.text}</p>
+                            <p class="text-xs text-slate-600 mt-0.5">${t.project}</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs px-2 py-1 rounded-full ${t.priority === 'high' ? 'bg-rose-500/20 text-rose-400' : t.priority === 'medium' ? 'bg-amber-500/20 text-amber-400' : 'bg-slate-700/50 text-slate-400'}">${t.priority}</span>
+                        <button onclick="deleteTodo(${t.id})" class="p-1.5 text-slate-500 hover:text-rose-400 transition-colors">✕</button>
+                    </div>
+                </div>
+            `).join('');
+            
+            document.getElementById('todo-stats').innerHTML = `
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5">
+                    <p class="text-xs text-slate-500 uppercase">Total Tasks</p>
+                    <p class="text-2xl font-bold text-slate-200 mt-1">${todos.length}</p>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5">
+                    <p class="text-xs text-slate-500 uppercase">Completed</p>
+                    <p class="text-2xl font-bold text-emerald-400 mt-1">${todos.filter(t => t.done).length}</p>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5">
+                    <p class="text-xs text-slate-500 uppercase">High Priority</p>
+                    <p class="text-2xl font-bold text-rose-400 mt-1">${todos.filter(t => t.priority === 'high' && !t.done).length}</p>
+                </div>
+            `;
+        }
+
+        function addTodo() {
+            const text = document.getElementById('new-todo-text').value.trim();
+            if (!text) return;
+            todos.push({
+                id: Date.now(),
+                text,
+                project: document.getElementById('new-todo-project').value,
+                priority: document.getElementById('new-todo-priority').value,
+                done: false
+            });
+            document.getElementById('new-todo-text').value = '';
+            renderTodos();
+            updateProjection();
+            saveTodos();
+        }
+
+        function toggleTodo(id) {
+            const todo = todos.find(t => t.id === id);
+            if (todo) todo.done = !todo.done;
+            renderTodos();
+            saveTodos();
+        }
+
+        function deleteTodo(id) {
+            todos = todos.filter(t => t.id !== id);
+            renderTodos();
+            updateProjection();
+            saveTodos();
+        }
+
+        function saveTodos() {
+            // Save to localStorage for persistence between page loads
+            localStorage.setItem('bridgedev_todos', JSON.stringify(todos));
+        }
+
+        function loadTodosFromStorage() {
+            const stored = localStorage.getItem('bridgedev_todos');
+            if (stored) {
+                try {
+                    todos = JSON.parse(stored);
+                } catch (e) {}
+            }
+        }
+
+        function updateProjection() {
+            const commitHist = getFilteredCommitHistory();
+            const this_week_commits = commitHist.slice(-7).reduce((sum, d) => sum + (d.commits || 0), 0);
+            const remaining = todos.filter(t => !t.done).length;
+            const commitsPerDay = this_week_commits / 7;
+            const daysToComplete = commitsPerDay > 0 ? Math.ceil(remaining / commitsPerDay) : '∞';
+            document.getElementById('projection-text').innerHTML = `
+                At current pace (${this_week_commits} commits/week), you'll complete approximately
+                <span class="text-emerald-400 font-medium">${Math.round(this_week_commits * 4.3)} commits</span> this month.
+                Based on ${remaining} remaining tasks, estimated completion in
+                <span class="text-emerald-400 font-medium">${daysToComplete} days</span>.
+            `;
+        }
+
+        function showTab(tab) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.tab-btn').forEach(el => {
+                el.classList.remove('bg-emerald-500/20', 'text-emerald-400', 'border', 'border-emerald-500/30');
+                el.classList.add('text-slate-400', 'hover:text-slate-200', 'hover:bg-slate-800/50');
+            });
+            document.getElementById('tab-' + tab).classList.remove('hidden');
+            const btn = document.querySelector(`[data-tab="${tab}"]`);
+            btn.classList.add('bg-emerald-500/20', 'text-emerald-400', 'border', 'border-emerald-500/30');
+            btn.classList.remove('text-slate-400', 'hover:text-slate-200', 'hover:bg-slate-800/50');
+            updateUrlParams(tab);
+        }
+
+        // Initialize
+        initFiltersFromUrl();
+        loadTodosFromStorage();
+        loadData();
+    </script>
+</body>
+</html>

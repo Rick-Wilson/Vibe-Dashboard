@@ -1,0 +1,69 @@
+name: Update Dashboard Data
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Daily at 6 AM UTC
+  push:
+    branches: [main]
+  workflow_dispatch:  # Manual trigger from GitHub UI
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout dashboard repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: pip install requests python-dateutil
+
+      - name: Install tokei for LOC counting
+        run: |
+          curl -L https://github.com/XAMPPRocky/tokei/releases/download/v12.1.2/tokei-x86_64-unknown-linux-gnu.tar.gz | tar xz
+          sudo mv tokei /usr/local/bin/
+          tokei --version
+
+      - name: Clone repositories
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p repos
+          cd repos
+
+          # Clone all repos owned by Rick-Wilson (non-forks, non-archived)
+          gh repo list Rick-Wilson --limit 100 --no-archived --source --json name,sshUrl \
+            --jq '.[] | .sshUrl' | while read url; do
+              repo_name=$(basename "$url" .git)
+              echo "Cloning $repo_name..."
+              git clone "$url" "$repo_name" 2>/dev/null || echo "  Failed to clone $repo_name"
+          done
+
+          echo "Cloned $(ls -1 | wc -l) repositories"
+
+      - name: Generate dashboard data
+        run: |
+          python fetch_github_data.py \
+            --local \
+            --path ./repos \
+            --owner Rick-Wilson \
+            --author "Rick Wilson" \
+            --output dashboard_data.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add dashboard_data.json
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update dashboard data [skip ci]"
+            git push
+          fi
