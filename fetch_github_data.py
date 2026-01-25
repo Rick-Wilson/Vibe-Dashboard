@@ -386,15 +386,20 @@ class LocalRepoScanner:
         return ""
 
 
-def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path) -> dict:
+def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_loc: bool = False) -> dict:
     """Fetch all data for a single local project."""
-    print(f"\n📊 Processing {repo_path.name}...")
+    fork_indicator = " (fork)" if skip_loc else ""
+    print(f"\n📊 Processing {repo_path.name}{fork_indicator}...")
 
     # Basic repo info
     info = scanner.get_repo_info(repo_path)
 
-    # Get LOC using configured tool
-    loc = count_lines_of_code(str(repo_path), CONFIG["loc_tool"])
+    # Get LOC using configured tool (skip for forks)
+    if skip_loc:
+        loc = {}
+        print(f"   ⏭️  Skipping LOC count (fork)")
+    else:
+        loc = count_lines_of_code(str(repo_path), CONFIG["loc_tool"])
 
     # Commits (last 90 days)
     since = datetime.now() - timedelta(days=90)
@@ -442,7 +447,8 @@ def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path) -> dict
         "completed_goals": [],
     }
 
-    print(f"   ✓ {total_commits} commits, {sum(loc.values())} lines of code")
+    loc_summary = f"{sum(loc.values())} lines of code" if loc else "LOC excluded"
+    print(f"   ✓ {total_commits} commits, {loc_summary}")
     return project
 
 
@@ -718,9 +724,12 @@ def generate_loc_history(projects: list) -> dict:
     Generate LOC growth history based on actual monthly git data.
     Works backwards from current LOC using real additions/deletions.
     Returns both aggregated history and per-repo breakdown.
+    Excludes forks from LOC calculations.
     """
     from calendar import monthrange
-    total_loc = sum(sum(p.get("loc", {}).values()) for p in projects)
+    # Exclude forks from LOC calculations
+    non_fork_projects = [p for p in projects if not p.get("is_fork", False)]
+    total_loc = sum(sum(p.get("loc", {}).values()) for p in non_fork_projects)
     today = datetime.now()
 
     # Build month labels for the last 12 calendar months
@@ -738,9 +747,9 @@ def generate_loc_history(projects: list) -> dict:
             "net": 0
         })
 
-    # Calculate per-project LOC history
+    # Calculate per-project LOC history (excluding forks)
     repos_history = []
-    for p in projects:
+    for p in non_fork_projects:
         project_loc = sum(p.get("loc", {}).values())
         changes = p.get("monthly_loc_changes", [])
 
@@ -776,8 +785,8 @@ def generate_loc_history(projects: list) -> dict:
             "data": loc_values
         })
 
-    # Aggregate monthly net changes across all projects
-    for p in projects:
+    # Aggregate monthly net changes across non-fork projects
+    for p in non_fork_projects:
         changes = p.get("monthly_loc_changes", [])
         project_loc = sum(p.get("loc", {}).values())
         for idx, change in enumerate(changes):
@@ -885,6 +894,7 @@ def main():
     parser.add_argument("--author", help="Filter commits by author name or email (used with --local)")
     parser.add_argument("--owner", help="Only include repos owned by this GitHub user (used with --local)")
     parser.add_argument("--exclude", help="Comma-separated list of repo names to exclude (used with --local)")
+    parser.add_argument("--fork-repos", help="Comma-separated list of repo names that are forks (LOC excluded but included in other metrics)")
     parser.add_argument("--clone", action="store_true", help="Clone repos for accurate LOC counting")
     parser.add_argument("--output", default=CONFIG["output_file"], help="Output JSON file")
     parser.add_argument("--token", help="GitHub token (or set GITHUB_TOKEN env var)")
@@ -906,6 +916,10 @@ def main():
             print(f"📝 Filtering commits by author: {args.author}")
         if args.owner:
             print(f"📁 Filtering repos by owner: {args.owner}")
+        fork_repos = set()
+        if args.fork_repos:
+            fork_repos = {x.strip().lower() for x in args.fork_repos.split(",") if x.strip()}
+            print(f"🍴 Fork repos (LOC excluded): {', '.join(fork_repos) if fork_repos else 'none'}")
         scanner = LocalRepoScanner(local_path, author=args.author)
         repos = scanner.discover_repos()
 
@@ -932,7 +946,9 @@ def main():
 
         for repo_path in repos:
             try:
-                project = fetch_local_project_data(scanner, repo_path)
+                is_fork = repo_path.name.lower() in fork_repos
+                project = fetch_local_project_data(scanner, repo_path, skip_loc=is_fork)
+                project["is_fork"] = is_fork
 
                 # Apply manual configuration
                 if project["full_name"] in project_config:
@@ -1016,9 +1032,10 @@ def main():
         print("❌ No projects were successfully processed")
         sys.exit(1)
     
-    # Calculate aggregate statistics
-    total_loc = sum(sum(p.get("loc", {}).values()) for p in projects)
-    total_commits = sum(p.get("commits", 0) for p in projects)
+    # Calculate aggregate statistics (exclude fork LOC)
+    non_fork_projects = [p for p in projects if not p.get("is_fork", False)]
+    total_loc = sum(sum(p.get("loc", {}).values()) for p in non_fork_projects)
+    total_commits = sum(p.get("commits", 0) for p in projects)  # Include all commits
     avg_progress = sum(p.get("progress", 0) for p in projects) // len(projects)
     
     # Aggregate commit history
@@ -1032,9 +1049,9 @@ def main():
     # Generate LOC history
     loc_history = generate_loc_history(projects)
     
-    # Language breakdown
+    # Language breakdown (exclude forks)
     language_totals = {}
-    for p in projects:
+    for p in non_fork_projects:
         for lang, lines in p.get("loc", {}).items():
             language_totals[lang] = language_totals.get(lang, 0) + lines
     
@@ -1059,6 +1076,7 @@ def main():
             "last_week_commits": last_week,
             "week_trend": week_trend,
             "project_count": len(projects),
+            "fork_count": len(projects) - len(non_fork_projects),
         },
         "languages": language_totals,
         "commit_history": commit_history,
@@ -1077,9 +1095,10 @@ def main():
         json.dump(output, f, indent=2)
     
     print(f"\n✅ Dashboard data saved to {args.output}")
+    fork_count = len(projects) - len(non_fork_projects)
     print(f"\n📈 Summary:")
-    print(f"   Projects: {len(projects)}")
-    print(f"   Total LOC: {total_loc:,}")
+    print(f"   Projects: {len(projects)} ({fork_count} forks)")
+    print(f"   Total LOC: {total_loc:,} (excluding forks)")
     print(f"   Total Commits: {total_commits:,}")
     print(f"   Avg Progress: {avg_progress}%")
     print(f"   This Week: {this_week} commits ({'+' if week_trend >= 0 else ''}{week_trend} vs last week)")
