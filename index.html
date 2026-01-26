@@ -74,6 +74,7 @@
                             <button onclick="showTab('overview')" class="tab-btn px-4 py-2 rounded-md text-sm transition-all active" data-tab="overview">Overview</button>
                             <button onclick="showTab('projects')" class="tab-btn px-4 py-2 rounded-md text-sm transition-all" data-tab="projects">Projects</button>
                             <button onclick="showTab('activity')" class="tab-btn px-4 py-2 rounded-md text-sm transition-all" data-tab="activity">Activity</button>
+                            <button onclick="showTab('claude')" class="tab-btn px-4 py-2 rounded-md text-sm transition-all" data-tab="claude">Claude</button>
                         </nav>
                     </div>
                 </div>
@@ -145,12 +146,46 @@
                 </div>
             </div>
 
+            <!-- Claude Tab -->
+            <div id="tab-claude" class="tab-content hidden space-y-6">
+                <!-- Claude Stats Grid -->
+                <div class="grid grid-cols-4 gap-4" id="claude-stats-grid"></div>
+
+                <!-- Claude Activity Chart -->
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
+                    <h3 class="text-sm font-medium text-slate-400 mb-4">Claude Usage Over Time</h3>
+                    <canvas id="claudeActivityChart" height="100"></canvas>
+                </div>
+
+                <!-- Claude Heatmap -->
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
+                    <h3 class="text-sm font-medium text-slate-400 mb-4">Activity Heatmap</h3>
+                    <div id="claude-heatmap" class="grid gap-2"></div>
+                    <div class="flex items-center gap-2 mt-4 text-xs text-slate-500">
+                        <span>Less</span>
+                        <div class="w-3 h-3 rounded-sm bg-slate-800"></div>
+                        <div class="w-3 h-3 rounded-sm bg-violet-900"></div>
+                        <div class="w-3 h-3 rounded-sm bg-violet-700"></div>
+                        <div class="w-3 h-3 rounded-sm bg-violet-500"></div>
+                        <div class="w-3 h-3 rounded-sm bg-violet-400"></div>
+                        <span>More</span>
+                    </div>
+                </div>
+
+                <!-- Hourly Distribution -->
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
+                    <h3 class="text-sm font-medium text-slate-400 mb-4">Hourly Activity Distribution</h3>
+                    <canvas id="claudeHourlyChart" height="60"></canvas>
+                </div>
+            </div>
+
         </main>
     </div>
 
     <script>
         // Global state
         let dashboardData = null;
+        let claudeData = null;
         let charts = {};
         let currentFilters = {
             repo: 'all',
@@ -193,7 +228,7 @@
             document.getElementById('growth-timeframe').value = currentFilters.growthMonths;
 
             // Set tab from URL (will be applied after data loads)
-            if (urlParams.tab && ['overview', 'projects', 'activity'].includes(urlParams.tab)) {
+            if (urlParams.tab && ['overview', 'projects', 'activity', 'claude'].includes(urlParams.tab)) {
                 setTimeout(() => showTab(urlParams.tab), 0);
             }
         }
@@ -219,10 +254,26 @@
                 const response = await fetch('dashboard_data.json');
                 if (!response.ok) throw new Error('File not found');
                 dashboardData = await response.json();
+
+                // Also try to load Claude data
+                await loadClaudeData();
+
                 showApp();
             } catch (error) {
                 console.log('Could not load dashboard_data.json:', error);
                 showError(error.message);
+            }
+        }
+
+        async function loadClaudeData() {
+            try {
+                const response = await fetch('claude_stats.json');
+                if (response.ok) {
+                    claudeData = await response.json();
+                }
+            } catch (error) {
+                console.log('Claude stats not available:', error);
+                claudeData = null;
             }
         }
 
@@ -319,6 +370,7 @@
             renderProjectsList();
             renderCalendar();
             renderActivity();
+            renderClaudeTab();
         }
 
         function populateRepoFilter() {
@@ -860,6 +912,262 @@
             btn.classList.add('bg-emerald-500/20', 'text-emerald-400', 'border', 'border-emerald-500/30');
             btn.classList.remove('text-slate-400', 'hover:text-slate-200', 'hover:bg-slate-800/50');
             updateUrlParams(tab);
+        }
+
+        // Claude Tab Rendering
+        function renderClaudeTab() {
+            if (!claudeData) {
+                document.getElementById('claude-stats-grid').innerHTML = `
+                    <div class="col-span-4 text-center py-12">
+                        <p class="text-slate-500">Claude stats not available</p>
+                        <p class="text-xs text-slate-600 mt-2">Place claude_stats.json in the dashboard directory</p>
+                    </div>`;
+                return;
+            }
+
+            renderClaudeStats();
+            renderClaudeActivityChart();
+            renderClaudeHeatmap();
+            renderClaudeHourlyChart();
+        }
+
+        function renderClaudeStats() {
+            const stats = claudeData;
+            const totalTokens = Object.values(stats.modelUsage || {}).reduce((sum, m) => {
+                return sum + (m.inputTokens || 0) + (m.outputTokens || 0) +
+                       (m.cacheReadInputTokens || 0) + (m.cacheCreationInputTokens || 0);
+            }, 0);
+
+            // Calculate recent activity - use userPrompts
+            const recentActivity = (stats.dailyActivity || []).slice(-7);
+            const thisWeekPrompts = recentActivity.reduce((sum, d) => sum + (d.userPrompts || 0), 0);
+            const thisWeekSessions = recentActivity.reduce((sum, d) => sum + (d.sessionCount || 0), 0);
+
+            // Format first session date
+            const firstDate = stats.firstSessionDate ? new Date(stats.firstSessionDate).toLocaleDateString() : 'N/A';
+
+            // Get primary model
+            const models = Object.keys(stats.modelUsage || {});
+            const primaryModel = models.length > 0 ? models[models.length - 1].split('-').slice(1, 3).join(' ') : 'N/A';
+
+            document.getElementById('claude-stats-grid').innerHTML = `
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-violet-500/30 transition-all">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">Total Sessions</p>
+                    <p class="text-3xl font-bold mt-1 text-violet-400">${(stats.totalSessions || 0).toLocaleString()}</p>
+                    <p class="text-xs text-slate-600 mt-1">+${thisWeekSessions} this week</p>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-fuchsia-500/30 transition-all">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">User Prompts</p>
+                    <p class="text-3xl font-bold mt-1 text-fuchsia-400">${(stats.totalUserPrompts || 0).toLocaleString()}</p>
+                    <p class="text-xs text-slate-600 mt-1">+${thisWeekPrompts.toLocaleString()} this week</p>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-pink-500/30 transition-all">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">Total Tokens</p>
+                    <p class="text-3xl font-bold mt-1 text-pink-400">${formatTokens(totalTokens)}</p>
+                    <p class="text-xs text-slate-600 mt-1">${primaryModel}</p>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-indigo-500/30 transition-all">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">Since</p>
+                    <p class="text-2xl font-bold mt-1 text-indigo-400">${firstDate}</p>
+                    <p class="text-xs text-slate-600 mt-1">${calculateDaysSince(stats.firstSessionDate)} days</p>
+                </div>
+            `;
+        }
+
+        function formatTokens(tokens) {
+            if (tokens >= 1e9) return (tokens / 1e9).toFixed(1) + 'B';
+            if (tokens >= 1e6) return (tokens / 1e6).toFixed(1) + 'M';
+            if (tokens >= 1e3) return (tokens / 1e3).toFixed(1) + 'K';
+            return tokens.toString();
+        }
+
+        function calculateDaysSince(dateStr) {
+            if (!dateStr) return 0;
+            const start = new Date(dateStr);
+            const now = new Date();
+            return Math.floor((now - start) / (1000 * 60 * 60 * 24));
+        }
+
+        function renderClaudeActivityChart() {
+            const activity = claudeData.dailyActivity || [];
+            if (activity.length === 0) return;
+
+            if (charts.claudeActivity) charts.claudeActivity.destroy();
+
+            charts.claudeActivity = new Chart(document.getElementById('claudeActivityChart'), {
+                type: 'line',
+                data: {
+                    labels: activity.map(d => d.date.slice(5)),
+                    datasets: [
+                        {
+                            label: 'User Prompts',
+                            data: activity.map(d => d.userPrompts || 0),
+                            borderColor: '#a855f7',
+                            backgroundColor: 'rgba(168, 85, 247, 0.1)',
+                            fill: true,
+                            tension: 0.4,
+                            yAxisID: 'y'
+                        },
+                        {
+                            label: 'Tool Calls',
+                            data: activity.map(d => d.toolCallCount || 0),
+                            borderColor: '#ec4899',
+                            backgroundColor: 'rgba(236, 72, 153, 0.1)',
+                            fill: true,
+                            tension: 0.4,
+                            yAxisID: 'y'
+                        },
+                        {
+                            label: 'Sessions',
+                            data: activity.map(d => d.sessionCount || 0),
+                            borderColor: '#6366f1',
+                            backgroundColor: 'rgba(99, 102, 241, 0.1)',
+                            fill: false,
+                            tension: 0.4,
+                            yAxisID: 'y1'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { color: '#94a3b8', font: { size: 10 } }
+                        }
+                    },
+                    scales: {
+                        x: { ticks: { color: '#475569', maxTicksLimit: 15 } },
+                        y: {
+                            type: 'linear',
+                            display: true,
+                            position: 'left',
+                            title: { display: true, text: 'Prompts / Tool Calls', color: '#94a3b8', font: { size: 10 } },
+                            ticks: { color: '#475569' }
+                        },
+                        y1: {
+                            type: 'linear',
+                            display: true,
+                            position: 'right',
+                            title: { display: true, text: 'Sessions', color: '#94a3b8', font: { size: 10 } },
+                            grid: { drawOnChartArea: false },
+                            ticks: { color: '#475569' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderClaudeHeatmap() {
+            const activity = claudeData.dailyActivity || [];
+            if (activity.length === 0) return;
+
+            // Group by month - use userPrompts
+            const monthlyData = {};
+            activity.forEach(d => {
+                const date = new Date(d.date);
+                const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                const dayOfMonth = date.getDate();
+
+                if (!monthlyData[monthKey]) {
+                    monthlyData[monthKey] = {
+                        year: date.getFullYear(),
+                        month: date.getMonth(),
+                        days: {}
+                    };
+                }
+                monthlyData[monthKey].days[dayOfMonth] = d.userPrompts || 0;
+            });
+
+            // Find max prompts for scaling
+            const maxPrompts = Math.max(...activity.map(d => d.userPrompts || 0));
+
+            // Generate heatmap HTML
+            const months = Object.keys(monthlyData).sort();
+            const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+            const today = new Date();
+            const todayYear = today.getFullYear();
+            const todayMonth = today.getMonth();
+            const todayDay = today.getDate();
+
+            let html = '<div class="space-y-3">';
+            months.forEach(monthKey => {
+                const data = monthlyData[monthKey];
+                const daysInMonth = new Date(data.year, data.month + 1, 0).getDate();
+                const monthName = monthNames[data.month];
+
+                html += `<div class="flex items-center gap-3">`;
+                html += `<span class="text-xs text-slate-500 w-12">${monthName} ${data.year.toString().slice(2)}</span>`;
+                html += `<div class="flex gap-1 flex-wrap">`;
+
+                for (let day = 1; day <= daysInMonth; day++) {
+                    // Skip future days
+                    if (data.year > todayYear ||
+                        (data.year === todayYear && data.month > todayMonth) ||
+                        (data.year === todayYear && data.month === todayMonth && day > todayDay)) {
+                        continue;
+                    }
+
+                    const prompts = data.days[day] || 0;
+                    const intensity = prompts === 0 ? 0 :
+                        prompts <= maxPrompts * 0.2 ? 1 :
+                        prompts <= maxPrompts * 0.4 ? 2 :
+                        prompts <= maxPrompts * 0.6 ? 3 : 4;
+                    const colors = ['bg-slate-800', 'bg-violet-900', 'bg-violet-700', 'bg-violet-500', 'bg-violet-400'];
+                    const dateStr = `${data.year}-${String(data.month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+
+                    html += `<div class="w-3 h-3 rounded-sm ${colors[intensity]} hover:ring-1 hover:ring-violet-400 cursor-pointer" title="${dateStr}: ${prompts.toLocaleString()} prompts"></div>`;
+                }
+
+                html += `</div></div>`;
+            });
+            html += '</div>';
+
+            document.getElementById('claude-heatmap').innerHTML = html;
+        }
+
+        function renderClaudeHourlyChart() {
+            const hourCounts = claudeData.hourCounts || {};
+            if (Object.keys(hourCounts).length === 0) return;
+
+            // Fill in all hours 0-23
+            const hours = [];
+            const counts = [];
+            for (let h = 0; h < 24; h++) {
+                hours.push(h.toString().padStart(2, '0') + ':00');
+                counts.push(hourCounts[h] || 0);
+            }
+
+            if (charts.claudeHourly) charts.claudeHourly.destroy();
+
+            charts.claudeHourly = new Chart(document.getElementById('claudeHourlyChart'), {
+                type: 'bar',
+                data: {
+                    labels: hours,
+                    datasets: [{
+                        label: 'User Prompts',
+                        data: counts,
+                        backgroundColor: 'rgba(139, 92, 246, 0.6)',
+                        borderColor: '#8b5cf6',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        x: { ticks: { color: '#475569', maxTicksLimit: 12 } },
+                        y: { ticks: { color: '#475569' } }
+                    }
+                }
+            });
         }
 
         // Initialize
