@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-01-26T16:17:23.275919+00:00",
+  "generated_at": "2026-01-26T17:29:04.671430+00:00",
   "stats": {
-    "total_loc": 48551,
-    "total_commits": 487,
+    "total_loc": 49096,
+    "total_commits": 490,
     "avg_progress": 57,
     "this_week_commits": 71,
     "last_week_commits": 28,
@@ -11,16 +11,16 @@
     "fork_count": 7
   },
   "languages": {
-    "JSON": 3150,
+    "JSON": 3391,
     "JavaScript": 1391,
-    "Rust": 42047,
+    "Rust": 42239,
     "TOML": 224,
     "Vue": 57,
-    "Shell": 561,
+    "Shell": 574,
     "C": 50,
     "Pest": 130,
     "PowerShell": 82,
-    "Python": 859
+    "Python": 958
   },
   "commit_history": [
     {
@@ -567,51 +567,51 @@
   "loc_history": [
     {
       "month": "Feb",
-      "loc": 4855
+      "loc": 4909
     },
     {
       "month": "Mar",
-      "loc": 4855
+      "loc": 4909
     },
     {
       "month": "Apr",
-      "loc": 4855
+      "loc": 4909
     },
     {
       "month": "May",
-      "loc": 4855
+      "loc": 4909
     },
     {
       "month": "Jun",
-      "loc": 4855
+      "loc": 4909
     },
     {
       "month": "Jul",
-      "loc": 4855
+      "loc": 4909
     },
     {
       "month": "Aug",
-      "loc": 4855
+      "loc": 4909
     },
     {
       "month": "Sep",
-      "loc": 4855
+      "loc": 4909
     },
     {
       "month": "Oct",
-      "loc": 4855
+      "loc": 4909
     },
     {
       "month": "Nov",
-      "loc": 4855
+      "loc": 4909
     },
     {
       "month": "Dec",
-      "loc": 4855
+      "loc": 4909
     },
     {
       "month": "Jan",
-      "loc": 48551
+      "loc": 49096
     }
   ],
   "loc_history_by_repo": {
@@ -644,7 +644,7 @@
           0,
           0,
           0,
-          12555
+          12747
         ]
       },
       {
@@ -780,7 +780,7 @@
           0,
           0,
           0,
-          859
+          1212
         ]
       },
       {
@@ -838,7 +838,7 @@
   },
   "projects": [
     {
-      "id": 364688268,
+      "id": 1844655969,
       "name": "acbl-proxy",
       "full_name": "Rick-Wilson/acbl-proxy",
       "description": "Repository: acbl-proxy",
@@ -1553,7 +1553,7 @@
       "is_fork": false
     },
     {
-      "id": 1149403121,
+      "id": 3067212594,
       "name": "BBA-CLI",
       "full_name": "Rick-Wilson/BBA-CLI",
       "description": "BBA-CLI",
@@ -2260,6 +2260,12 @@
       ],
       "releases": [
         {
+          "tag": "8738",
+          "date": "2026-01-26T17:47:19+01:00",
+          "message": "8738",
+          "repo": "BBA-CLI"
+        },
+        {
           "tag": "v8736.5",
           "date": "2026-01-18T07:51:18-08:00",
           "message": "Fix auto-update to wait for child process and return its exit code",
@@ -2312,12 +2318,6 @@
           "date": "2026-01-11T17:50:32-08:00",
           "message": "Release v0.1.0 - Initial EPBot wrapper release",
           "repo": "BBA-CLI"
-        },
-        {
-          "tag": "8736a",
-          "date": "2025-11-08T18:27:26+01:00",
-          "message": "Corrected",
-          "repo": "BBA-CLI"
         }
       ],
       "progress": 60,
@@ -2326,7 +2326,7 @@
       "is_fork": true
     },
     {
-      "id": 763831954,
+      "id": 399370662,
       "name": "bbo-pbs",
       "full_name": "Rick-Wilson/bbo-pbs",
       "description": "BBOalert",
@@ -3045,7 +3045,7 @@
       "is_fork": true
     },
     {
-      "id": 871369872,
+      "id": 3809006423,
       "name": "bridge-bots",
       "full_name": "Rick-Wilson/bridge-bots",
       "description": "bridge-bots",
@@ -3818,7 +3818,7 @@
       "is_fork": true
     },
     {
-      "id": 889493548,
+      "id": 637875188,
       "name": "Bridge-Dealer-Scripts",
       "full_name": "Rick-Wilson/Bridge-Dealer-Scripts",
       "description": "Bridge-Dealer-Scripts",
@@ -4532,7 +4532,7 @@
       "is_fork": false
     },
     {
-      "id": 3232982967,
+      "id": 3923289014,
       "name": "bridge-encodings",
       "full_name": "Rick-Wilson/bridge-encodings",
       "description": "bridge-encodings",
@@ -5247,7 +5247,7 @@
       "is_fork": false
     },
     {
-      "id": 1141352803,
+      "id": 279613115,
       "name": "Bridge-Offline-Practice",
       "full_name": "Rick-Wilson/Bridge-Offline-Practice",
       "description": "Bridge Bidding Practice",
@@ -5963,7 +5963,7 @@
       "is_fork": false
     },
     {
-      "id": 4104966762,
+      "id": 4069112026,
       "name": "Bridge-Parsers",
       "full_name": "Rick-Wilson/Bridge-Parsers",
       "description": "Repository: Bridge-Parsers",
@@ -6678,7 +6678,7 @@
       "is_fork": false
     },
     {
-      "id": 1383972031,
+      "id": 805789195,
       "name": "bridge-solver",
       "full_name": "Rick-Wilson/bridge-solver",
       "description": "Repository: bridge-solver",
@@ -7393,7 +7393,7 @@
       "is_fork": false
     },
     {
-      "id": 2914539833,
+      "id": 161742961,
       "name": "bridge-solver-xray",
       "full_name": "Rick-Wilson/bridge-solver-xray",
       "description": "Bridge Solver X-ray",
@@ -8105,7 +8105,7 @@
       "is_fork": true
     },
     {
-      "id": 2797979111,
+      "id": 280701044,
       "name": "bridge-types",
       "full_name": "Rick-Wilson/bridge-types",
       "description": "bridge-types",
@@ -8820,7 +8820,7 @@
       "is_fork": false
     },
     {
-      "id": 2814159072,
+      "id": 3446001302,
       "name": "bridge-wrangler",
       "full_name": "Rick-Wilson/bridge-wrangler",
       "description": "bridge-wrangler",
@@ -9543,7 +9543,7 @@
       "is_fork": false
     },
     {
-      "id": 3074943468,
+      "id": 3321241607,
       "name": "Dealer-cleanup",
       "full_name": "Rick-Wilson/Dealer-cleanup",
       "description": "Dealer by Hans van Staveren",
@@ -10255,7 +10255,7 @@
       "is_fork": true
     },
     {
-      "id": 871207383,
+      "id": 181655260,
       "name": "Dealer3",
       "full_name": "Rick-Wilson/Dealer3",
       "description": "dealer3",
@@ -10999,7 +10999,7 @@
       "is_fork": false
     },
     {
-      "id": 3459411719,
+      "id": 417336056,
       "name": "pbn-to-pdf",
       "full_name": "Rick-Wilson/pbn-to-pdf",
       "description": "pbn-to-pdf",
@@ -11008,14 +11008,14 @@
       "forks": 0,
       "open_issues": 0,
       "loc": {
-        "Rust": 12539,
+        "Rust": 12731,
         "TOML": 16
       },
-      "commits": 37,
+      "commits": 39,
       "recent_commits": 36,
-      "last_commit": "2026-01-26T07:02:34-08:00",
-      "created_at": "2026-01-26T07:02:34-08:00",
-      "updated_at": "2026-01-26T07:02:34-08:00",
+      "last_commit": "2026-01-26T09:15:20-08:00",
+      "created_at": "2026-01-26T09:15:20-08:00",
+      "updated_at": "2026-01-26T09:15:20-08:00",
       "url": "https://github.com/Rick-Wilson/pbn-to-pdf",
       "commit_history": [
         {
@@ -11617,8 +11617,8 @@
         },
         {
           "date": "2026-01-19",
-          "additions": 30726,
-          "deletions": 1350
+          "additions": 31822,
+          "deletions": 2074
         }
       ],
       "monthly_loc_changes": [
@@ -11702,9 +11702,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 45308,
-          "deletions": 3195,
-          "net": 42113
+          "additions": 46404,
+          "deletions": 3919,
+          "net": 42485
         }
       ],
       "releases": [
@@ -11733,7 +11733,7 @@
       "is_fork": false
     },
     {
-      "id": 1155112884,
+      "id": 3617712828,
       "name": "pdf-handouts",
       "full_name": "Rick-Wilson/pdf-handouts",
       "description": "PDF Handouts",
@@ -12467,7 +12467,7 @@
       "is_fork": false
     },
     {
-      "id": 1892124848,
+      "id": 1731102798,
       "name": "Practice-Bidding-Scenarios",
       "full_name": "Rick-Wilson/Practice-Bidding-Scenarios",
       "description": "Practice Bidding Scenarios",
@@ -13179,7 +13179,7 @@
       "is_fork": true
     },
     {
-      "id": 3892958546,
+      "id": 1984017112,
       "name": "printpdf",
       "full_name": "Rick-Wilson/printpdf",
       "description": "\ufeff# printpdf",
@@ -13922,7 +13922,7 @@
       "is_fork": true
     },
     {
-      "id": 1618562695,
+      "id": 2766655243,
       "name": "Vibe-Dashboard",
       "full_name": "Rick-Wilson/Vibe-Dashboard",
       "description": "Vibe Dashboard",
@@ -13931,13 +13931,15 @@
       "forks": 0,
       "open_issues": 0,
       "loc": {
-        "Python": 859
+        "JSON": 241,
+        "Python": 958,
+        "Shell": 13
       },
-      "commits": 21,
+      "commits": 22,
       "recent_commits": 14,
-      "last_commit": "2026-01-26T08:15:34-08:00",
-      "created_at": "2026-01-26T08:15:34-08:00",
-      "updated_at": "2026-01-26T08:15:34-08:00",
+      "last_commit": "2026-01-26T09:27:27-08:00",
+      "created_at": "2026-01-26T09:27:27-08:00",
+      "updated_at": "2026-01-26T09:27:27-08:00",
       "url": "https://github.com/Rick-Wilson/Vibe-Dashboard",
       "commit_history": [
         {
@@ -14539,8 +14541,8 @@
         },
         {
           "date": "2026-01-19",
-          "additions": 23404,
-          "deletions": 943
+          "additions": 24108,
+          "deletions": 944
         }
       ],
       "monthly_loc_changes": [
@@ -14624,19 +14626,25 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 23404,
-          "deletions": 943,
-          "net": 22461
+          "additions": 24108,
+          "deletions": 944,
+          "net": 23164
         }
       ],
       "releases": [],
-      "progress": 50,
+      "progress": 60,
       "goals": [],
       "completed_goals": [],
       "is_fork": false
     }
   ],
   "releases": [
+    {
+      "tag": "8738",
+      "date": "2026-01-26T17:47:19+01:00",
+      "message": "8738",
+      "repo": "BBA-CLI"
+    },
     {
       "tag": "v0.1.0",
       "date": "2026-01-25T14:47:36-08:00",
@@ -14756,12 +14764,6 @@
       "date": "2026-01-01T18:37:47-08:00",
       "message": "Update release workflow to use action-gh-release",
       "repo": "Dealer3"
-    },
-    {
-      "tag": "8736a",
-      "date": "2025-11-08T18:27:26+01:00",
-      "message": "Corrected",
-      "repo": "BBA-CLI"
     },
     {
       "tag": "0.8.2",
