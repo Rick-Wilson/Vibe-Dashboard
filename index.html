@@ -575,7 +575,10 @@
                     borderColor: REPO_COLORS[idx % REPO_COLORS.length],
                     borderWidth: 1,
                     fill: true,
-                    tension: 0.4
+                    tension: 0.4,
+                    pointRadius: 0,
+                    pointHitRadius: 15,
+                    pointHoverRadius: 5
                 }));
 
                 charts.growth = new Chart(document.getElementById('growthChart'), {
@@ -593,17 +596,23 @@
                                 labels: { color: '#94a3b8', font: { size: 9 }, boxWidth: 12 }
                             },
                             tooltip: {
-                                mode: 'index',
-                                intersect: false,
-                                filter: (item) => item.parsed.y > 0,
+                                mode: 'nearest',
+                                intersect: true,
                                 callbacks: {
-                                    label: (item) => {
-                                        return `${item.dataset.label}: ${item.parsed.y.toLocaleString()} LOC`;
-                                    },
-                                    footer: (items) => {
+                                    title: (items) => {
                                         if (items.length === 0) return '';
-                                        const total = items.reduce((sum, item) => sum + item.parsed.y, 0);
-                                        return `Total: ${total.toLocaleString()} LOC`;
+                                        return `${items[0].dataset.label} - ${items[0].label}`;
+                                    },
+                                    label: (item) => {
+                                        return `Lines of Code: ${item.parsed.y.toLocaleString()}`;
+                                    },
+                                    afterLabel: (item) => {
+                                        const project = dashboardData.projects.find(p => p.name === item.dataset.label);
+                                        if (!project || !project.loc) return '';
+                                        const langs = Object.entries(project.loc).sort((a, b) => b[1] - a[1]).slice(0, 4);
+                                        if (langs.length === 0) return '';
+                                        const total = Object.values(project.loc).reduce((a, b) => a + b, 0);
+                                        return '\n' + langs.map(([l, c]) => `${l}: ${((c/total)*100).toFixed(0)}%`).join(', ');
                                     }
                                 }
                             }
