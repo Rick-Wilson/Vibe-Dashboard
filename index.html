@@ -725,11 +725,24 @@
             }).join('');
         }
 
+        function getLatestRelease(repoName) {
+            const releases = dashboardData.releases || [];
+            const repoReleases = releases.filter(r => r.repo === repoName);
+            if (repoReleases.length === 0) return null;
+            // Sort by date descending and return the latest
+            repoReleases.sort((a, b) => new Date(b.date) - new Date(a.date));
+            return repoReleases[0];
+        }
+
         function renderProjectsList() {
             const projects = dashboardData.projects || [];
             document.getElementById('projects-list').innerHTML = projects.map(p => {
                 const totalLoc = Object.values(p.loc || {}).reduce((a, b) => a + b, 0);
                 const color = LANG_COLORS[p.language] || '#6b7280';
+                const latestRelease = getLatestRelease(p.name);
+                const releaseHtml = latestRelease
+                    ? `<a href="${getReleaseUrl(p.name, latestRelease.tag)}" target="_blank" onclick="event.stopPropagation()" class="text-amber-400 hover:text-amber-300">${latestRelease.tag}</a>`
+                    : '<span class="text-slate-600">—</span>';
                 return `
                 <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6 hover:border-emerald-500/30 transition-all cursor-pointer" onclick="showProjectDetail('${p.name}')">
                     <div class="flex items-center justify-between">
@@ -748,6 +761,7 @@
                             <div class="text-right"><p class="text-2xl font-bold text-emerald-400">${p.progress || 0}%</p><p class="text-xs text-slate-500">progress</p></div>
                             <div class="text-right"><p class="text-lg font-medium text-slate-300">${p.commits || 0}</p><p class="text-xs text-slate-500">commits</p></div>
                             <div class="text-right"><p class="text-lg font-medium text-slate-300">${totalLoc.toLocaleString()}</p><p class="text-xs text-slate-500">lines</p></div>
+                            <div class="text-right w-20"><p class="text-lg font-medium">${releaseHtml}</p><p class="text-xs text-slate-500">release</p></div>
                         </div>
                     </div>
                     <div class="mt-4"><div class="h-1.5 bg-slate-800 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full" style="width: ${p.progress || 0}%"></div></div></div>
