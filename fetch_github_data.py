@@ -34,7 +34,7 @@ import json
 import os
 import subprocess
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Optional
 import requests
@@ -1067,7 +1067,7 @@ def main():
 
     # Build final output
     output = {
-        "generated_at": datetime.now().isoformat(),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "stats": {
             "total_loc": total_loc,
             "total_commits": total_commits,
