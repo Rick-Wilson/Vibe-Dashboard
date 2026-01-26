@@ -593,12 +593,35 @@
                                 labels: { color: '#94a3b8', font: { size: 9 }, boxWidth: 12 }
                             },
                             tooltip: {
-                                mode: 'index',
-                                filter: (item) => item.parsed.y > 0,
+                                mode: 'nearest',
+                                intersect: true,
                                 callbacks: {
-                                    footer: (items) => {
-                                        const total = items.reduce((sum, item) => sum + item.parsed.y, 0);
-                                        return `Total: ${total.toLocaleString()} LOC`;
+                                    title: (items) => {
+                                        if (items.length === 0) return '';
+                                        const item = items[0];
+                                        return `${item.dataset.label} - ${item.label}`;
+                                    },
+                                    label: (item) => {
+                                        return `Lines of Code: ${item.parsed.y.toLocaleString()}`;
+                                    },
+                                    afterLabel: (item) => {
+                                        const repoName = item.dataset.label;
+                                        const project = dashboardData.projects.find(p => p.name === repoName);
+                                        if (!project || !project.loc) return '';
+
+                                        const langs = Object.entries(project.loc)
+                                            .sort((a, b) => b[1] - a[1])
+                                            .slice(0, 5);
+
+                                        if (langs.length === 0) return '';
+
+                                        const total = Object.values(project.loc).reduce((a, b) => a + b, 0);
+                                        const lines = langs.map(([lang, loc]) => {
+                                            const pct = ((loc / total) * 100).toFixed(0);
+                                            return `  ${lang}: ${loc.toLocaleString()} (${pct}%)`;
+                                        });
+
+                                        return '\nLanguages:\n' + lines.join('\n');
                                     }
                                 }
                             }
