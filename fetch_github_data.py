@@ -782,7 +782,8 @@ def generate_loc_history(projects: list) -> dict:
 
         repos_history.append({
             "name": p.get("name", "Unknown"),
-            "data": loc_values
+            "data": loc_values,
+            "created_at": p.get("created_at", "")
         })
 
     # Aggregate monthly net changes across non-fork projects
@@ -818,8 +819,8 @@ def generate_loc_history(projects: list) -> dict:
             "loc": loc_values[i]
         })
 
-    # Sort repos by current LOC (largest first) for better chart stacking
-    repos_history.sort(key=lambda x: x["data"][-1], reverse=True)
+    # Sort repos by age (oldest first) so static repos appear as horizontal lines at bottom
+    repos_history.sort(key=lambda x: x.get("created_at", ""))
 
     return {
         "months": [m["month"] for m in months_data],
