@@ -284,6 +284,8 @@
         const RELEASES_CACHE_KEY = 'vibe_dashboard_releases';
         const RELEASES_CACHE_TTL = 60 * 60 * 1000; // 1 hour
         const GITHUB_USER = 'Rick-Wilson';
+        // Repos that have CI-generated releases (bot releases)
+        const CI_RELEASE_REPOS = ['bridge-wrangler'];
 
         async function fetchLiveReleases() {
             try {
@@ -298,43 +300,73 @@
                     }
                 }
 
-                // Fetch from GitHub Events API
                 console.log('Fetching live releases from GitHub...');
-                const response = await fetch(`https://api.github.com/users/${GITHUB_USER}/received_events?per_page=100`);
 
-                if (!response.ok) {
-                    if (response.status === 403) {
-                        console.log('GitHub API rate limited, using cached/static data');
-                    }
-                    return;
+                // Fetch user events and CI repo releases in parallel
+                const [eventsResponse, ...ciResponses] = await Promise.all([
+                    fetch(`https://api.github.com/users/${GITHUB_USER}/events?per_page=100`),
+                    ...CI_RELEASE_REPOS.map(repo =>
+                        fetch(`https://api.github.com/repos/${GITHUB_USER}/${repo}/releases?per_page=5`)
+                    )
+                ]);
+
+                let liveReleases = [];
+
+                // Process user events for manual releases
+                if (eventsResponse.ok) {
+                    const events = await eventsResponse.json();
+                    const releaseEvents = events.filter(e =>
+                        e.type === 'ReleaseEvent' ||
+                        (e.type === 'CreateEvent' && e.payload.ref_type === 'tag')
+                    );
+
+                    liveReleases = releaseEvents.map(e => {
+                        if (e.type === 'ReleaseEvent') {
+                            return {
+                                tag: e.payload.release.tag_name,
+                                date: e.payload.release.published_at || e.created_at,
+                                repo: e.repo.name.split('/')[1],
+                                message: e.payload.release.name || e.payload.release.tag_name,
+                                live: true
+                            };
+                        } else {
+                            return {
+                                tag: e.payload.ref,
+                                date: e.created_at,
+                                repo: e.repo.name.split('/')[1],
+                                message: e.payload.ref,
+                                live: true
+                            };
+                        }
+                    });
+                } else if (eventsResponse.status === 403) {
+                    console.log('GitHub API rate limited for events');
                 }
 
-                const events = await response.json();
-
-                // Filter for release and tag creation events
-                const releaseEvents = events.filter(e =>
-                    e.type === 'ReleaseEvent' ||
-                    (e.type === 'CreateEvent' && e.payload.ref_type === 'tag')
-                );
-
-                const liveReleases = releaseEvents.map(e => {
-                    if (e.type === 'ReleaseEvent') {
-                        return {
-                            tag: e.payload.release.tag_name,
-                            date: e.payload.release.published_at || e.created_at,
-                            repo: e.repo.name.split('/')[1],
-                            message: e.payload.release.name || e.payload.release.tag_name,
+                // Process CI repo releases
+                for (let i = 0; i < ciResponses.length; i++) {
+                    const response = ciResponses[i];
+                    const repoName = CI_RELEASE_REPOS[i];
+                    if (response.ok) {
+                        const releases = await response.json();
+                        const ciReleases = releases.map(r => ({
+                            tag: r.tag_name,
+                            date: r.published_at,
+                            repo: repoName,
+                            message: r.name || r.tag_name,
                             live: true
-                        };
-                    } else {
-                        return {
-                            tag: e.payload.ref,
-                            date: e.created_at,
-                            repo: e.repo.name.split('/')[1],
-                            message: e.payload.ref,
-                            live: true
-                        };
+                        }));
+                        liveReleases = [...liveReleases, ...ciReleases];
                     }
+                }
+
+                // Deduplicate by repo+tag (prefer earlier entry)
+                const seen = new Set();
+                liveReleases = liveReleases.filter(r => {
+                    const key = `${r.repo}:${r.tag}`;
+                    if (seen.has(key)) return false;
+                    seen.add(key);
+                    return true;
                 });
 
                 // Cache the results
