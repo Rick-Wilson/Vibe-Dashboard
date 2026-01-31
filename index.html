@@ -259,6 +259,9 @@
                 await loadClaudeData();
 
                 showApp();
+
+                // Fetch live releases in background (won't block initial render)
+                fetchLiveReleases();
             } catch (error) {
                 console.log('Could not load dashboard_data.json:', error);
                 showError(error.message);
@@ -274,6 +277,99 @@
             } catch (error) {
                 console.log('Claude stats not available:', error);
                 claudeData = null;
+            }
+        }
+
+        // Live releases from GitHub Events API
+        const RELEASES_CACHE_KEY = 'vibe_dashboard_releases';
+        const RELEASES_CACHE_TTL = 60 * 60 * 1000; // 1 hour
+        const GITHUB_USER = 'Rick-Wilson';
+
+        async function fetchLiveReleases() {
+            try {
+                // Check cache first
+                const cached = localStorage.getItem(RELEASES_CACHE_KEY);
+                if (cached) {
+                    const { timestamp, releases } = JSON.parse(cached);
+                    if (Date.now() - timestamp < RELEASES_CACHE_TTL) {
+                        console.log('Using cached releases');
+                        mergeLiveReleases(releases);
+                        return;
+                    }
+                }
+
+                // Fetch from GitHub Events API
+                console.log('Fetching live releases from GitHub...');
+                const response = await fetch(`https://api.github.com/users/${GITHUB_USER}/events?per_page=100`);
+
+                if (!response.ok) {
+                    if (response.status === 403) {
+                        console.log('GitHub API rate limited, using cached/static data');
+                    }
+                    return;
+                }
+
+                const events = await response.json();
+
+                // Filter for release and tag creation events
+                const releaseEvents = events.filter(e =>
+                    e.type === 'ReleaseEvent' ||
+                    (e.type === 'CreateEvent' && e.payload.ref_type === 'tag')
+                );
+
+                const liveReleases = releaseEvents.map(e => {
+                    if (e.type === 'ReleaseEvent') {
+                        return {
+                            tag: e.payload.release.tag_name,
+                            date: e.payload.release.published_at || e.created_at,
+                            repo: e.repo.name.split('/')[1],
+                            message: e.payload.release.name || e.payload.release.tag_name,
+                            live: true
+                        };
+                    } else {
+                        return {
+                            tag: e.payload.ref,
+                            date: e.created_at,
+                            repo: e.repo.name.split('/')[1],
+                            message: e.payload.ref,
+                            live: true
+                        };
+                    }
+                });
+
+                // Cache the results
+                localStorage.setItem(RELEASES_CACHE_KEY, JSON.stringify({
+                    timestamp: Date.now(),
+                    releases: liveReleases
+                }));
+
+                mergeLiveReleases(liveReleases);
+
+            } catch (error) {
+                console.log('Could not fetch live releases:', error);
+            }
+        }
+
+        function mergeLiveReleases(liveReleases) {
+            if (!liveReleases || liveReleases.length === 0) return;
+
+            const staticReleases = dashboardData.releases || [];
+
+            // Create a map of existing releases by repo+tag to avoid duplicates
+            const existingKeys = new Set(staticReleases.map(r => `${r.repo}:${r.tag}`));
+
+            // Add new live releases that don't exist in static data
+            const newReleases = liveReleases.filter(r => !existingKeys.has(`${r.repo}:${r.tag}`));
+
+            if (newReleases.length > 0) {
+                // Merge and sort by date (newest first)
+                dashboardData.releases = [...newReleases, ...staticReleases]
+                    .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+                console.log(`Added ${newReleases.length} live releases`);
+
+                // Re-render stats to show updated releases
+                renderStats();
             }
         }
 
