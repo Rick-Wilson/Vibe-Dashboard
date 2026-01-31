@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-01-31T20:11:52.502144+00:00",
+  "generated_at": "2026-01-31T21:20:27.574822+00:00",
   "stats": {
     "total_loc": 67357,
-    "total_commits": 626,
+    "total_commits": 629,
     "avg_progress": 58,
     "this_week_commits": 132,
     "last_week_commits": 39,
@@ -669,42 +669,6 @@
         "created_at": "2025-11-07T17:45:00Z"
       },
       {
-        "name": "pbn-to-pdf",
-        "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          13595
-        ],
-        "created_at": "2026-01-31T10:47:38-08:00"
-      },
-      {
-        "name": "bridge-wrangler",
-        "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1844
-        ],
-        "created_at": "2026-01-31T11:29:23-08:00"
-      },
-      {
         "name": "Baker-Bridge",
         "data": [
           0,
@@ -921,6 +885,24 @@
         "created_at": "2026-01-31T12:00:42-08:00"
       },
       {
+        "name": "pbn-to-pdf",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13595
+        ],
+        "created_at": "2026-01-31T12:14:16-08:00"
+      },
+      {
         "name": "Vibe-Dashboard",
         "data": [
           0,
@@ -936,13 +918,31 @@
           0,
           1241
         ],
-        "created_at": "2026-01-31T12:09:20-08:00"
+        "created_at": "2026-01-31T13:18:09-08:00"
+      },
+      {
+        "name": "bridge-wrangler",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1844
+        ],
+        "created_at": "2026-01-31T20:53:10Z"
       }
     ]
   },
   "projects": [
     {
-      "id": 2497830343,
+      "id": 32055578,
       "name": "acbl-proxy",
       "full_name": "Rick-Wilson/acbl-proxy",
       "description": "Repository: acbl-proxy",
@@ -1657,7 +1657,7 @@
       "is_fork": false
     },
     {
-      "id": 1557867514,
+      "id": 3087465375,
       "name": "Baker-Bridge",
       "full_name": "Rick-Wilson/Baker-Bridge",
       "description": "Baker Bridge",
@@ -2375,7 +2375,7 @@
       "is_fork": false
     },
     {
-      "id": 2078598973,
+      "id": 874601840,
       "name": "BBA-CLI",
       "full_name": "Rick-Wilson/BBA-CLI",
       "description": "BBA-CLI",
@@ -3148,7 +3148,7 @@
       "is_fork": true
     },
     {
-      "id": 2293725080,
+      "id": 110388502,
       "name": "bbo-pbs",
       "full_name": "Rick-Wilson/bbo-pbs",
       "description": "BBOalert",
@@ -3867,7 +3867,7 @@
       "is_fork": true
     },
     {
-      "id": 3654316199,
+      "id": 1633042291,
       "name": "bridge-bots",
       "full_name": "Rick-Wilson/bridge-bots",
       "description": "bridge-bots",
@@ -4640,7 +4640,7 @@
       "is_fork": true
     },
     {
-      "id": 3775160461,
+      "id": 573065462,
       "name": "Bridge-Classroom",
       "full_name": "Rick-Wilson/Bridge-Classroom",
       "description": "Repository: Bridge-Classroom",
@@ -5358,7 +5358,7 @@
       "is_fork": false
     },
     {
-      "id": 4277963497,
+      "id": 2890067320,
       "name": "Bridge-Club-Game-Analysis",
       "full_name": "Rick-Wilson/Bridge-Club-Game-Analysis",
       "description": "Repository: Bridge-Club-Game-Analysis",
@@ -6070,7 +6070,7 @@
       "is_fork": false
     },
     {
-      "id": 966751924,
+      "id": 3458559497,
       "name": "Bridge-Dealer-Scripts",
       "full_name": "Rick-Wilson/Bridge-Dealer-Scripts",
       "description": "Bridge-Dealer-Scripts",
@@ -6784,7 +6784,7 @@
       "is_fork": false
     },
     {
-      "id": 1728694467,
+      "id": 1055545724,
       "name": "bridge-encodings",
       "full_name": "Rick-Wilson/bridge-encodings",
       "description": "bridge-encodings",
@@ -7499,7 +7499,7 @@
       "is_fork": false
     },
     {
-      "id": 460755778,
+      "id": 1973328964,
       "name": "Bridge-OCR",
       "full_name": "Rick-Wilson/Bridge-OCR",
       "description": "Repository: Bridge-OCR",
@@ -8211,7 +8211,7 @@
       "is_fork": false
     },
     {
-      "id": 3726956637,
+      "id": 2297643390,
       "name": "Bridge-Offline-Practice",
       "full_name": "Rick-Wilson/Bridge-Offline-Practice",
       "description": "Bridge Bidding Practice",
@@ -8927,7 +8927,7 @@
       "is_fork": false
     },
     {
-      "id": 4266216290,
+      "id": 4113226839,
       "name": "Bridge-Parsers",
       "full_name": "Rick-Wilson/Bridge-Parsers",
       "description": "Bridge-Parsers",
@@ -9642,7 +9642,7 @@
       "is_fork": false
     },
     {
-      "id": 2455595043,
+      "id": 3594938403,
       "name": "bridge-solver",
       "full_name": "Rick-Wilson/bridge-solver",
       "description": "Repository: bridge-solver",
@@ -10357,7 +10357,7 @@
       "is_fork": false
     },
     {
-      "id": 510946635,
+      "id": 3072111822,
       "name": "bridge-solver-xray",
       "full_name": "Rick-Wilson/bridge-solver-xray",
       "description": "Bridge Solver X-ray",
@@ -11069,7 +11069,7 @@
       "is_fork": true
     },
     {
-      "id": 3009518360,
+      "id": 2362485281,
       "name": "bridge-types",
       "full_name": "Rick-Wilson/bridge-types",
       "description": "bridge-types",
@@ -11784,7 +11784,7 @@
       "is_fork": false
     },
     {
-      "id": 423765218,
+      "id": 3497881373,
       "name": "bridge-wrangler",
       "full_name": "Rick-Wilson/bridge-wrangler",
       "description": "bridge-wrangler",
@@ -11797,11 +11797,11 @@
         "Shell": 37,
         "TOML": 14
       },
-      "commits": 24,
+      "commits": 25,
       "recent_commits": 16,
-      "last_commit": "2026-01-31T11:29:23-08:00",
-      "created_at": "2026-01-31T11:29:23-08:00",
-      "updated_at": "2026-01-31T11:29:23-08:00",
+      "last_commit": "2026-01-31T20:53:10Z",
+      "created_at": "2026-01-31T20:53:10Z",
+      "updated_at": "2026-01-31T20:53:10Z",
       "url": "https://github.com/Rick-Wilson/bridge-wrangler",
       "commit_history": [
         {
@@ -12398,12 +12398,12 @@
         },
         {
           "date": "2026-01-17",
-          "additions": 8922,
+          "additions": 9129,
           "deletions": 97
         },
         {
           "date": "2026-01-24",
-          "additions": 2698,
+          "additions": 2501,
           "deletions": 261
         }
       ],
@@ -12488,12 +12488,18 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 11620,
+          "additions": 11630,
           "deletions": 358,
-          "net": 11262
+          "net": 11272
         }
       ],
       "releases": [
+        {
+          "tag": "v0.5.1",
+          "date": "2026-01-31T20:53:10Z",
+          "message": "Release v0.5.1 (dependency update)",
+          "repo": "bridge-wrangler"
+        },
         {
           "tag": "v0.5.0",
           "date": "2026-01-31T09:58:36-08:00",
@@ -12531,7 +12537,7 @@
       "is_fork": false
     },
     {
-      "id": 1225339813,
+      "id": 3702877198,
       "name": "Dealer-cleanup",
       "full_name": "Rick-Wilson/Dealer-cleanup",
       "description": "Dealer by Hans van Staveren",
@@ -13243,7 +13249,7 @@
       "is_fork": true
     },
     {
-      "id": 2958942081,
+      "id": 3355739333,
       "name": "Dealer3",
       "full_name": "Rick-Wilson/Dealer3",
       "description": "dealer3",
@@ -13950,9 +13956,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 31301,
-          "deletions": 19003,
-          "net": 12298
+          "additions": 28555,
+          "deletions": 18976,
+          "net": 9579
         }
       ],
       "releases": [
@@ -13987,7 +13993,7 @@
       "is_fork": false
     },
     {
-      "id": 101128776,
+      "id": 2745401061,
       "name": "EDGAR-Defense-Toolkit",
       "full_name": "Rick-Wilson/EDGAR-Defense-Toolkit",
       "description": "EDGAR Defense Toolkit",
@@ -14702,7 +14708,7 @@
       "is_fork": false
     },
     {
-      "id": 3302016858,
+      "id": 59771325,
       "name": "pbn-to-pdf",
       "full_name": "Rick-Wilson/pbn-to-pdf",
       "description": "pbn-to-pdf",
@@ -14714,11 +14720,11 @@
         "Rust": 13579,
         "TOML": 16
       },
-      "commits": 60,
+      "commits": 61,
       "recent_commits": 53,
-      "last_commit": "2026-01-31T10:47:38-08:00",
-      "created_at": "2026-01-31T10:47:38-08:00",
-      "updated_at": "2026-01-31T10:47:38-08:00",
+      "last_commit": "2026-01-31T12:14:16-08:00",
+      "created_at": "2026-01-31T12:14:16-08:00",
+      "updated_at": "2026-01-31T12:14:16-08:00",
       "url": "https://github.com/Rick-Wilson/pbn-to-pdf",
       "commit_history": [
         {
@@ -15320,8 +15326,8 @@
         },
         {
           "date": "2026-01-24",
-          "additions": 6250,
-          "deletions": 2083
+          "additions": 6256,
+          "deletions": 2089
         }
       ],
       "monthly_loc_changes": [
@@ -15405,12 +15411,18 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 48647,
-          "deletions": 4641,
+          "additions": 48653,
+          "deletions": 4647,
           "net": 44006
         }
       ],
       "releases": [
+        {
+          "tag": "v0.9.0",
+          "date": "2026-01-31T12:14:16-08:00",
+          "message": "Release v0.9.0",
+          "repo": "pbn-to-pdf"
+        },
         {
           "tag": "v0.8.0",
           "date": "2026-01-31T10:20:16-08:00",
@@ -15466,7 +15478,7 @@
       "is_fork": false
     },
     {
-      "id": 1338996216,
+      "id": 1197382274,
       "name": "pdf-handouts",
       "full_name": "Rick-Wilson/pdf-handouts",
       "description": "PDF Handouts",
@@ -16200,7 +16212,7 @@
       "is_fork": false
     },
     {
-      "id": 1468716827,
+      "id": 1952693850,
       "name": "Practice-Bidding-Scenarios",
       "full_name": "Rick-Wilson/Practice-Bidding-Scenarios",
       "description": "Practice Bidding Scenarios",
@@ -16912,7 +16924,7 @@
       "is_fork": true
     },
     {
-      "id": 3696892930,
+      "id": 2952966281,
       "name": "printpdf",
       "full_name": "Rick-Wilson/printpdf",
       "description": "\ufeff# printpdf",
@@ -17661,7 +17673,7 @@
       "is_fork": true
     },
     {
-      "id": 824576097,
+      "id": 3687082328,
       "name": "Vibe-Dashboard",
       "full_name": "Rick-Wilson/Vibe-Dashboard",
       "description": "Vibe Dashboard",
@@ -17674,11 +17686,11 @@
         "Python": 959,
         "Shell": 13
       },
-      "commits": 33,
+      "commits": 34,
       "recent_commits": 28,
-      "last_commit": "2026-01-31T12:09:20-08:00",
-      "created_at": "2026-01-31T12:09:20-08:00",
-      "updated_at": "2026-01-31T12:09:20-08:00",
+      "last_commit": "2026-01-31T13:18:09-08:00",
+      "created_at": "2026-01-31T13:18:09-08:00",
+      "updated_at": "2026-01-31T13:18:09-08:00",
       "url": "https://github.com/Rick-Wilson/Vibe-Dashboard",
       "commit_history": [
         {
@@ -18280,8 +18292,8 @@
         },
         {
           "date": "2026-01-24",
-          "additions": 24356,
-          "deletions": 1045
+          "additions": 24357,
+          "deletions": 1046
         }
       ],
       "monthly_loc_changes": [
@@ -18365,8 +18377,8 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 24356,
-          "deletions": 1045,
+          "additions": 24357,
+          "deletions": 1046,
           "net": 23311
         }
       ],
@@ -18378,6 +18390,18 @@
     }
   ],
   "releases": [
+    {
+      "tag": "v0.5.1",
+      "date": "2026-01-31T20:53:10Z",
+      "message": "Release v0.5.1 (dependency update)",
+      "repo": "bridge-wrangler"
+    },
+    {
+      "tag": "v0.9.0",
+      "date": "2026-01-31T12:14:16-08:00",
+      "message": "Release v0.9.0",
+      "repo": "pbn-to-pdf"
+    },
     {
       "tag": "v0.8.0",
       "date": "2026-01-31T10:20:16-08:00",
