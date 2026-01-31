@@ -977,7 +977,13 @@
             const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
             const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-            if (diffDays < 7) {
+            // Check if same calendar day
+            const isToday = date.toDateString() === now.toDateString();
+
+            if (isToday) {
+                // Today: show time
+                return date.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+            } else if (diffDays < 7) {
                 // Within past 7 days: show day of week
                 return days[date.getDay()];
             } else if (diffYears < 1) {
