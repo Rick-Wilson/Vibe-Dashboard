@@ -60,6 +60,14 @@ jobs:
           echo "FORK_REPOS=$FORKS" >> $GITHUB_ENV
           echo "Identified forks: $FORKS"
 
+      - name: Update LOC history
+        run: |
+          # Update LOC history with today's measurements
+          python accumulate_loc_history.py \
+            --path ./repos \
+            --days 1 \
+            --output loc_history.json
+
       - name: Generate dashboard data
         run: |
           python fetch_github_data.py \
@@ -74,7 +82,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add dashboard_data.json
+          git add dashboard_data.json loc_history.json
 
           if git diff --staged --quiet; then
             echo "No changes to commit"

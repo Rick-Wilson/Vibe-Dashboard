@@ -1,27 +1,40 @@
 {
-  "generated_at": "2026-02-04T12:39:48.913947+00:00",
+  "generated_at": "2026-02-04T19:39:54.027038+00:00",
   "stats": {
-    "total_loc": 68481,
-    "total_commits": 656,
-    "avg_progress": 58,
-    "this_week_commits": 143,
+    "total_loc": 144013,
+    "total_commits": 432,
+    "avg_progress": 63,
+    "this_week_commits": 152,
     "last_week_commits": 98,
-    "week_trend": 45,
-    "project_count": 25,
-    "fork_count": 7
+    "week_trend": 54,
+    "project_count": 24,
+    "fork_count": 0
   },
   "languages": {
-    "JSON": 6577,
-    "JavaScript": 6974,
-    "CSS": 1040,
+    "CSS": 1425,
     "INI": 78,
-    "PowerShell": 276,
-    "Python": 6211,
-    "Shell": 1483,
-    "Rust": 45148,
-    "TOML": 287,
-    "Vue": 227,
-    "C": 50,
+    "PowerShell": 657,
+    "Python": 14675,
+    "Shell": 2323,
+    "Batch": 6,
+    "C#": 3753,
+    "JSON": 16831,
+    "MSBuild": 63,
+    "Rust": 73461,
+    "TOML": 583,
+    "VBScript": 3,
+    "Visual Basic": 331,
+    "JavaScript": 18135,
+    "TeX": 1876,
+    "SQL": 47,
+    "Vue": 276,
+    "Objective-C++": 812,
+    "C++": 5294,
+    "Makefile": 38,
+    "C": 2182,
+    "C Header": 288,
+    "Happy": 637,
+    "Lex": 109,
     "Pest": 130
   },
   "commit_history": [
@@ -33,7 +46,7 @@
     },
     {
       "date": "2025-11-07",
-      "commits": 1,
+      "commits": 0,
       "additions": 0,
       "deletions": 0
     },
@@ -495,7 +508,7 @@
     },
     {
       "date": "2026-01-23",
-      "commits": 15,
+      "commits": 12,
       "additions": 0,
       "deletions": 0
     },
@@ -507,13 +520,13 @@
     },
     {
       "date": "2026-01-25",
-      "commits": 39,
+      "commits": 41,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-01-26",
-      "commits": 23,
+      "commits": 24,
       "additions": 0,
       "deletions": 0
     },
@@ -543,25 +556,25 @@
     },
     {
       "date": "2026-01-31",
-      "commits": 67,
+      "commits": 73,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-02-01",
-      "commits": 3,
+      "commits": 4,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-02-02",
-      "commits": 12,
+      "commits": 13,
       "additions": 0,
       "deletions": 0
     },
     {
       "date": "2026-02-03",
-      "commits": 5,
+      "commits": 6,
       "additions": 0,
       "deletions": 0
     }
@@ -569,51 +582,51 @@
   "loc_history": [
     {
       "month": "Mar",
-      "loc": 6848
+      "loc": 0
     },
     {
       "month": "Apr",
-      "loc": 6848
+      "loc": 0
     },
     {
       "month": "May",
-      "loc": 6848
+      "loc": 0
     },
     {
       "month": "Jun",
-      "loc": 6848
+      "loc": 0
     },
     {
       "month": "Jul",
-      "loc": 6848
+      "loc": 0
     },
     {
       "month": "Aug",
-      "loc": 6848
+      "loc": 0
     },
     {
       "month": "Sep",
-      "loc": 6848
+      "loc": 0
     },
     {
       "month": "Oct",
-      "loc": 6848
+      "loc": 0
     },
     {
       "month": "Nov",
-      "loc": 6848
+      "loc": 0
     },
     {
       "month": "Dec",
-      "loc": 6848
+      "loc": 54676
     },
     {
       "month": "Jan",
-      "loc": 65766
+      "loc": 120090
     },
     {
       "month": "Feb",
-      "loc": 68481
+      "loc": 144013
     }
   ],
   "loc_history_by_repo": {
@@ -633,7 +646,7 @@
     ],
     "repos": [
       {
-        "name": "Bridge-Dealer-Scripts",
+        "name": "ABS-Lessons",
         "data": [
           0,
           0,
@@ -645,31 +658,13 @@
           0,
           0,
           0,
-          0,
+          309,
           0
         ],
-        "created_at": "2024-03-04T08:36:15-08:00"
+        "created_at": "2026-01-28T10:01:08-08:00"
       },
       {
-        "name": "acbl-proxy",
-        "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          52,
-          52,
-          52,
-          44
-        ],
-        "created_at": "2025-11-07T17:45:00Z"
-      },
-      {
-        "name": "Baker-Bridge",
+        "name": "bridge-bots",
         "data": [
           0,
           0,
@@ -680,9 +675,9 @@
           0,
           0,
           0,
-          0,
-          3171721,
-          7473
+          6535,
+          6535,
+          6762
         ],
         "created_at": "2026-01-31T11:30:14-08:00"
       },
@@ -699,8 +694,8 @@
           0,
           0,
           0,
-          22114,
-          9826
+          9826,
+          10562
         ],
         "created_at": "2026-01-31T11:30:14-08:00"
       },
@@ -717,10 +712,46 @@
           0,
           0,
           0,
-          7150,
+          4432,
           4432
         ],
         "created_at": "2026-01-31T11:30:14-08:00"
+      },
+      {
+        "name": "Dealer-cleanup",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3158,
+          3169,
+          3169
+        ],
+        "created_at": "2026-01-31T11:30:14-08:00"
+      },
+      {
+        "name": "bridge-solver-xray",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2221,
+          5618,
+          5618
+        ],
+        "created_at": "2026-01-31T11:30:15-08:00"
       },
       {
         "name": "Bridge-OCR",
@@ -735,7 +766,7 @@
           0,
           0,
           0,
-          24,
+          0,
           0
         ],
         "created_at": "2026-01-31T11:37:39-08:00"
@@ -753,8 +784,8 @@
           0,
           0,
           0,
-          24,
-          0
+          0,
+          2287
         ],
         "created_at": "2026-01-31T11:37:45-08:00"
       },
@@ -771,7 +802,7 @@
           0,
           0,
           0,
-          2914,
+          766,
           766
         ],
         "created_at": "2026-01-31T11:37:45-08:00"
@@ -789,7 +820,7 @@
           0,
           0,
           0,
-          4880,
+          2396,
           2396
         ],
         "created_at": "2026-01-31T11:37:45-08:00"
@@ -807,8 +838,26 @@
           0,
           0,
           0,
-          7516,
+          3700,
           3700
+        ],
+        "created_at": "2026-01-31T11:37:45-08:00"
+      },
+      {
+        "name": "printpdf-fork",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27194,
+          27185,
+          27185
         ],
         "created_at": "2026-01-31T11:37:45-08:00"
       },
@@ -825,7 +874,7 @@
           0,
           0,
           0,
-          7195,
+          2405,
           2405
         ],
         "created_at": "2026-01-31T11:41:27-08:00"
@@ -843,13 +892,13 @@
           0,
           0,
           0,
-          10625,
-          5169
+          5043,
+          5043
         ],
         "created_at": "2026-01-31T11:41:28-08:00"
       },
       {
-        "name": "Dealer3",
+        "name": "dealer3",
         "data": [
           0,
           0,
@@ -860,11 +909,29 @@
           0,
           0,
           0,
-          6483,
-          18607,
+          5049,
+          9286,
           9286
         ],
         "created_at": "2026-01-31T12:00:42-08:00"
+      },
+      {
+        "name": "Bridge-Lessons-by-Grant-Robinson",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1533
+        ],
+        "created_at": "2026-01-31T12:26:12-08:00"
       },
       {
         "name": "bridge-solver",
@@ -879,7 +946,7 @@
           0,
           0,
           0,
-          6657,
+          5058,
           5058
         ],
         "created_at": "2026-01-31T16:42:20-08:00"
@@ -897,10 +964,64 @@
           0,
           0,
           0,
-          43538,
+          13852,
           13847
         ],
         "created_at": "2026-02-01T05:30:03-08:00"
+      },
+      {
+        "name": "bridge-wrangler",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1797,
+          1797
+        ],
+        "created_at": "2026-02-01T18:45:07-08:00"
+      },
+      {
+        "name": "bbo-pbs",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10519,
+          11292,
+          11385
+        ],
+        "created_at": "2026-02-02T18:24:41-08:00"
+      },
+      {
+        "name": "BBA-CLI",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6180,
+          6548
+        ],
+        "created_at": "2026-02-03T05:19:59-08:00"
       },
       {
         "name": "Bridge-Attendance",
@@ -933,13 +1054,13 @@
           0,
           0,
           0,
-          23186,
-          1241
+          1241,
+          11835
         ],
-        "created_at": "2026-02-03T12:39:40Z"
+        "created_at": "2026-02-04T02:00:07-08:00"
       },
       {
-        "name": "bridge-wrangler",
+        "name": "Baker-Bridge",
         "data": [
           0,
           0,
@@ -951,33 +1072,30 @@
           0,
           0,
           0,
-          11068,
-          1797
+          0,
+          7480
         ],
-        "created_at": "2026-02-03T12:47:01Z"
+        "created_at": "2026-02-04T11:24:31-08:00"
       }
     ]
   },
   "projects": [
     {
-      "id": 2430652999,
-      "name": "acbl-proxy",
-      "full_name": "Rick-Wilson/acbl-proxy",
-      "description": "Repository: acbl-proxy",
-      "language": "JavaScript",
+      "id": 4096150926,
+      "name": "ABS-Lessons",
+      "full_name": "Rick-Wilson/ABS-Lessons",
+      "description": "ABS-Lessons",
+      "language": "Unknown",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
-      "loc": {
-        "JSON": 13,
-        "JavaScript": 31
-      },
-      "commits": 1,
-      "recent_commits": 1,
-      "last_commit": "2025-11-07T17:45:00Z",
-      "created_at": "2025-11-07T17:45:00Z",
-      "updated_at": "2025-11-07T17:45:00Z",
-      "url": "https://github.com/Rick-Wilson/acbl-proxy",
+      "loc": {},
+      "commits": 4,
+      "recent_commits": 4,
+      "last_commit": "2026-01-28T10:01:08-08:00",
+      "created_at": "2026-01-28T10:01:08-08:00",
+      "updated_at": "2026-01-28T10:01:08-08:00",
+      "url": "git@github.com:Rick-Wilson/ABS-Lessons",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -987,7 +1105,7 @@
         },
         {
           "date": "2025-11-07",
-          "commits": 1,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
@@ -1461,13 +1579,13 @@
         },
         {
           "date": "2026-01-25",
-          "commits": 0,
+          "commits": 2,
           "additions": 0,
           "deletions": 0
         },
         {
           "date": "2026-01-26",
-          "commits": 0,
+          "commits": 1,
           "additions": 0,
           "deletions": 0
         },
@@ -1479,7 +1597,7 @@
         },
         {
           "date": "2026-01-28",
-          "commits": 0,
+          "commits": 1,
           "additions": 0,
           "deletions": 0
         },
@@ -1573,8 +1691,8 @@
         },
         {
           "date": "2026-01-21",
-          "additions": 0,
-          "deletions": 0
+          "additions": 162682,
+          "deletions": 3
         },
         {
           "date": "2026-01-28",
@@ -1642,9 +1760,9 @@
         {
           "month": "Nov 2025",
           "month_short": "Nov",
-          "additions": 52,
+          "additions": 0,
           "deletions": 0,
-          "net": 52
+          "net": 0
         },
         {
           "month": "Dec 2025",
@@ -1656,9 +1774,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
+          "additions": 162682,
+          "deletions": 3,
+          "net": 162679
         },
         {
           "month": "Feb 2026",
@@ -1675,7 +1793,7 @@
       "is_fork": false
     },
     {
-      "id": 2816198195,
+      "id": 214160088,
       "name": "Baker-Bridge",
       "full_name": "Rick-Wilson/Baker-Bridge",
       "description": "Baker Bridge",
@@ -1686,16 +1804,16 @@
       "loc": {
         "CSS": 1040,
         "INI": 78,
-        "PowerShell": 194,
+        "PowerShell": 201,
         "Python": 5252,
         "Shell": 909
       },
-      "commits": 5,
-      "recent_commits": 5,
-      "last_commit": "2026-01-31T11:30:14-08:00",
-      "created_at": "2026-01-31T11:30:14-08:00",
-      "updated_at": "2026-01-31T11:30:14-08:00",
-      "url": "https://github.com/Rick-Wilson/Baker-Bridge",
+      "commits": 1,
+      "recent_commits": 0,
+      "last_commit": "2026-02-04T11:24:31-08:00",
+      "created_at": "2026-02-04T11:24:31-08:00",
+      "updated_at": "2026-02-04T11:24:31-08:00",
+      "url": "git@github.com:Rick-Wilson/Baker-Bridge",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -2167,7 +2285,7 @@
         },
         {
           "date": "2026-01-23",
-          "commits": 3,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
@@ -2197,7 +2315,7 @@
         },
         {
           "date": "2026-01-28",
-          "commits": 1,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
@@ -2215,7 +2333,7 @@
         },
         {
           "date": "2026-01-31",
-          "commits": 1,
+          "commits": 0,
           "additions": 0,
           "deletions": 0
         },
@@ -2291,13 +2409,13 @@
         },
         {
           "date": "2026-01-21",
-          "additions": 4364953,
-          "deletions": 1240533
+          "additions": 0,
+          "deletions": 0
         },
         {
           "date": "2026-01-28",
-          "additions": 47509,
-          "deletions": 207
+          "additions": 3171722,
+          "deletions": 0
         }
       ],
       "monthly_loc_changes": [
@@ -2374,16 +2492,16 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 4412461,
-          "deletions": 1240740,
-          "net": 3171721
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
         },
         {
           "month": "Feb 2026",
           "month_short": "Feb",
-          "additions": 0,
+          "additions": 3171722,
           "deletions": 0,
-          "net": 0
+          "net": 3171722
         }
       ],
       "releases": [],
@@ -2393,21 +2511,32 @@
       "is_fork": false
     },
     {
-      "id": 4165259737,
+      "id": 2013836979,
       "name": "BBA-CLI",
       "full_name": "Rick-Wilson/BBA-CLI",
       "description": "BBA-CLI",
-      "language": "Unknown",
+      "language": "C#",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
-      "loc": {},
+      "loc": {
+        "Batch": 3,
+        "C#": 3753,
+        "JSON": 43,
+        "MSBuild": 63,
+        "Python": 1369,
+        "Rust": 763,
+        "Shell": 188,
+        "TOML": 32,
+        "VBScript": 3,
+        "Visual Basic": 331
+      },
       "commits": 51,
       "recent_commits": 51,
       "last_commit": "2026-02-03T05:19:59-08:00",
       "created_at": "2026-02-03T05:19:59-08:00",
       "updated_at": "2026-02-03T05:19:59-08:00",
-      "url": "https://github.com/Rick-Wilson/BBA-CLI",
+      "url": "git@github.com:Rick-Wilson/BBA-CLI",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -3086,9 +3215,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 89418,
+          "additions": 89501,
           "deletions": 79500,
-          "net": 9918
+          "net": 10001
         },
         {
           "month": "Feb 2026",
@@ -3160,27 +3289,33 @@
           "repo": "BBA-CLI"
         }
       ],
-      "progress": 70,
+      "progress": 90,
       "goals": [],
       "completed_goals": [],
-      "is_fork": true
+      "is_fork": false
     },
     {
-      "id": 3893685004,
+      "id": 195023945,
       "name": "bbo-pbs",
       "full_name": "Rick-Wilson/bbo-pbs",
       "description": "BBOalert",
-      "language": "Unknown",
+      "language": "JavaScript",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
-      "loc": {},
+      "loc": {
+        "CSS": 4,
+        "JavaScript": 9429,
+        "JSON": 67,
+        "Shell": 9,
+        "TeX": 1876
+      },
       "commits": 54,
       "recent_commits": 54,
       "last_commit": "2026-02-02T18:24:41-08:00",
       "created_at": "2026-02-02T18:24:41-08:00",
       "updated_at": "2026-02-02T18:24:41-08:00",
-      "url": "https://github.com/Rick-Wilson/bbo-pbs",
+      "url": "git@github.com:Rick-Wilson/bbo-pbs",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -3859,9 +3994,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 1502,
+          "additions": 1504,
           "deletions": 520,
-          "net": 982
+          "net": 984
         },
         {
           "month": "Feb 2026",
@@ -3879,13 +4014,13 @@
           "repo": "bbo-pbs"
         }
       ],
-      "progress": 70,
+      "progress": 100,
       "goals": [],
       "completed_goals": [],
-      "is_fork": true
+      "is_fork": false
     },
     {
-      "id": 4177258569,
+      "id": 2583423395,
       "name": "Bridge-Attendance",
       "full_name": "Rick-Wilson/Bridge-Attendance",
       "description": "Bridge Class Attendance System",
@@ -3903,7 +4038,7 @@
       "last_commit": "2026-02-03T07:46:37-08:00",
       "created_at": "2026-02-03T07:46:37-08:00",
       "updated_at": "2026-02-03T07:46:37-08:00",
-      "url": "https://github.com/Rick-Wilson/Bridge-Attendance",
+      "url": "git@github.com:Rick-Wilson/Bridge-Attendance",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -4601,21 +4736,25 @@
       "is_fork": false
     },
     {
-      "id": 904898571,
+      "id": 4215236492,
       "name": "bridge-bots",
       "full_name": "Rick-Wilson/bridge-bots",
       "description": "bridge-bots",
-      "language": "Unknown",
+      "language": "Python",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
-      "loc": {},
+      "loc": {
+        "Python": 6658,
+        "SQL": 47,
+        "TOML": 57
+      },
       "commits": 1,
       "recent_commits": 1,
       "last_commit": "2026-01-31T11:30:14-08:00",
       "created_at": "2026-01-31T11:30:14-08:00",
       "updated_at": "2026-01-31T11:30:14-08:00",
-      "url": "https://github.com/Rick-Wilson/bridge-bots",
+      "url": "git@github.com:Rick-Wilson/bridge-bots",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -5294,8 +5433,8 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 0,
-          "deletions": 0,
+          "additions": 1,
+          "deletions": 1,
           "net": 0
         },
         {
@@ -5368,13 +5507,13 @@
           "repo": "bridge-bots"
         }
       ],
-      "progress": 45,
+      "progress": 65,
       "goals": [],
       "completed_goals": [],
-      "is_fork": true
+      "is_fork": false
     },
     {
-      "id": 3710403396,
+      "id": 1187680421,
       "name": "Bridge-Classroom",
       "full_name": "Rick-Wilson/Bridge-Classroom",
       "description": "Repository: Bridge-Classroom",
@@ -5383,18 +5522,18 @@
       "forks": 0,
       "open_issues": 0,
       "loc": {
+        "JavaScript": 6193,
         "JSON": 3148,
-        "JavaScript": 5583,
-        "Rust": 902,
+        "Rust": 979,
         "TOML": 23,
-        "Vue": 170
+        "Vue": 219
       },
       "commits": 12,
       "recent_commits": 12,
       "last_commit": "2026-01-31T11:30:14-08:00",
       "created_at": "2026-01-31T11:30:14-08:00",
       "updated_at": "2026-01-31T11:30:14-08:00",
-      "url": "https://github.com/Rick-Wilson/Bridge-Classroom",
+      "url": "git@github.com:Rick-Wilson/Bridge-Classroom",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -5990,13 +6129,13 @@
         },
         {
           "date": "2026-01-21",
-          "additions": 0,
-          "deletions": 0
+          "additions": 19025,
+          "deletions": 94
         },
         {
           "date": "2026-01-28",
-          "additions": 22212,
-          "deletions": 97
+          "additions": 3187,
+          "deletions": 3
         }
       ],
       "monthly_loc_changes": [
@@ -6073,9 +6212,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 22211,
+          "additions": 22212,
           "deletions": 97,
-          "net": 22114
+          "net": 22115
         },
         {
           "month": "Feb 2026",
@@ -6086,27 +6225,30 @@
         }
       ],
       "releases": [],
-      "progress": 70,
+      "progress": 80,
       "goals": [],
       "completed_goals": [],
       "is_fork": false
     },
     {
-      "id": 674966234,
+      "id": 3443676928,
       "name": "Bridge-Club-Game-Analysis",
       "full_name": "Rick-Wilson/Bridge-Club-Game-Analysis",
       "description": "Repository: Bridge-Club-Game-Analysis",
-      "language": "Unknown",
+      "language": "Rust",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
-      "loc": {},
+      "loc": {
+        "Rust": 2257,
+        "TOML": 30
+      },
       "commits": 4,
       "recent_commits": 4,
       "last_commit": "2026-01-31T11:37:45-08:00",
       "created_at": "2026-01-31T11:37:45-08:00",
       "updated_at": "2026-01-31T11:37:45-08:00",
-      "url": "https://github.com/Rick-Wilson/Bridge-Club-Game-Analysis",
+      "url": "git@github.com:Rick-Wilson/Bridge-Club-Game-Analysis",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -6785,9 +6927,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 24,
+          "additions": 90,
           "deletions": 0,
-          "net": 24
+          "net": 90
         },
         {
           "month": "Feb 2026",
@@ -6798,727 +6940,13 @@
         }
       ],
       "releases": [],
-      "progress": 45,
+      "progress": 55,
       "goals": [],
       "completed_goals": [],
       "is_fork": false
     },
     {
-      "id": 4107804051,
-      "name": "Bridge-Dealer-Scripts",
-      "full_name": "Rick-Wilson/Bridge-Dealer-Scripts",
-      "description": "Bridge-Dealer-Scripts",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "open_issues": 0,
-      "loc": {
-        "JavaScript": 122
-      },
-      "commits": 217,
-      "recent_commits": 0,
-      "last_commit": "2024-03-04T08:36:15-08:00",
-      "created_at": "2024-03-04T08:36:15-08:00",
-      "updated_at": "2024-03-04T08:36:15-08:00",
-      "url": "https://github.com/Rick-Wilson/Bridge-Dealer-Scripts",
-      "commit_history": [
-        {
-          "date": "2025-11-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-31",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-31",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-02-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-02-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-02-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        }
-      ],
-      "code_changes": [
-        {
-          "date": "2025-11-12",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-19",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-26",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-03",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-10",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-17",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-24",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-31",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-07",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-14",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-21",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-28",
-          "additions": 0,
-          "deletions": 0
-        }
-      ],
-      "monthly_loc_changes": [
-        {
-          "month": "Mar 2025",
-          "month_short": "Mar",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Apr 2025",
-          "month_short": "Apr",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "May 2025",
-          "month_short": "May",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jun 2025",
-          "month_short": "Jun",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jul 2025",
-          "month_short": "Jul",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Aug 2025",
-          "month_short": "Aug",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Sep 2025",
-          "month_short": "Sep",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Oct 2025",
-          "month_short": "Oct",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Nov 2025",
-          "month_short": "Nov",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Dec 2025",
-          "month_short": "Dec",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jan 2026",
-          "month_short": "Jan",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Feb 2026",
-          "month_short": "Feb",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        }
-      ],
-      "releases": [],
-      "progress": 45,
-      "goals": [],
-      "completed_goals": [],
-      "is_fork": false
-    },
-    {
-      "id": 665806209,
+      "id": 313453241,
       "name": "bridge-encodings",
       "full_name": "Rick-Wilson/bridge-encodings",
       "description": "bridge-encodings",
@@ -7535,7 +6963,7 @@
       "last_commit": "2026-01-31T11:37:45-08:00",
       "created_at": "2026-01-31T11:37:45-08:00",
       "updated_at": "2026-01-31T11:37:45-08:00",
-      "url": "https://github.com/Rick-Wilson/bridge-encodings",
+      "url": "git@github.com:Rick-Wilson/bridge-encodings",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -8214,9 +7642,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 2914,
+          "additions": 2977,
           "deletions": 0,
-          "net": 2914
+          "net": 2977
         },
         {
           "month": "Feb 2026",
@@ -8233,7 +7661,723 @@
       "is_fork": false
     },
     {
-      "id": 3121991105,
+      "id": 2829662934,
+      "name": "Bridge-Lessons-by-Grant-Robinson",
+      "full_name": "Rick-Wilson/Bridge-Lessons-by-Grant-Robinson",
+      "description": "Repository: Bridge-Lessons-by-Grant-Robinson",
+      "language": "Objective-C++",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "loc": {
+        "Objective-C++": 812,
+        "PowerShell": 374,
+        "Shell": 347
+      },
+      "commits": 7,
+      "recent_commits": 7,
+      "last_commit": "2026-01-31T12:26:12-08:00",
+      "created_at": "2026-01-31T12:26:12-08:00",
+      "updated_at": "2026-01-31T12:26:12-08:00",
+      "url": "git@github.com:Rick-Wilson/Bridge-Lessons-by-Grant-Robinson",
+      "commit_history": [
+        {
+          "date": "2025-11-06",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-07",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-08",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-09",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-10",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-11",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-12",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-14",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-15",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-16",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-17",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-18",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-19",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-20",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-21",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-22",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-23",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-24",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-25",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-26",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-27",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-28",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-29",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-30",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-01",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-02",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-03",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-04",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-05",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-06",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-07",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-08",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-09",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-10",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-11",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-12",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-14",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-15",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-16",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-17",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-18",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-19",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-20",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-21",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-22",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-23",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-24",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-25",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-26",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-27",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-28",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-29",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-30",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-31",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-01",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-02",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-03",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-04",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-05",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-06",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-07",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-08",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-09",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-10",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-11",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-12",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-14",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-15",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-16",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-17",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-18",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-19",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-20",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-21",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-22",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-23",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-24",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-25",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-26",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-27",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-28",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-29",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-30",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-31",
+          "commits": 7,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-02-01",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-02-02",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-02-03",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
+        }
+      ],
+      "code_changes": [
+        {
+          "date": "2025-11-12",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-19",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-11-26",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-03",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-10",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-17",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-24",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2025-12-31",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-07",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-14",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-21",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-01-28",
+          "additions": 226457,
+          "deletions": 52
+        }
+      ],
+      "monthly_loc_changes": [
+        {
+          "month": "Mar 2025",
+          "month_short": "Mar",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Apr 2025",
+          "month_short": "Apr",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "May 2025",
+          "month_short": "May",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Jun 2025",
+          "month_short": "Jun",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Jul 2025",
+          "month_short": "Jul",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Aug 2025",
+          "month_short": "Aug",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Sep 2025",
+          "month_short": "Sep",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Oct 2025",
+          "month_short": "Oct",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Nov 2025",
+          "month_short": "Nov",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Dec 2025",
+          "month_short": "Dec",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Jan 2026",
+          "month_short": "Jan",
+          "additions": 226434,
+          "deletions": 3,
+          "net": 226431
+        },
+        {
+          "month": "Feb 2026",
+          "month_short": "Feb",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        }
+      ],
+      "releases": [],
+      "progress": 60,
+      "goals": [],
+      "completed_goals": [],
+      "is_fork": false
+    },
+    {
+      "id": 3009015744,
       "name": "Bridge-OCR",
       "full_name": "Rick-Wilson/Bridge-OCR",
       "description": "Repository: Bridge-OCR",
@@ -8247,7 +8391,7 @@
       "last_commit": "2026-01-31T11:37:39-08:00",
       "created_at": "2026-01-31T11:37:39-08:00",
       "updated_at": "2026-01-31T11:37:39-08:00",
-      "url": "https://github.com/Rick-Wilson/Bridge-OCR",
+      "url": "git@github.com:Rick-Wilson/Bridge-OCR",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -8926,9 +9070,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 24,
+          "additions": 26,
           "deletions": 0,
-          "net": 24
+          "net": 26
         },
         {
           "month": "Feb 2026",
@@ -8945,17 +9089,17 @@
       "is_fork": false
     },
     {
-      "id": 688884344,
+      "id": 855016528,
       "name": "Bridge-Offline-Practice",
       "full_name": "Rick-Wilson/Bridge-Offline-Practice",
-      "description": "Bridge Bidding Practice",
+      "description": "App for solo practice of bridge bidding and cardplay",
       "language": "JSON",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
       "loc": {
-        "JSON": 3137,
         "JavaScript": 1238,
+        "JSON": 3137,
         "Vue": 57
       },
       "commits": 4,
@@ -8963,7 +9107,7 @@
       "last_commit": "2026-01-31T11:30:14-08:00",
       "created_at": "2026-01-31T11:30:14-08:00",
       "updated_at": "2026-01-31T11:30:14-08:00",
-      "url": "https://github.com/Rick-Wilson/Bridge-Offline-Practice",
+      "url": "git@github.com:Rick-Wilson/Bridge-Offline-Practice",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -9656,15 +9800,21 @@
       ],
       "releases": [],
       "progress": 55,
-      "goals": [],
-      "completed_goals": [],
+      "goals": [
+        "Goal 1",
+        "Goal 2",
+        "Goal 3"
+      ],
+      "completed_goals": [
+        "Goal 1"
+      ],
       "is_fork": false
     },
     {
-      "id": 472727614,
+      "id": 2193272396,
       "name": "Bridge-Parsers",
       "full_name": "Rick-Wilson/Bridge-Parsers",
-      "description": "Bridge-Parsers",
+      "description": "Parsers for common file formats related to the game of Bridge, including PBN, LIN and BWS files.",
       "language": "Rust",
       "stars": 0,
       "forks": 0,
@@ -9678,7 +9828,7 @@
       "last_commit": "2026-01-31T11:41:27-08:00",
       "created_at": "2026-01-31T11:41:27-08:00",
       "updated_at": "2026-01-31T11:41:27-08:00",
-      "url": "https://github.com/Rick-Wilson/Bridge-Parsers",
+      "url": "git@github.com:Rick-Wilson/Bridge-Parsers",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -10357,9 +10507,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 14159,
+          "additions": 14225,
           "deletions": 6964,
-          "net": 7195
+          "net": 7261
         },
         {
           "month": "Feb 2026",
@@ -10370,13 +10520,19 @@
         }
       ],
       "releases": [],
-      "progress": 60,
-      "goals": [],
-      "completed_goals": [],
+      "progress": 65,
+      "goals": [
+        "Goal 1",
+        "Goal 2",
+        "Goal 3"
+      ],
+      "completed_goals": [
+        "Goal 1"
+      ],
       "is_fork": false
     },
     {
-      "id": 3614288757,
+      "id": 2032096517,
       "name": "bridge-solver",
       "full_name": "Rick-Wilson/bridge-solver",
       "description": "Repository: bridge-solver",
@@ -10393,7 +10549,7 @@
       "last_commit": "2026-01-31T16:42:20-08:00",
       "created_at": "2026-01-31T16:42:20-08:00",
       "updated_at": "2026-01-31T16:42:20-08:00",
-      "url": "https://github.com/Rick-Wilson/bridge-solver",
+      "url": "git@github.com:Rick-Wilson/bridge-solver",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -11072,9 +11228,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 6657,
+          "additions": 6722,
           "deletions": 0,
-          "net": 6657
+          "net": 6722
         },
         {
           "month": "Feb 2026",
@@ -11098,21 +11254,25 @@
       "is_fork": false
     },
     {
-      "id": 2251507008,
+      "id": 620115548,
       "name": "bridge-solver-xray",
       "full_name": "Rick-Wilson/bridge-solver-xray",
       "description": "Bridge Solver X-ray",
-      "language": "Unknown",
+      "language": "C++",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
-      "loc": {},
+      "loc": {
+        "C++": 5294,
+        "Makefile": 38,
+        "Shell": 286
+      },
       "commits": 9,
       "recent_commits": 9,
       "last_commit": "2026-01-31T11:30:15-08:00",
       "created_at": "2026-01-31T11:30:15-08:00",
       "updated_at": "2026-01-31T11:30:15-08:00",
-      "url": "https://github.com/Rick-Wilson/bridge-solver-xray",
+      "url": "git@github.com:Rick-Wilson/bridge-solver-xray",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -11791,9 +11951,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 5684,
+          "additions": 5685,
           "deletions": 177,
-          "net": 5507
+          "net": 5508
         },
         {
           "month": "Feb 2026",
@@ -11804,13 +11964,13 @@
         }
       ],
       "releases": [],
-      "progress": 50,
+      "progress": 70,
       "goals": [],
       "completed_goals": [],
-      "is_fork": true
+      "is_fork": false
     },
     {
-      "id": 223006165,
+      "id": 2844627184,
       "name": "bridge-types",
       "full_name": "Rick-Wilson/bridge-types",
       "description": "bridge-types",
@@ -11827,7 +11987,7 @@
       "last_commit": "2026-01-31T11:37:45-08:00",
       "created_at": "2026-01-31T11:37:45-08:00",
       "updated_at": "2026-01-31T11:37:45-08:00",
-      "url": "https://github.com/Rick-Wilson/bridge-types",
+      "url": "git@github.com:Rick-Wilson/bridge-types",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -12506,9 +12666,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 4885,
+          "additions": 4950,
           "deletions": 5,
-          "net": 4880
+          "net": 4945
         },
         {
           "month": "Feb 2026",
@@ -12525,10 +12685,10 @@
       "is_fork": false
     },
     {
-      "id": 2051409315,
+      "id": 1303350726,
       "name": "bridge-wrangler",
       "full_name": "Rick-Wilson/bridge-wrangler",
-      "description": "bridge-wrangler",
+      "description": "A CLI with utility functions to manage large sets of bridge hands",
       "language": "Rust",
       "stars": 0,
       "forks": 0,
@@ -12540,10 +12700,10 @@
       },
       "commits": 28,
       "recent_commits": 28,
-      "last_commit": "2026-02-03T12:47:01Z",
-      "created_at": "2026-02-03T12:47:01Z",
-      "updated_at": "2026-02-03T12:47:01Z",
-      "url": "https://github.com/Rick-Wilson/bridge-wrangler",
+      "last_commit": "2026-02-01T18:45:07-08:00",
+      "created_at": "2026-02-01T18:45:07-08:00",
+      "updated_at": "2026-02-01T18:45:07-08:00",
+      "url": "git@github.com:Rick-Wilson/bridge-wrangler",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -13139,13 +13299,13 @@
         },
         {
           "date": "2026-01-21",
-          "additions": 11267,
-          "deletions": 322
+          "additions": 11270,
+          "deletions": 327
         },
         {
           "date": "2026-01-28",
-          "additions": 482,
-          "deletions": 231
+          "additions": 479,
+          "deletions": 226
         }
       ],
       "monthly_loc_changes": [
@@ -13222,9 +13382,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 11421,
-          "deletions": 353,
-          "net": 11068
+          "additions": 11620,
+          "deletions": 358,
+          "net": 11262
         },
         {
           "month": "Feb 2026",
@@ -13296,27 +13456,39 @@
           "repo": "bridge-wrangler"
         }
       ],
-      "progress": 70,
-      "goals": [],
-      "completed_goals": [],
+      "progress": 55,
+      "goals": [
+        "Goal 1",
+        "Goal 2",
+        "Goal 3"
+      ],
+      "completed_goals": [
+        "Goal 1"
+      ],
       "is_fork": false
     },
     {
-      "id": 1860224935,
+      "id": 2021301398,
       "name": "Dealer-cleanup",
       "full_name": "Rick-Wilson/Dealer-cleanup",
       "description": "Dealer by Hans van Staveren",
-      "language": "Unknown",
+      "language": "C",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
-      "loc": {},
+      "loc": {
+        "Batch": 3,
+        "C": 2132,
+        "C Header": 288,
+        "Happy": 637,
+        "Lex": 109
+      },
       "commits": 5,
       "recent_commits": 5,
       "last_commit": "2026-01-31T11:30:14-08:00",
       "created_at": "2026-01-31T11:30:14-08:00",
       "updated_at": "2026-01-31T11:30:14-08:00",
-      "url": "https://github.com/Rick-Wilson/Dealer-cleanup",
+      "url": "git@github.com:Rick-Wilson/Dealer-cleanup",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -13897,13 +14069,13 @@
         },
         {
           "date": "2025-12-31",
-          "additions": 0,
-          "deletions": 0
+          "additions": 117,
+          "deletions": 9
         },
         {
           "date": "2026-01-07",
-          "additions": 136,
-          "deletions": 21
+          "additions": 19,
+          "deletions": 12
         },
         {
           "date": "2026-01-14",
@@ -13995,9 +14167,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 136,
+          "additions": 137,
           "deletions": 21,
-          "net": 115
+          "net": 116
         },
         {
           "month": "Feb 2026",
@@ -14008,15 +14180,15 @@
         }
       ],
       "releases": [],
-      "progress": 45,
+      "progress": 55,
       "goals": [],
       "completed_goals": [],
-      "is_fork": true
+      "is_fork": false
     },
     {
-      "id": 2121224688,
-      "name": "Dealer3",
-      "full_name": "Rick-Wilson/Dealer3",
+      "id": 3930567454,
+      "name": "dealer3",
+      "full_name": "Rick-Wilson/dealer3",
       "description": "dealer3",
       "language": "Rust",
       "stars": 0,
@@ -14035,7 +14207,7 @@
       "last_commit": "2026-01-31T12:00:42-08:00",
       "created_at": "2026-01-31T12:00:42-08:00",
       "updated_at": "2026-01-31T12:00:42-08:00",
-      "url": "https://github.com/Rick-Wilson/Dealer3",
+      "url": "git@github.com:Rick-Wilson/Dealer3",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -14611,28 +14783,28 @@
         },
         {
           "date": "2025-12-24",
-          "additions": 6608,
-          "deletions": 125
+          "additions": 9193,
+          "deletions": 266
         },
         {
           "date": "2025-12-31",
-          "additions": 27653,
-          "deletions": 10160
+          "additions": 25746,
+          "deletions": 10119
         },
         {
           "date": "2026-01-07",
-          "additions": 3956,
-          "deletions": 555
+          "additions": 3278,
+          "deletions": 455
         },
         {
           "date": "2026-01-14",
-          "additions": 0,
-          "deletions": 0
+          "additions": 3088,
+          "deletions": 31
         },
         {
           "date": "2026-01-21",
-          "additions": 3202,
-          "deletions": 8716
+          "additions": 114,
+          "deletions": 8685
         },
         {
           "date": "2026-01-28",
@@ -14707,16 +14879,16 @@
         {
           "month": "Dec 2025",
           "month_short": "Dec",
-          "additions": 6608,
-          "deletions": 125,
-          "net": 6483
+          "additions": 9193,
+          "deletions": 266,
+          "net": 8927
         },
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 31256,
-          "deletions": 19132,
-          "net": 12124
+          "additions": 31261,
+          "deletions": 18941,
+          "net": 12320
         },
         {
           "month": "Feb 2026",
@@ -14731,25 +14903,25 @@
           "tag": "v0.4.0",
           "date": "2026-01-21T10:34:04-08:00",
           "message": "Release v0.4.0",
-          "repo": "Dealer3"
+          "repo": "dealer3"
         },
         {
           "tag": "v0.3.0",
           "date": "2026-01-07T12:55:11-08:00",
           "message": "Release v0.3.0 - Fast Parallel Mode",
-          "repo": "Dealer3"
+          "repo": "dealer3"
         },
         {
           "tag": "v0.2.0",
           "date": "2026-01-04T19:06:32-08:00",
           "message": "v0.2.0 Release",
-          "repo": "Dealer3"
+          "repo": "dealer3"
         },
         {
           "tag": "v0.1.0",
           "date": "2026-01-01T18:37:47-08:00",
           "message": "Update release workflow to use action-gh-release",
-          "repo": "Dealer3"
+          "repo": "dealer3"
         }
       ],
       "progress": 90,
@@ -14758,7 +14930,7 @@
       "is_fork": false
     },
     {
-      "id": 3706534507,
+      "id": 3594230729,
       "name": "EDGAR-Defense-Toolkit",
       "full_name": "Rick-Wilson/EDGAR-Defense-Toolkit",
       "description": "EDGAR Defense Toolkit",
@@ -14775,7 +14947,7 @@
       "last_commit": "2026-01-31T11:37:45-08:00",
       "created_at": "2026-01-31T11:37:45-08:00",
       "updated_at": "2026-01-31T11:37:45-08:00",
-      "url": "https://github.com/Rick-Wilson/EDGAR-Defense-Toolkit",
+      "url": "git@github.com:Rick-Wilson/EDGAR-Defense-Toolkit",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -15454,9 +15626,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 7516,
+          "additions": 7569,
           "deletions": 0,
-          "net": 7516
+          "net": 7569
         },
         {
           "month": "Feb 2026",
@@ -15473,10 +15645,10 @@
       "is_fork": false
     },
     {
-      "id": 834210604,
+      "id": 2251832993,
       "name": "pbn-to-pdf",
       "full_name": "Rick-Wilson/pbn-to-pdf",
-      "description": "pbn-to-pdf",
+      "description": "Repository: pbn-to-pdf",
       "language": "Rust",
       "stars": 0,
       "forks": 0,
@@ -15490,7 +15662,7 @@
       "last_commit": "2026-02-01T05:30:03-08:00",
       "created_at": "2026-02-01T05:30:03-08:00",
       "updated_at": "2026-02-01T05:30:03-08:00",
-      "url": "https://github.com/Rick-Wilson/pbn-to-pdf",
+      "url": "git@github.com:Rick-Wilson/pbn-to-pdf",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -16086,13 +16258,13 @@
         },
         {
           "date": "2026-01-21",
-          "additions": 14399,
-          "deletions": 2201
+          "additions": 14519,
+          "deletions": 2230
         },
         {
           "date": "2026-01-28",
-          "additions": 3117,
-          "deletions": 365
+          "additions": 2997,
+          "deletions": 336
         }
       ],
       "monthly_loc_changes": [
@@ -16169,16 +16341,16 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 47966,
-          "deletions": 4428,
-          "net": 43538
+          "additions": 48647,
+          "deletions": 4641,
+          "net": 44006
         },
         {
           "month": "Feb 2026",
           "month_short": "Feb",
-          "additions": 1835,
-          "deletions": 29,
-          "net": 1806
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
         }
       ],
       "releases": [
@@ -16243,22 +16415,28 @@
           "repo": "pbn-to-pdf"
         }
       ],
-      "progress": 100,
-      "goals": [],
-      "completed_goals": [],
+      "progress": 90,
+      "goals": [
+        "Goal 1",
+        "Goal 2",
+        "Goal 3"
+      ],
+      "completed_goals": [
+        "Goal 1"
+      ],
       "is_fork": false
     },
     {
-      "id": 798429267,
+      "id": 436053516,
       "name": "pdf-handouts",
       "full_name": "Rick-Wilson/pdf-handouts",
-      "description": "PDF Handouts",
+      "description": "read list of pdfs, image files; merge-> handouts, with headers and footers",
       "language": "Rust",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
       "loc": {
-        "Rust": 5147,
+        "Rust": 5021,
         "TOML": 22
       },
       "commits": 18,
@@ -16266,7 +16444,7 @@
       "last_commit": "2026-01-31T11:41:28-08:00",
       "created_at": "2026-01-31T11:41:28-08:00",
       "updated_at": "2026-01-31T11:41:28-08:00",
-      "url": "https://github.com/Rick-Wilson/pdf-handouts",
+      "url": "git@github.com:Rick-Wilson/pdf-handouts",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -16945,9 +17123,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 11483,
+          "additions": 11546,
           "deletions": 858,
-          "net": 10625
+          "net": 10688
         },
         {
           "month": "Feb 2026",
@@ -16977,739 +17155,39 @@
           "repo": "pdf-handouts"
         }
       ],
-      "progress": 70,
-      "goals": [],
-      "completed_goals": [],
+      "progress": 60,
+      "goals": [
+        "Goal 1",
+        "Goal 2",
+        "Goal 3"
+      ],
+      "completed_goals": [
+        "Goal 1"
+      ],
       "is_fork": false
     },
     {
-      "id": 145091675,
-      "name": "Practice-Bidding-Scenarios",
-      "full_name": "Rick-Wilson/Practice-Bidding-Scenarios",
-      "description": "Practice Bidding Scenarios",
-      "language": "Unknown",
-      "stars": 0,
-      "forks": 0,
-      "open_issues": 0,
-      "loc": {},
-      "commits": 17,
-      "recent_commits": 0,
-      "last_commit": "2025-10-11T13:36:23-05:00",
-      "created_at": "2025-10-11T13:36:23-05:00",
-      "updated_at": "2025-10-11T13:36:23-05:00",
-      "url": "https://github.com/Rick-Wilson/Practice-Bidding-Scenarios",
-      "commit_history": [
-        {
-          "date": "2025-11-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-31",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-04",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-05",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-06",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-07",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-08",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-09",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-10",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-11",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-12",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-13",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-14",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-16",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-17",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-18",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-19",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-20",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-21",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-22",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-23",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-24",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-25",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-26",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-27",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-28",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-29",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-30",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-31",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-02-01",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-02-02",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-02-03",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        }
-      ],
-      "code_changes": [
-        {
-          "date": "2025-11-12",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-19",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-11-26",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-03",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-10",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-17",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-24",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2025-12-31",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-07",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-14",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-21",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-01-28",
-          "additions": 0,
-          "deletions": 0
-        }
-      ],
-      "monthly_loc_changes": [
-        {
-          "month": "Mar 2025",
-          "month_short": "Mar",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Apr 2025",
-          "month_short": "Apr",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "May 2025",
-          "month_short": "May",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jun 2025",
-          "month_short": "Jun",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jul 2025",
-          "month_short": "Jul",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Aug 2025",
-          "month_short": "Aug",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Sep 2025",
-          "month_short": "Sep",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Oct 2025",
-          "month_short": "Oct",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Nov 2025",
-          "month_short": "Nov",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Dec 2025",
-          "month_short": "Dec",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Jan 2026",
-          "month_short": "Jan",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        },
-        {
-          "month": "Feb 2026",
-          "month_short": "Feb",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
-        }
-      ],
-      "releases": [],
-      "progress": 45,
-      "goals": [],
-      "completed_goals": [],
-      "is_fork": true
-    },
-    {
-      "id": 3645538678,
-      "name": "printpdf",
-      "full_name": "Rick-Wilson/printpdf",
+      "id": 4039076663,
+      "name": "printpdf-fork",
+      "full_name": "Rick-Wilson/printpdf-fork",
       "description": "\ufeff# printpdf",
-      "language": "Unknown",
+      "language": "Rust",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
-      "loc": {},
+      "loc": {
+        "CSS": 381,
+        "JavaScript": 1275,
+        "Rust": 25342,
+        "Shell": 10,
+        "TOML": 177
+      },
       "commits": 3,
       "recent_commits": 3,
       "last_commit": "2026-01-31T11:37:45-08:00",
       "created_at": "2026-01-31T11:37:45-08:00",
       "updated_at": "2026-01-31T11:37:45-08:00",
-      "url": "https://github.com/Rick-Wilson/printpdf",
+      "url": "git@github.com:Rick-Wilson/printpdf",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -18388,9 +17866,9 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 2,
-          "deletions": 2,
-          "net": 0
+          "additions": 64,
+          "deletions": 3,
+          "net": 61
         },
         {
           "month": "Feb 2026",
@@ -18402,67 +17880,61 @@
       ],
       "releases": [
         {
-          "tag": "0.9.0",
-          "date": "2026-01-29T04:32:59+01:00",
-          "message": "Release 0.9.0, fix azul deps",
-          "repo": "printpdf"
-        },
-        {
           "tag": "0.8.2",
           "date": "2025-03-20T16:36:00+01:00",
           "message": "Fix glyph width being encoded even if glyph parsing fails",
-          "repo": "printpdf"
+          "repo": "printpdf-fork"
         },
         {
           "tag": "0.8.0",
           "date": "2025-03-17T12:09:50+01:00",
           "message": "Merge pull request #208 from Tommypop2/master",
-          "repo": "printpdf"
+          "repo": "printpdf-fork"
         },
         {
           "tag": "0.7.0",
           "date": "2024-01-24T04:28:33+01:00",
           "message": "Update README",
-          "repo": "printpdf"
+          "repo": "printpdf-fork"
         },
         {
           "tag": "0.6.0",
           "date": "2023-09-13T20:16:36+02:00",
           "message": "Release 0.6.0",
-          "repo": "printpdf"
+          "repo": "printpdf-fork"
         },
         {
           "tag": "v0.5.0",
           "date": "2021-12-18T20:48:00+01:00",
           "message": "Release 0.5.0",
-          "repo": "printpdf"
+          "repo": "printpdf-fork"
         }
       ],
-      "progress": 45,
+      "progress": 75,
       "goals": [],
       "completed_goals": [],
-      "is_fork": true
+      "is_fork": false
     },
     {
-      "id": 305270258,
+      "id": 2025653682,
       "name": "Vibe-Dashboard",
       "full_name": "Rick-Wilson/Vibe-Dashboard",
-      "description": "Vibe Dashboard",
-      "language": "Python",
+      "description": "Track status and history of my github projects. Use To-do list to project forward activity",
+      "language": "JSON",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
       "loc": {
-        "JSON": 269,
-        "Python": 959,
+        "JSON": 10426,
+        "Python": 1396,
         "Shell": 13
       },
-      "commits": 35,
-      "recent_commits": 35,
-      "last_commit": "2026-02-03T12:39:40Z",
-      "created_at": "2026-02-03T12:39:40Z",
-      "updated_at": "2026-02-03T12:39:40Z",
-      "url": "https://github.com/Rick-Wilson/Vibe-Dashboard",
+      "commits": 39,
+      "recent_commits": 38,
+      "last_commit": "2026-02-04T02:00:07-08:00",
+      "created_at": "2026-02-04T02:00:07-08:00",
+      "updated_at": "2026-02-04T02:00:07-08:00",
+      "url": "git@github.com:Rick-Wilson/Vibe-Dashboard",
       "commit_history": [
         {
           "date": "2025-11-06",
@@ -18988,19 +18460,19 @@
         },
         {
           "date": "2026-02-01",
-          "commits": 0,
+          "commits": 1,
           "additions": 0,
           "deletions": 0
         },
         {
           "date": "2026-02-02",
-          "commits": 0,
+          "commits": 1,
           "additions": 0,
           "deletions": 0
         },
         {
           "date": "2026-02-03",
-          "commits": 0,
+          "commits": 1,
           "additions": 0,
           "deletions": 0
         }
@@ -19058,13 +18530,13 @@
         },
         {
           "date": "2026-01-21",
-          "additions": 24122,
-          "deletions": 944
+          "additions": 24167,
+          "deletions": 981
         },
         {
           "date": "2026-01-28",
-          "additions": 298,
-          "deletions": 133
+          "additions": 443,
+          "deletions": 299
         }
       ],
       "monthly_loc_changes": [
@@ -19141,22 +18613,28 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 24167,
-          "deletions": 981,
-          "net": 23186
+          "additions": 24253,
+          "deletions": 1044,
+          "net": 23209
         },
         {
           "month": "Feb 2026",
           "month_short": "Feb",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
+          "additions": 190,
+          "deletions": 203,
+          "net": -13
         }
       ],
       "releases": [],
-      "progress": 70,
-      "goals": [],
-      "completed_goals": [],
+      "progress": 45,
+      "goals": [
+        "Goal 1",
+        "Goal 2",
+        "Goal 3"
+      ],
+      "completed_goals": [
+        "Goal 1"
+      ],
       "is_fork": false
     }
   ],
@@ -19246,12 +18724,6 @@
       "repo": "pbn-to-pdf"
     },
     {
-      "tag": "0.9.0",
-      "date": "2026-01-29T04:32:59+01:00",
-      "message": "Release 0.9.0, fix azul deps",
-      "repo": "printpdf"
-    },
-    {
       "tag": "v0.3.0",
       "date": "2026-01-28T07:15:35-08:00",
       "message": "Release v0.3.0",
@@ -19303,7 +18775,7 @@
       "tag": "v0.4.0",
       "date": "2026-01-21T10:34:04-08:00",
       "message": "Release v0.4.0",
-      "repo": "Dealer3"
+      "repo": "dealer3"
     },
     {
       "tag": "v0.3.0",
@@ -19381,43 +18853,43 @@
       "tag": "v0.3.0",
       "date": "2026-01-07T12:55:11-08:00",
       "message": "Release v0.3.0 - Fast Parallel Mode",
-      "repo": "Dealer3"
+      "repo": "dealer3"
     },
     {
       "tag": "v0.2.0",
       "date": "2026-01-04T19:06:32-08:00",
       "message": "v0.2.0 Release",
-      "repo": "Dealer3"
+      "repo": "dealer3"
     },
     {
       "tag": "v0.1.0",
       "date": "2026-01-01T18:37:47-08:00",
       "message": "Update release workflow to use action-gh-release",
-      "repo": "Dealer3"
+      "repo": "dealer3"
     },
     {
       "tag": "0.8.2",
       "date": "2025-03-20T16:36:00+01:00",
       "message": "Fix glyph width being encoded even if glyph parsing fails",
-      "repo": "printpdf"
+      "repo": "printpdf-fork"
     },
     {
       "tag": "0.8.0",
       "date": "2025-03-17T12:09:50+01:00",
       "message": "Merge pull request #208 from Tommypop2/master",
-      "repo": "printpdf"
+      "repo": "printpdf-fork"
     },
     {
       "tag": "0.7.0",
       "date": "2024-01-24T04:28:33+01:00",
       "message": "Update README",
-      "repo": "printpdf"
+      "repo": "printpdf-fork"
     },
     {
       "tag": "0.6.0",
       "date": "2023-09-13T20:16:36+02:00",
       "message": "Release 0.6.0",
-      "repo": "printpdf"
+      "repo": "printpdf-fork"
     },
     {
       "tag": "v0.0.12",
@@ -19471,7 +18943,7 @@
       "tag": "v0.5.0",
       "date": "2021-12-18T20:48:00+01:00",
       "message": "Release 0.5.0",
-      "repo": "printpdf"
+      "repo": "printpdf-fork"
     },
     {
       "tag": "v0.0.7",
@@ -19492,5 +18964,13 @@
       "repo": "bbo-pbs"
     }
   ],
-  "todos": []
+  "todos": [
+    {
+      "id": 1,
+      "text": "Example task - edit todos.json to customize",
+      "project": "Vibe-Dashboard",
+      "priority": "medium",
+      "done": false
+    }
+  ]
 }

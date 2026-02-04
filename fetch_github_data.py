@@ -719,15 +719,13 @@ def aggregate_commit_history(projects: list) -> list:
     return sorted(combined.values(), key=lambda x: x["date"])
 
 
-def generate_loc_history(projects: list) -> dict:
+def generate_loc_history(projects: list, loc_history_file: str = "loc_history.json") -> dict:
     """
-    Generate LOC growth history based on actual monthly git data.
-    Works backwards from current LOC using real additions/deletions.
+    Generate LOC growth history from accumulated measurements in loc_history.json.
+    Falls back to current LOC if no history file exists.
     Returns both aggregated history and per-repo breakdown.
     Excludes forks from LOC calculations.
     """
-    from calendar import monthrange
-    # Exclude forks from LOC calculations
     non_fork_projects = [p for p in projects if not p.get("is_fork", False)]
     total_loc = sum(sum(p.get("loc", {}).values()) for p in non_fork_projects)
     today = datetime.now()
@@ -744,79 +742,70 @@ def generate_loc_history(projects: list) -> dict:
             "month": datetime(year, month, 1).strftime("%b"),
             "year": year,
             "month_num": month,
-            "net": 0
+            "start_date": datetime(year, month, 1),
         })
 
-    # Calculate per-project LOC history (excluding forks)
+    # Try to load accumulated LOC history
+    loc_history = {}
+    if Path(loc_history_file).exists():
+        try:
+            with open(loc_history_file) as f:
+                loc_history = json.load(f).get("repos", {})
+        except (json.JSONDecodeError, IOError):
+            pass
+
+    # Build per-repo LOC history from measurements
     repos_history = []
     for p in non_fork_projects:
+        repo_name = p.get("name", "Unknown")
         project_loc = sum(p.get("loc", {}).values())
-        changes = p.get("monthly_loc_changes", [])
-
-        # Find first month with any commit activity (additions or deletions > 0)
-        first_active_month = None
-        for idx, change in enumerate(changes):
-            if change.get("additions", 0) > 0 or change.get("deletions", 0) > 0:
-                first_active_month = idx
-                break
-
-        # Work forwards: start at 0, accumulate net changes, end at current LOC
         loc_values = [0] * 12
 
-        if first_active_month is not None:
-            # Calculate total net change from first active month to now
-            total_net = sum(c.get("net", 0) for c in changes[first_active_month:])
+        repo_measurements = loc_history.get(repo_name, {}).get("measurements", {})
 
-            # Starting LOC = current LOC - all net changes since first activity
-            starting_loc = max(0, project_loc - total_net)
+        if repo_measurements:
+            # For each month, find the closest measurement
+            for idx, month_info in enumerate(months_data):
+                month_start = month_info["start_date"]
+                # Find measurements within this month or the closest one before
+                best_value = 0
+                best_date = None
+                for date_str, data in repo_measurements.items():
+                    try:
+                        measurement_date = datetime.strptime(date_str, "%Y-%m-%d")
+                        # Use measurements from this month or earlier
+                        if measurement_date <= month_start + timedelta(days=31):
+                            if measurement_date.year == month_start.year and measurement_date.month == month_start.month:
+                                # Exact month match - use this
+                                best_value = data.get("total", 0)
+                                best_date = measurement_date
+                            elif best_date is None or measurement_date > best_date:
+                                if measurement_date <= month_start:
+                                    best_value = data.get("total", 0)
+                                    best_date = measurement_date
+                    except ValueError:
+                        continue
+                loc_values[idx] = best_value
 
-            # Build forward from first active month
-            running = starting_loc
-            for i in range(first_active_month, 12):
-                if i < len(changes):
-                    running += changes[i].get("net", 0)
-                loc_values[i] = max(0, running)
-
-            # Ensure final value matches current LOC
+            # Ensure the final month uses current LOC
+            loc_values[11] = project_loc
+        else:
+            # No history - just show current LOC in the final month
             loc_values[11] = project_loc
 
         repos_history.append({
-            "name": p.get("name", "Unknown"),
+            "name": repo_name,
             "data": loc_values,
             "created_at": p.get("created_at", "")
         })
 
-    # Aggregate monthly net changes across non-fork projects
-    for p in non_fork_projects:
-        changes = p.get("monthly_loc_changes", [])
-        project_loc = sum(p.get("loc", {}).values())
-        for idx, change in enumerate(changes):
-            if idx < len(months_data):
-                # Cap net change to reasonable bounds (avoid HTML inflation)
-                net = change.get("net", 0)
-                # Limit to project's current LOC to avoid impossible values
-                capped_net = max(-project_loc, min(net, project_loc))
-                months_data[idx]["net"] += capped_net
-
-    # Calculate cumulative LOC working backwards from current total
-    history = []
-    running_loc = total_loc
-
-    # Start from the end (current month) and work backwards
-    loc_values = [0] * 12
-    loc_values[11] = total_loc
-
-    for i in range(10, -1, -1):
-        # Subtract the net change of the next month to get this month's ending LOC
-        running_loc -= months_data[i + 1]["net"]
-        # Floor at 10% of current LOC (there was some code before we started tracking)
-        loc_values[i] = max(int(total_loc * 0.1), running_loc)
-
-    # Build the history list
-    for i in range(12):
-        history.append({
-            "month": months_data[i]["month"],
-            "loc": loc_values[i]
+    # Build aggregated total history
+    total_history = []
+    for idx, month_info in enumerate(months_data):
+        month_total = sum(r["data"][idx] for r in repos_history)
+        total_history.append({
+            "month": month_info["month"],
+            "loc": month_total
         })
 
     # Sort repos by age (oldest first) so static repos appear as horizontal lines at bottom
@@ -824,7 +813,7 @@ def generate_loc_history(projects: list) -> dict:
 
     return {
         "months": [m["month"] for m in months_data],
-        "total": history,
+        "total": total_history,
         "repos": repos_history
     }
 
