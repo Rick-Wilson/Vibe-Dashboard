@@ -478,7 +478,7 @@ def count_lines_of_code(repo_path: str, tool: str = "scc") -> dict:
             if result.returncode == 0:
                 data = json.loads(result.stdout)
                 return {lang: info.get("code", 0) for lang, info in data.items()
-                        if lang not in ("Total", "HTML", "SVG") and isinstance(info, dict) and info.get("code", 0) > 0}
+                        if lang not in ("Total", "HTML", "SVG", "JSON") and isinstance(info, dict) and info.get("code", 0) > 0}
         
         elif tool == "cloc":
             result = subprocess.run(

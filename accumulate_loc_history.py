@@ -54,7 +54,7 @@ def run_tokei(repo_path: Path) -> dict:
             return {
                 lang: info.get("code", 0)
                 for lang, info in data.items()
-                if lang not in ("Total", "HTML", "SVG") and isinstance(info, dict) and info.get("code", 0) > 0
+                if lang not in ("Total", "HTML", "SVG", "JSON") and isinstance(info, dict) and info.get("code", 0) > 0
             }
     except (subprocess.TimeoutExpired, json.JSONDecodeError, FileNotFoundError):
         pass
