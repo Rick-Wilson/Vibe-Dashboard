@@ -9260,7 +9260,99 @@
           "commit": "2733b751"
         }
       }
+    },
+    "acbl-proxy": {
+      "measurements": {
+        "2026-02-03": {
+          "total": 44,
+          "languages": {
+            "JSON": 13,
+            "JavaScript": 31
+          },
+          "commit": "85eb458e"
+        },
+        "2026-02-04": {
+          "total": 44,
+          "languages": {
+            "JSON": 13,
+            "JavaScript": 31
+          },
+          "commit": "85eb458e"
+        }
+      }
+    },
+    "Bridge-Dealer-Scripts": {
+      "measurements": {
+        "2026-02-03": {
+          "total": 122,
+          "languages": {
+            "JavaScript": 122
+          },
+          "commit": "319c10fd"
+        },
+        "2026-02-04": {
+          "total": 122,
+          "languages": {
+            "JavaScript": 122
+          },
+          "commit": "319c10fd"
+        }
+      }
+    },
+    "Dealer3": {
+      "measurements": {
+        "2026-02-03": {
+          "total": 9286,
+          "languages": {
+            "C": 50,
+            "Pest": 130,
+            "PowerShell": 82,
+            "Rust": 8408,
+            "Shell": 524,
+            "TOML": 92
+          },
+          "commit": "d491751b"
+        },
+        "2026-02-04": {
+          "total": 9286,
+          "languages": {
+            "C": 50,
+            "Pest": 130,
+            "PowerShell": 82,
+            "Rust": 8408,
+            "Shell": 524,
+            "TOML": 92
+          },
+          "commit": "d491751b"
+        }
+      }
+    },
+    "printpdf": {
+      "measurements": {
+        "2026-02-03": {
+          "total": 27197,
+          "languages": {
+            "CSS": 381,
+            "JavaScript": 1275,
+            "Rust": 25354,
+            "Shell": 10,
+            "TOML": 177
+          },
+          "commit": "582d7012"
+        },
+        "2026-02-04": {
+          "total": 27197,
+          "languages": {
+            "CSS": 381,
+            "JavaScript": 1275,
+            "Rust": 25354,
+            "Shell": 10,
+            "TOML": 177
+          },
+          "commit": "582d7012"
+        }
+      }
     }
   },
-  "last_updated": "2026-02-04T19:35:35.619619+00:00"
+  "last_updated": "2026-02-04T19:42:12.089572+00:00"
 }
