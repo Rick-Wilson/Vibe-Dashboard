@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-04T20:00:45.969295+00:00",
+  "generated_at": "2026-02-04T20:08:31.545909+00:00",
   "stats": {
     "total_loc": 62100,
-    "total_commits": 659,
+    "total_commits": 660,
     "avg_progress": 58,
     "this_week_commits": 144,
     "last_week_commits": 95,
@@ -935,7 +935,7 @@
           972,
           1168
         ],
-        "created_at": "2026-02-04T11:58:01-08:00"
+        "created_at": "2026-02-04T12:05:50-08:00"
       },
       {
         "name": "bridge-wrangler",
@@ -959,7 +959,7 @@
   },
   "projects": [
     {
-      "id": 1800391194,
+      "id": 2339305107,
       "name": "acbl-proxy",
       "full_name": "Rick-Wilson/acbl-proxy",
       "description": "Repository: acbl-proxy",
@@ -1673,7 +1673,7 @@
       "is_fork": false
     },
     {
-      "id": 1738753731,
+      "id": 2778287618,
       "name": "Baker-Bridge",
       "full_name": "Rick-Wilson/Baker-Bridge",
       "description": "Baker Bridge",
@@ -2391,7 +2391,7 @@
       "is_fork": false
     },
     {
-      "id": 1987832693,
+      "id": 1472324655,
       "name": "BBA-CLI",
       "full_name": "Rick-Wilson/BBA-CLI",
       "description": "BBA-CLI",
@@ -3164,7 +3164,7 @@
       "is_fork": true
     },
     {
-      "id": 3331538434,
+      "id": 1959493172,
       "name": "bbo-pbs",
       "full_name": "Rick-Wilson/bbo-pbs",
       "description": "BBOalert",
@@ -3883,7 +3883,7 @@
       "is_fork": true
     },
     {
-      "id": 2399915781,
+      "id": 1823115079,
       "name": "Bridge-Attendance",
       "full_name": "Rick-Wilson/Bridge-Attendance",
       "description": "Bridge Class Attendance System",
@@ -4598,7 +4598,7 @@
       "is_fork": false
     },
     {
-      "id": 107124495,
+      "id": 2556161522,
       "name": "bridge-bots",
       "full_name": "Rick-Wilson/bridge-bots",
       "description": "bridge-bots",
@@ -5371,7 +5371,7 @@
       "is_fork": true
     },
     {
-      "id": 3039678627,
+      "id": 2844979307,
       "name": "Bridge-Classroom",
       "full_name": "Rick-Wilson/Bridge-Classroom",
       "description": "Repository: Bridge-Classroom",
@@ -6088,7 +6088,7 @@
       "is_fork": false
     },
     {
-      "id": 2108574235,
+      "id": 1120503,
       "name": "Bridge-Club-Game-Analysis",
       "full_name": "Rick-Wilson/Bridge-Club-Game-Analysis",
       "description": "Repository: Bridge-Club-Game-Analysis",
@@ -6800,7 +6800,7 @@
       "is_fork": false
     },
     {
-      "id": 297457916,
+      "id": 3926893869,
       "name": "Bridge-Dealer-Scripts",
       "full_name": "Rick-Wilson/Bridge-Dealer-Scripts",
       "description": "Bridge-Dealer-Scripts",
@@ -7514,7 +7514,7 @@
       "is_fork": false
     },
     {
-      "id": 324695321,
+      "id": 411161928,
       "name": "bridge-encodings",
       "full_name": "Rick-Wilson/bridge-encodings",
       "description": "bridge-encodings",
@@ -8229,7 +8229,7 @@
       "is_fork": false
     },
     {
-      "id": 135999053,
+      "id": 1185944034,
       "name": "Bridge-OCR",
       "full_name": "Rick-Wilson/Bridge-OCR",
       "description": "Repository: Bridge-OCR",
@@ -8941,7 +8941,7 @@
       "is_fork": false
     },
     {
-      "id": 1042723960,
+      "id": 1881438323,
       "name": "Bridge-Offline-Practice",
       "full_name": "Rick-Wilson/Bridge-Offline-Practice",
       "description": "Bridge Bidding Practice",
@@ -9656,7 +9656,7 @@
       "is_fork": false
     },
     {
-      "id": 2775241340,
+      "id": 320948901,
       "name": "Bridge-Parsers",
       "full_name": "Rick-Wilson/Bridge-Parsers",
       "description": "Bridge-Parsers",
@@ -10371,7 +10371,7 @@
       "is_fork": false
     },
     {
-      "id": 1364134853,
+      "id": 3342622825,
       "name": "bridge-solver",
       "full_name": "Rick-Wilson/bridge-solver",
       "description": "Repository: bridge-solver",
@@ -11093,7 +11093,7 @@
       "is_fork": false
     },
     {
-      "id": 202260250,
+      "id": 15151799,
       "name": "bridge-solver-xray",
       "full_name": "Rick-Wilson/bridge-solver-xray",
       "description": "Bridge Solver X-ray",
@@ -11805,7 +11805,7 @@
       "is_fork": true
     },
     {
-      "id": 1433768147,
+      "id": 2227789450,
       "name": "bridge-types",
       "full_name": "Rick-Wilson/bridge-types",
       "description": "bridge-types",
@@ -12520,7 +12520,7 @@
       "is_fork": false
     },
     {
-      "id": 1033466594,
+      "id": 392889275,
       "name": "bridge-wrangler",
       "full_name": "Rick-Wilson/bridge-wrangler",
       "description": "bridge-wrangler",
@@ -13297,7 +13297,7 @@
       "is_fork": false
     },
     {
-      "id": 3138795552,
+      "id": 1855365974,
       "name": "Dealer-cleanup",
       "full_name": "Rick-Wilson/Dealer-cleanup",
       "description": "Dealer by Hans van Staveren",
@@ -14009,7 +14009,7 @@
       "is_fork": true
     },
     {
-      "id": 629914795,
+      "id": 3185574639,
       "name": "Dealer3",
       "full_name": "Rick-Wilson/Dealer3",
       "description": "dealer3",
@@ -14753,7 +14753,7 @@
       "is_fork": false
     },
     {
-      "id": 4030951450,
+      "id": 3085216689,
       "name": "EDGAR-Defense-Toolkit",
       "full_name": "Rick-Wilson/EDGAR-Defense-Toolkit",
       "description": "EDGAR Defense Toolkit",
@@ -15468,7 +15468,7 @@
       "is_fork": false
     },
     {
-      "id": 877654523,
+      "id": 2969265199,
       "name": "pbn-to-pdf",
       "full_name": "Rick-Wilson/pbn-to-pdf",
       "description": "pbn-to-pdf",
@@ -16244,7 +16244,7 @@
       "is_fork": false
     },
     {
-      "id": 2125190541,
+      "id": 3012931879,
       "name": "pdf-handouts",
       "full_name": "Rick-Wilson/pdf-handouts",
       "description": "PDF Handouts",
@@ -16978,7 +16978,7 @@
       "is_fork": false
     },
     {
-      "id": 404285998,
+      "id": 3833789759,
       "name": "Practice-Bidding-Scenarios",
       "full_name": "Rick-Wilson/Practice-Bidding-Scenarios",
       "description": "Practice Bidding Scenarios",
@@ -17690,7 +17690,7 @@
       "is_fork": true
     },
     {
-      "id": 2791504536,
+      "id": 2579239995,
       "name": "printpdf",
       "full_name": "Rick-Wilson/printpdf",
       "description": "\ufeff# printpdf",
@@ -18439,7 +18439,7 @@
       "is_fork": true
     },
     {
-      "id": 804329691,
+      "id": 2703135122,
       "name": "Vibe-Dashboard",
       "full_name": "Rick-Wilson/Vibe-Dashboard",
       "description": "Vibe Dashboard",
@@ -18451,11 +18451,11 @@
         "Python": 1155,
         "Shell": 13
       },
-      "commits": 42,
+      "commits": 43,
       "recent_commits": 38,
-      "last_commit": "2026-02-04T11:58:01-08:00",
-      "created_at": "2026-02-04T11:58:01-08:00",
-      "updated_at": "2026-02-04T11:58:01-08:00",
+      "last_commit": "2026-02-04T12:05:50-08:00",
+      "created_at": "2026-02-04T12:05:50-08:00",
+      "updated_at": "2026-02-04T12:05:50-08:00",
       "url": "https://github.com/Rick-Wilson/Vibe-Dashboard",
       "commit_history": [
         {
@@ -19057,8 +19057,8 @@
         },
         {
           "date": "2026-01-28",
-          "additions": 11950,
-          "deletions": 4133
+          "additions": 13272,
+          "deletions": 8156
         }
       ],
       "monthly_loc_changes": [
@@ -19135,16 +19135,16 @@
         {
           "month": "Jan 2026",
           "month_short": "Jan",
-          "additions": 24253,
+          "additions": 24349,
           "deletions": 1044,
-          "net": 23209
+          "net": 23305
         },
         {
           "month": "Feb 2026",
           "month_short": "Feb",
-          "additions": 11697,
-          "deletions": 4037,
-          "net": 7660
+          "additions": 13019,
+          "deletions": 8060,
+          "net": 4959
         }
       ],
       "releases": [],
