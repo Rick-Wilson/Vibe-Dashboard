@@ -412,6 +412,17 @@
             "Shell": 909
           },
           "commit": "fb7d44a8"
+        },
+        "2026-02-08": {
+          "total": 8338,
+          "languages": {
+            "CSS": 1040,
+            "INI": 78,
+            "PowerShell": 194,
+            "Python": 6117,
+            "Shell": 909
+          },
+          "commit": "fb7d44a8"
         }
       }
     },
@@ -902,6 +913,20 @@
             "Visual Basic": 331
           },
           "commit": "3eec07a9"
+        },
+        "2026-02-08": {
+          "total": 6502,
+          "languages": {
+            "C#": 3753,
+            "MSBuild": 63,
+            "Python": 1369,
+            "Rust": 763,
+            "Shell": 188,
+            "TOML": 32,
+            "VBScript": 3,
+            "Visual Basic": 331
+          },
+          "commit": "3eec07a9"
         }
       }
     },
@@ -1366,6 +1391,16 @@
             "TeX": 1876
           },
           "commit": "e6feff55"
+        },
+        "2026-02-08": {
+          "total": 11340,
+          "languages": {
+            "CSS": 4,
+            "JavaScript": 9451,
+            "Shell": 9,
+            "TeX": 1876
+          },
+          "commit": "faab5419"
         }
       }
     },
@@ -1564,6 +1599,14 @@
           "commit": "283160a5"
         },
         "2026-02-07": {
+          "total": 909,
+          "languages": {
+            "Rust": 888,
+            "TOML": 21
+          },
+          "commit": "283160a5"
+        },
+        "2026-02-08": {
           "total": 909,
           "languages": {
             "Rust": 888,
@@ -1988,6 +2031,15 @@
             "TOML": 57
           },
           "commit": "457d3dff"
+        },
+        "2026-02-08": {
+          "total": 6535,
+          "languages": {
+            "Python": 6431,
+            "SQL": 47,
+            "TOML": 57
+          },
+          "commit": "457d3dff"
         }
       }
     },
@@ -2236,6 +2288,16 @@
             "Vue": 252
           },
           "commit": "56c1ca5b"
+        },
+        "2026-02-08": {
+          "total": 9403,
+          "languages": {
+            "JavaScript": 6708,
+            "Rust": 2387,
+            "TOML": 28,
+            "Vue": 280
+          },
+          "commit": "88a85e16"
         }
       }
     },
@@ -2432,6 +2494,11 @@
           "commit": "403b5ab5"
         },
         "2026-02-07": {
+          "total": 0,
+          "languages": {},
+          "commit": "403b5ab5"
+        },
+        "2026-02-08": {
           "total": 0,
           "languages": {},
           "commit": "403b5ab5"
@@ -2669,6 +2736,14 @@
           "commit": "cdbb70ba"
         },
         "2026-02-07": {
+          "total": 766,
+          "languages": {
+            "Rust": 756,
+            "TOML": 10
+          },
+          "commit": "cdbb70ba"
+        },
+        "2026-02-08": {
           "total": 766,
           "languages": {
             "Rust": 756,
@@ -3071,6 +3146,11 @@
           "total": 0,
           "languages": {},
           "commit": "259ad3b7"
+        },
+        "2026-02-08": {
+          "total": 0,
+          "languages": {},
+          "commit": "259ad3b7"
         }
       }
     },
@@ -3380,6 +3460,14 @@
             "Vue": 57
           },
           "commit": "3bd76a30"
+        },
+        "2026-02-08": {
+          "total": 1295,
+          "languages": {
+            "JavaScript": 1238,
+            "Vue": 57
+          },
+          "commit": "3bd76a30"
         }
       }
     },
@@ -3648,6 +3736,14 @@
             "TOML": 25
           },
           "commit": "78d118d2"
+        },
+        "2026-02-08": {
+          "total": 2405,
+          "languages": {
+            "Rust": 2380,
+            "TOML": 25
+          },
+          "commit": "78d118d2"
         }
       }
     },
@@ -3882,6 +3978,14 @@
           "commit": "dcdabe3f"
         },
         "2026-02-07": {
+          "total": 5058,
+          "languages": {
+            "Rust": 5029,
+            "TOML": 29
+          },
+          "commit": "dcdabe3f"
+        },
+        "2026-02-08": {
           "total": 5058,
           "languages": {
             "Rust": 5029,
@@ -4306,6 +4410,15 @@
             "Shell": 286
           },
           "commit": "a7a25d25"
+        },
+        "2026-02-08": {
+          "total": 5618,
+          "languages": {
+            "C++": 5294,
+            "Makefile": 38,
+            "Shell": 286
+          },
+          "commit": "a7a25d25"
         }
       }
     },
@@ -4540,6 +4653,14 @@
           "commit": "f3017fd5"
         },
         "2026-02-07": {
+          "total": 2396,
+          "languages": {
+            "Rust": 2388,
+            "TOML": 8
+          },
+          "commit": "f3017fd5"
+        },
+        "2026-02-08": {
           "total": 2396,
           "languages": {
             "Rust": 2388,
@@ -4808,6 +4929,15 @@
             "TOML": 14
           },
           "commit": "00181d76"
+        },
+        "2026-02-08": {
+          "total": 1797,
+          "languages": {
+            "Rust": 1746,
+            "Shell": 37,
+            "TOML": 14
+          },
+          "commit": "be0eada3"
         }
       }
     },
@@ -5315,6 +5445,16 @@
             "Happy": 637
           },
           "commit": "4fff8943"
+        },
+        "2026-02-08": {
+          "total": 3060,
+          "languages": {
+            "Batch": 3,
+            "C": 2132,
+            "C Header": 288,
+            "Happy": 637
+          },
+          "commit": "4fff8943"
         }
       }
     },
@@ -5541,6 +5681,14 @@
           "commit": "7d75119b"
         },
         "2026-02-07": {
+          "total": 3700,
+          "languages": {
+            "Rust": 3673,
+            "TOML": 27
+          },
+          "commit": "7d75119b"
+        },
+        "2026-02-08": {
           "total": 3700,
           "languages": {
             "Rust": 3673,
@@ -5847,6 +5995,14 @@
             "TOML": 16
           },
           "commit": "1a1a1e52"
+        },
+        "2026-02-08": {
+          "total": 13847,
+          "languages": {
+            "Rust": 13831,
+            "TOML": 16
+          },
+          "commit": "c91bfa2a"
         }
       }
     },
@@ -6153,6 +6309,14 @@
           "commit": "dd03bd0b"
         },
         "2026-02-07": {
+          "total": 5169,
+          "languages": {
+            "Rust": 5147,
+            "TOML": 22
+          },
+          "commit": "dd03bd0b"
+        },
+        "2026-02-08": {
           "total": 5169,
           "languages": {
             "Rust": 5147,
@@ -6668,6 +6832,16 @@
             "Python": 2203
           },
           "commit": "c2735e20"
+        },
+        "2026-02-08": {
+          "total": 3055,
+          "languages": {
+            "Batch": 473,
+            "JavaScript": 211,
+            "PowerShell": 168,
+            "Python": 2203
+          },
+          "commit": "c2735e20"
         }
       }
     },
@@ -6908,6 +7082,14 @@
             "Shell": 13
           },
           "commit": "4f21f960"
+        },
+        "2026-02-08": {
+          "total": 1168,
+          "languages": {
+            "Python": 1155,
+            "Shell": 13
+          },
+          "commit": "5fc73c8c"
         }
       }
     },
@@ -6947,6 +7129,13 @@
             "JavaScript": 31
           },
           "commit": "85eb458e"
+        },
+        "2026-02-08": {
+          "total": 31,
+          "languages": {
+            "JavaScript": 31
+          },
+          "commit": "85eb458e"
         }
       }
     },
@@ -6981,6 +7170,13 @@
           "commit": "319c10fd"
         },
         "2026-02-07": {
+          "total": 122,
+          "languages": {
+            "JavaScript": 122
+          },
+          "commit": "319c10fd"
+        },
+        "2026-02-08": {
           "total": 122,
           "languages": {
             "JavaScript": 122
@@ -7050,6 +7246,18 @@
             "TOML": 92
           },
           "commit": "d491751b"
+        },
+        "2026-02-08": {
+          "total": 9286,
+          "languages": {
+            "C": 50,
+            "Pest": 130,
+            "PowerShell": 82,
+            "Rust": 8408,
+            "Shell": 524,
+            "TOML": 92
+          },
+          "commit": "d491751b"
         }
       }
     },
@@ -7109,9 +7317,38 @@
             "TOML": 177
           },
           "commit": "582d7012"
+        },
+        "2026-02-08": {
+          "total": 27197,
+          "languages": {
+            "CSS": 381,
+            "JavaScript": 1275,
+            "Rust": 25354,
+            "Shell": 10,
+            "TOML": 177
+          },
+          "commit": "582d7012"
+        }
+      }
+    },
+    "Bridge-Lessons-by-Andrew-Rowberg": {
+      "measurements": {
+        "2026-02-07": {
+          "total": 674,
+          "languages": {
+            "Python": 674
+          },
+          "commit": "2471303a"
+        },
+        "2026-02-08": {
+          "total": 674,
+          "languages": {
+            "Python": 674
+          },
+          "commit": "2471303a"
         }
       }
     }
   },
-  "last_updated": "2026-02-07T12:30:06.853884+00:00"
+  "last_updated": "2026-02-08T12:31:37.092325+00:00"
 }
