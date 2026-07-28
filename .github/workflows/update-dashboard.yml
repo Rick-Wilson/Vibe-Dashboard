@@ -126,6 +126,7 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add dashboard_data.json loc_history.json apps_data.json
+          git add app_icons 2>/dev/null || true
 
           if git diff --staged --quiet; then
             echo "No changes to commit"

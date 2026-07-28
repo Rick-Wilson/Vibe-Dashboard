@@ -20,6 +20,7 @@ import argparse
 import json
 import os
 import re
+import shutil
 import sys
 import time
 from datetime import datetime, timezone
@@ -114,7 +115,34 @@ def parse_pbxproj(pbxproj_path):
     }
 
 
-def discover_xcode_apps(base_path, repo_meta=None, allowed_repos=None):
+def extract_app_icon(repo_dir, icon_out_dir, repo_name):
+    """Copy the app's largest AppIcon PNG into icon_out_dir/<repo>.png.
+
+    The largest PNG in an AppIcon.appiconset is the 1024px marketing icon
+    (or the single icon in modern single-size asset catalogs). Returns the
+    web-relative path to the copied icon, or None if no icon is found.
+    """
+    appicon_dirs = [p for p in repo_dir.rglob("AppIcon.appiconset")
+                    if "Pods" not in p.parts and ".build" not in p.parts
+                    and "Carthage" not in p.parts]
+    pngs = []
+    for d in appicon_dirs:
+        pngs.extend(d.glob("*.png"))
+    if not pngs:
+        return None
+    best = max(pngs, key=lambda p: p.stat().st_size)
+    if best.stat().st_size == 0:
+        return None
+    icon_out_dir.mkdir(parents=True, exist_ok=True)
+    dest = icon_out_dir / f"{repo_name}.png"
+    try:
+        shutil.copyfile(best, dest)
+    except Exception:
+        return None
+    return str(dest)  # e.g. "app_icons/MyApp.png" — served from the repo root
+
+
+def discover_xcode_apps(base_path, repo_meta=None, allowed_repos=None, icon_dir=None):
     """Find Xcode-project repos under base_path and extract their app metadata.
 
     repo_meta: optional {repo_name: {"full_name":..., "url":...}} to enrich rows.
@@ -143,6 +171,7 @@ def discover_xcode_apps(base_path, repo_meta=None, allowed_repos=None):
 
         app_name = proj.stem  # e.g. MyApp.xcodeproj -> MyApp
         rmeta = repo_meta.get(repo_dir.name, {})
+        icon = extract_app_icon(repo_dir, icon_dir, repo_dir.name) if icon_dir else None
         apps.append({
             "name": app_name,
             "repo": repo_dir.name,
@@ -152,6 +181,7 @@ def discover_xcode_apps(base_path, repo_meta=None, allowed_repos=None):
             "version": meta.get("version"),
             "build": meta.get("build"),
             "platforms": meta.get("platforms") or [],
+            "icon": icon,
             "xcodeproj": str(proj.relative_to(repo_dir)),
         })
     return apps
@@ -343,6 +373,8 @@ def main():
     parser.add_argument("--output", default="apps_data.json", help="Output JSON file")
     parser.add_argument("--dashboard-data", default="dashboard_data.json",
                         help="Existing dashboard_data.json to source repo url/full_name from")
+    parser.add_argument("--icon-dir", default="app_icons",
+                        help="Directory to copy each app's icon into (served from the repo root)")
     args = parser.parse_args()
 
     base = Path(args.path)
@@ -355,7 +387,8 @@ def main():
     # co-workers' repos and forks with Xcode projects don't appear as "my apps".
     # If dashboard_data.json is absent/empty, fall back to scanning everything.
     allowed_repos = set(repo_meta) or None
-    apps = discover_xcode_apps(base, repo_meta, allowed_repos=allowed_repos)
+    icon_dir = Path(args.icon_dir) if args.icon_dir else None
+    apps = discover_xcode_apps(base, repo_meta, allowed_repos=allowed_repos, icon_dir=icon_dir)
     print(f"📱 Found {len(apps)} repo(s) with an Xcode project"
           + (f" (restricted to {len(allowed_repos)} owner repos)" if allowed_repos else ""))
     for a in apps:
