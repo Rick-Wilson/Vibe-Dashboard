@@ -232,13 +232,17 @@ class ASCClient:
                 "version": a.get("versionString")}
 
     def testflight_state(self, app_id):
-        params = {"limit": 1, "sort": "-version", "include": "buildBetaDetail",
-                  "fields[buildBetaDetails]": "externalBuildState,internalBuildState"}
-        resp = self._get(f"/apps/{app_id}/builds", params)
-        det = next((i for i in resp.get("included", []) if i.get("type") == "buildBetaDetails"), None)
-        if not det:
+        # Two-step to keep each request simple/well-formed: fetch the latest
+        # build, then its beta detail. (The combined include+fields+sort form
+        # returns 400 from the builds endpoint.)
+        builds = self._get(f"/apps/{app_id}/builds",
+                           {"limit": 1, "sort": "-uploadedDate"}).get("data", [])
+        if not builds:
             return None
-        a = det["attributes"]
+        build_id = builds[0]["id"]
+        det = self._get(f"/builds/{build_id}/buildBetaDetail",
+                        {"fields[buildBetaDetails]": "externalBuildState,internalBuildState"})
+        a = (det.get("data") or {}).get("attributes") or {}
         return {"external": a.get("externalBuildState"), "internal": a.get("internalBuildState")}
 
 
@@ -276,26 +280,44 @@ def enrich_with_asc(apps, client):
             app["status"] = derive_status(None, None, False)
             app["status"]["note"] = "no bundle id parsed"
             continue
+
         try:
             asc_app = client.find_app(bundle_id)
-            if not asc_app:
-                app["status"] = derive_status(None, None, False)
-                continue
-            app_id = asc_app["id"]
-            # Prefer ASC's marketing name over the .xcodeproj filename
-            asc_name = (asc_app.get("attributes") or {}).get("name")
-            if asc_name:
-                app["name"] = asc_name
-            store = client.store_state(app_id)
-            testflight = client.testflight_state(app_id)
-            app["store"] = store
-            app["testflight"] = testflight
-            app["status"] = derive_status(store, testflight, True)
-            if store and store.get("state") in ("READY_FOR_SALE", "REPLACED_WITH_NEW_VERSION"):
-                app["store"]["url"] = f"https://apps.apple.com/app/id{app_id}"
         except Exception as e:
             app["status"] = derive_status(None, None, False)
-            app["status"]["note"] = f"ASC lookup failed: {e}"
+            app["status"]["note"] = f"ASC app lookup failed: {e}"
+            continue
+        if not asc_app:
+            app["status"] = derive_status(None, None, False)
+            continue
+
+        app_id = asc_app["id"]
+        # Prefer ASC's marketing name over the .xcodeproj filename
+        asc_name = (asc_app.get("attributes") or {}).get("name")
+        if asc_name:
+            app["name"] = asc_name
+
+        # Fetch store and TestFlight state independently so a failure in one
+        # never discards the other (a released app must still show as Released
+        # even if the TestFlight lookup hiccups).
+        store = testflight = None
+        notes = []
+        try:
+            store = client.store_state(app_id)
+        except Exception as e:
+            notes.append(f"store lookup failed: {e}")
+        try:
+            testflight = client.testflight_state(app_id)
+        except Exception as e:
+            notes.append(f"testflight lookup failed: {e}")
+
+        app["store"] = store
+        app["testflight"] = testflight
+        app["status"] = derive_status(store, testflight, True)
+        if store and store.get("state") in ("READY_FOR_SALE", "REPLACED_WITH_NEW_VERSION"):
+            app["store"]["url"] = f"https://apps.apple.com/app/id{app_id}"
+        if notes:
+            app["status"]["note"] = "; ".join(notes)
     return apps
 
 
