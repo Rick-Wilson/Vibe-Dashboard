@@ -115,6 +115,18 @@ def parse_pbxproj(pbxproj_path):
     }
 
 
+def detect_ship_signals(repo_dir):
+    """Detect repo-side 'ready to ship' signals: App Store screenshots and
+    store metadata (fastlane deliver). Returns (has_screenshots, has_metadata).
+    """
+    meta_candidates = [repo_dir / "fastlane" / "metadata"] + list(repo_dir.glob("*/fastlane/metadata"))
+    shot_candidates = ([repo_dir / "fastlane" / "screenshots", repo_dir / "Screenshots", repo_dir / "screenshots"]
+                       + list(repo_dir.glob("*/fastlane/screenshots")))
+    has_metadata = any(p.is_dir() for p in meta_candidates)
+    has_screenshots = any(p.is_dir() and next(p.rglob("*.png"), None) is not None for p in shot_candidates)
+    return has_screenshots, has_metadata
+
+
 def extract_app_icon(repo_dir, icon_out_dir, repo_name):
     """Copy the app's largest AppIcon PNG into icon_out_dir/<repo>.png.
 
@@ -172,17 +184,27 @@ def discover_xcode_apps(base_path, repo_meta=None, allowed_repos=None, icon_dir=
         app_name = proj.stem  # e.g. MyApp.xcodeproj -> MyApp
         rmeta = repo_meta.get(repo_dir.name, {})
         icon = extract_app_icon(repo_dir, icon_dir, repo_dir.name) if icon_dir else None
+        has_screenshots, has_metadata = detect_ship_signals(repo_dir)
         apps.append({
             "name": app_name,
             "repo": repo_dir.name,
             "full_name": rmeta.get("full_name", repo_dir.name),
             "url": rmeta.get("url", ""),
+            "last_commit": rmeta.get("last_commit", ""),
             "bundle_id": meta.get("bundle_id"),
             "version": meta.get("version"),
             "build": meta.get("build"),
             "platforms": meta.get("platforms") or [],
             "icon": icon,
             "xcodeproj": str(proj.relative_to(repo_dir)),
+            # Ship-readiness signals; asc_registered/testflight filled in later.
+            "readiness": {
+                "icon": bool(icon),
+                "asc_registered": False,
+                "testflight": False,
+                "screenshots": has_screenshots,
+                "metadata": has_metadata,
+            },
         })
     return apps
 
@@ -323,6 +345,7 @@ def enrich_with_asc(apps, client):
             continue
 
         app_id = asc_app["id"]
+        app.setdefault("readiness", {})["asc_registered"] = True
         # Prefer ASC's marketing name over the .xcodeproj filename
         asc_name = (asc_app.get("attributes") or {}).get("name")
         if asc_name:
@@ -344,6 +367,7 @@ def enrich_with_asc(apps, client):
 
         app["store"] = store
         app["testflight"] = testflight
+        app.setdefault("readiness", {})["testflight"] = bool(testflight)
         app["status"] = derive_status(store, testflight, True)
         if store and store.get("state") in ("READY_FOR_SALE", "REPLACED_WITH_NEW_VERSION"):
             app["store"]["url"] = f"https://apps.apple.com/app/id{app_id}"
@@ -361,7 +385,8 @@ def load_repo_meta(dashboard_data_file):
             data = json.load(open(p))
             for proj in data.get("projects", []):
                 meta[proj.get("name")] = {"full_name": proj.get("full_name", ""),
-                                          "url": proj.get("url", "")}
+                                          "url": proj.get("url", ""),
+                                          "last_commit": proj.get("last_commit", "")}
         except (json.JSONDecodeError, IOError):
             pass
     return meta
@@ -414,10 +439,14 @@ def main():
         for a in apps:
             a["status"] = derive_status(None, None, False)
 
-    # Sort: by status category priority, then name
-    order = {"released": 0, "review": 1, "testflight": 2, "rejected": 3,
-             "removed": 4, "development": 5, "other": 6}
-    apps.sort(key=lambda a: (order.get(a.get("status", {}).get("category", "other"), 9), a["name"].lower()))
+    # Sort to surface the work: in-development first (most stale first, so the
+    # most-languishing app is at the very top), then review/testflight, with
+    # shipped apps last.
+    order = {"development": 0, "review": 1, "rejected": 2, "testflight": 3,
+             "released": 4, "removed": 5, "other": 6}
+    apps.sort(key=lambda a: (order.get(a.get("status", {}).get("category", "other"), 9),
+                             a.get("last_commit") or "9999",  # oldest last-commit first within a group
+                             a["name"].lower()))
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),

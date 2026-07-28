@@ -1142,6 +1142,46 @@
                 ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
         }
 
+        function daysSince(iso) {
+            if (!iso) return null;
+            const d = (Date.now() - new Date(iso).getTime()) / 86400000;
+            return isFinite(d) ? Math.max(0, Math.floor(d)) : null;
+        }
+
+        function stalenessHtml(iso) {
+            const d = daysSince(iso);
+            if (d === null) return '';
+            let cls = 'text-slate-500';
+            if (d >= 90) cls = 'text-red-400'; else if (d >= 30) cls = 'text-amber-400';
+            const label = d === 0 ? 'today' : (d === 1 ? '1 day ago' : `${d} days ago`);
+            return `<span class="text-xs ${cls}">🕓 last worked ${label}</span>`;
+        }
+
+        // Ship-readiness checklist for apps not yet released.
+        const READINESS_ITEMS = [
+            ['icon', 'App icon'],
+            ['asc_registered', 'In App Store Connect'],
+            ['testflight', 'TestFlight build'],
+            ['screenshots', 'Screenshots'],
+            ['metadata', 'Store metadata'],
+        ];
+        function readinessHtml(a) {
+            const r = a.readiness;
+            if (!r || (a.status && a.status.category === 'released')) return '';
+            const done = READINESS_ITEMS.filter(([k]) => r[k]).length;
+            const rows = READINESS_ITEMS.map(([k, label]) => `
+                <div class="flex items-center gap-2 text-xs ${r[k] ? 'text-slate-400' : 'text-slate-500'}">
+                    <span class="${r[k] ? 'text-emerald-400' : 'text-slate-600'}">${r[k] ? '✓' : '○'}</span>${label}
+                </div>`).join('');
+            return `<div class="mt-3 pt-3 border-t border-slate-800/50">
+                <div class="flex items-center justify-between mb-1.5">
+                    <span class="text-[11px] uppercase tracking-wide text-slate-600">To ship</span>
+                    <span class="text-[11px] text-slate-500">${done}/${READINESS_ITEMS.length}</span>
+                </div>
+                <div class="space-y-1">${rows}</div>
+            </div>`;
+        }
+
         function renderAppsTab() {
             const summary = document.getElementById('apps-summary');
             const list = document.getElementById('apps-list');
@@ -1197,8 +1237,11 @@
                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">` : ''}
                     <div class="w-14 h-14 rounded-2xl items-center justify-center bg-slate-800/60" style="display:${a.icon ? 'none' : 'flex'}">${glyphSvg}</div>
                 </div>`;
+                const isReleased = status.category === 'released';
+                const borderCls = isReleased ? 'border-slate-800/50' : 'border-violet-500/25';
+                const staleness = stalenessHtml(a.last_commit);
                 return `
-                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-emerald-500/30 transition-all flex flex-col">
+                <div class="bg-slate-900/50 border ${borderCls} rounded-xl p-5 hover:border-emerald-500/40 transition-all flex flex-col">
                     <div class="flex items-start gap-3">
                         ${icon}
                         <div class="min-w-0 flex-1">
@@ -1207,6 +1250,8 @@
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">${platforms}${version ? `<span class="text-xs text-slate-500">${version}</span>` : ''}</div>
                         </div>
                     </div>
+                    ${staleness ? `<div class="mt-2">${staleness}</div>` : ''}
+                    ${readinessHtml(a)}
                     <div class="mt-auto pt-4 flex items-center justify-between gap-2">
                         <span class="text-xs px-3 py-1 rounded-full ${style.badge}">${esc(status.label)} ${note}</span>
                         <div class="flex items-center text-right">${links}</div>
