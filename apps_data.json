@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-07-28T01:04:34.733274+00:00",
+  "count": 6,
+  "apps": [
+    {
+      "name": "ACBL Live Fetch and Analyze",
+      "repo": "acbl-live-fetch",
+      "full_name": "bridge-craftwork/acbl-live-fetch",
+      "url": "https://github.com/bridge-craftwork/acbl-live-fetch",
+      "bundle_id": "org.bridge-classroom.acbl-live-fetch",
+      "version": "1.0",
+      "build": "1",
+      "platforms": [
+        "iOS",
+        "macOS"
+      ],
+      "xcodeproj": "safari/ACBL Live Fetch and Analyze/ACBL Live Fetch and Analyze.xcodeproj",
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development"
+      }
+    },
+    {
+      "name": "BTLabel",
+      "repo": "BT-Label-Printing-App",
+      "full_name": "harmonic-systems-home/BT-Label-Printing-App",
+      "url": "https://github.com/harmonic-systems-home/BT-Label-Printing-App",
+      "bundle_id": "com.popperbiz.BTLabel",
+      "version": "1.0",
+      "build": "5",
+      "platforms": [
+        "iOS",
+        "macOS",
+        "visionOS"
+      ],
+      "xcodeproj": "BTLabel/BTLabel.xcodeproj",
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development",
+        "note": "ASC lookup failed: 400 Client Error: Bad Request for url: https://api.appstoreconnect.apple.com/v1/apps/6780239795/builds?limit=1&sort=-version&include=buildBetaDetail&fields%5BbuildBetaDetails%5D=externalBuildState%2CinternalBuildState"
+      }
+    },
+    {
+      "name": "IceQueue",
+      "repo": "ice-queue",
+      "full_name": "harmonic-systems-home/ice-queue",
+      "url": "https://github.com/harmonic-systems-home/ice-queue",
+      "bundle_id": "com.github.rick-wilson.IceQueue",
+      "version": "1.0",
+      "build": "1",
+      "platforms": [
+        "iOS",
+        "macOS",
+        "visionOS"
+      ],
+      "xcodeproj": "IceQueue/IceQueue.xcodeproj",
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development"
+      }
+    },
+    {
+      "name": "Kennit",
+      "repo": "Kennit-App",
+      "full_name": "harmonic-systems-home/Kennit-App",
+      "url": "https://github.com/harmonic-systems-home/Kennit-App",
+      "bundle_id": "com.popperbiz.kennit",
+      "version": "1.0",
+      "build": "1",
+      "platforms": [
+        "iOS",
+        "macOS"
+      ],
+      "xcodeproj": "Kennit.xcodeproj",
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development",
+        "note": "ASC lookup failed: 400 Client Error: Bad Request for url: https://api.appstoreconnect.apple.com/v1/apps/6775224401/builds?limit=1&sort=-version&include=buildBetaDetail&fields%5BbuildBetaDetails%5D=externalBuildState%2CinternalBuildState"
+      }
+    },
+    {
+      "name": "LessonStage",
+      "repo": "lesson-stage",
+      "full_name": "bridge-craftwork/lesson-stage",
+      "url": "https://github.com/bridge-craftwork/lesson-stage",
+      "bundle_id": "com.popperbiz.LessonStage",
+      "version": "0.1.0",
+      "build": "1",
+      "platforms": [
+        "iOS"
+      ],
+      "xcodeproj": "app/LessonStage.xcodeproj",
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development"
+      }
+    },
+    {
+      "name": "PBS with BBA Compare",
+      "repo": "pbs-bbo-extension",
+      "full_name": "bridge-craftwork/pbs-bbo-extension",
+      "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
+      "bundle_id": "com.rickwilson.PBS-with-BBA-Compare",
+      "version": "1.0.0",
+      "build": "3",
+      "platforms": [
+        "macOS"
+      ],
+      "xcodeproj": "safari/PBS with BBA Compare/PBS with BBA Compare.xcodeproj",
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development",
+        "note": "ASC lookup failed: 400 Client Error: Bad Request for url: https://api.appstoreconnect.apple.com/v1/apps/6760272056/builds?limit=1&sort=-version&include=buildBetaDetail&fields%5BbuildBetaDetails%5D=externalBuildState%2CinternalBuildState"
+      }
+    }
+  ]
+}
