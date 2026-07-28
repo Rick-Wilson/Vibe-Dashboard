@@ -24,7 +24,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install Python dependencies
-        run: pip install requests python-dateutil
+        run: pip install requests python-dateutil "pyjwt[crypto]"
 
       - name: Install tokei for LOC counting
         run: |
@@ -107,11 +107,25 @@ jobs:
             --exclude-dir "home-assistant:config/blueprints" "home-assistant:config/www" "home-assistant:config/image" "home-assistant:config/custom_components" \
             --output dashboard_data.json
 
+      - name: Generate app status
+        env:
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+        run: |
+          # Scans ./repos for Xcode projects and, if the ASC_* secrets are set,
+          # enriches each app with live App Store Connect release status.
+          # Without the secrets it still emits the app inventory (status=Development).
+          python fetch_app_status.py \
+            --path ./repos \
+            --dashboard-data dashboard_data.json \
+            --output apps_data.json
+
       - name: Commit and push if changed
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add dashboard_data.json loc_history.json
+          git add dashboard_data.json loc_history.json apps_data.json
 
           if git diff --staged --quiet; then
             echo "No changes to commit"
