@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T01:21:52.795238+00:00",
+  "generated_at": "2026-07-28T01:35:14.865645+00:00",
   "count": 6,
   "apps": [
     {
@@ -15,6 +15,7 @@
         "macOS",
         "visionOS"
       ],
+      "icon": "app_icons/BT-Label-Printing-App.png",
       "xcodeproj": "BTLabel/BTLabel.xcodeproj",
       "store": {
         "state": "READY_FOR_SALE",
@@ -41,6 +42,7 @@
       "platforms": [
         "macOS"
       ],
+      "icon": "app_icons/pbs-bbo-extension.png",
       "xcodeproj": "safari/PBS with BBA Compare/PBS with BBA Compare.xcodeproj",
       "store": {
         "state": "READY_FOR_SALE",
@@ -68,6 +70,7 @@
         "iOS",
         "macOS"
       ],
+      "icon": "app_icons/Kennit-App.png",
       "xcodeproj": "Kennit.xcodeproj",
       "store": {
         "state": "PREPARE_FOR_SUBMISSION",
@@ -94,6 +97,7 @@
         "iOS",
         "macOS"
       ],
+      "icon": null,
       "xcodeproj": "safari/ACBL Live Fetch and Analyze/ACBL Live Fetch and Analyze.xcodeproj",
       "store": null,
       "testflight": null,
@@ -115,6 +119,7 @@
         "macOS",
         "visionOS"
       ],
+      "icon": null,
       "xcodeproj": "IceQueue/IceQueue.xcodeproj",
       "store": null,
       "testflight": null,
@@ -134,6 +139,7 @@
       "platforms": [
         "iOS"
       ],
+      "icon": null,
       "xcodeproj": "app/LessonStage.xcodeproj",
       "store": null,
       "testflight": null,
