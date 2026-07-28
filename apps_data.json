@@ -1,34 +1,127 @@
 {
-  "generated_at": "2026-07-28T01:35:14.865645+00:00",
+  "generated_at": "2026-07-28T04:03:31.711028+00:00",
   "count": 6,
   "apps": [
     {
-      "name": "BTLabel",
-      "repo": "BT-Label-Printing-App",
-      "full_name": "harmonic-systems-home/BT-Label-Printing-App",
-      "url": "https://github.com/harmonic-systems-home/BT-Label-Printing-App",
-      "bundle_id": "com.popperbiz.BTLabel",
+      "name": "IceQueue",
+      "repo": "ice-queue",
+      "full_name": "harmonic-systems-home/ice-queue",
+      "url": "https://github.com/harmonic-systems-home/ice-queue",
+      "last_commit": "2026-03-28T10:55:36-07:00",
+      "bundle_id": "com.github.rick-wilson.IceQueue",
       "version": "1.0",
-      "build": "5",
+      "build": "1",
       "platforms": [
         "iOS",
         "macOS",
         "visionOS"
       ],
-      "icon": "app_icons/BT-Label-Printing-App.png",
-      "xcodeproj": "BTLabel/BTLabel.xcodeproj",
+      "icon": null,
+      "xcodeproj": "IceQueue/IceQueue.xcodeproj",
+      "readiness": {
+        "icon": false,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development"
+      }
+    },
+    {
+      "name": "ACBL Live Fetch and Analyze",
+      "repo": "acbl-live-fetch",
+      "full_name": "bridge-craftwork/acbl-live-fetch",
+      "url": "https://github.com/bridge-craftwork/acbl-live-fetch",
+      "last_commit": "2026-06-01T16:50:12-07:00",
+      "bundle_id": "org.bridge-classroom.acbl-live-fetch",
+      "version": "1.0",
+      "build": "1",
+      "platforms": [
+        "iOS",
+        "macOS"
+      ],
+      "icon": null,
+      "xcodeproj": "safari/ACBL Live Fetch and Analyze/ACBL Live Fetch and Analyze.xcodeproj",
+      "readiness": {
+        "icon": false,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development"
+      }
+    },
+    {
+      "name": "LessonStage",
+      "repo": "lesson-stage",
+      "full_name": "bridge-craftwork/lesson-stage",
+      "url": "https://github.com/bridge-craftwork/lesson-stage",
+      "last_commit": "2026-07-27T20:48:52-07:00",
+      "bundle_id": "com.popperbiz.LessonStage",
+      "version": "0.1.0",
+      "build": "1",
+      "platforms": [
+        "iOS"
+      ],
+      "icon": null,
+      "xcodeproj": "app/LessonStage.xcodeproj",
+      "readiness": {
+        "icon": false,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development"
+      }
+    },
+    {
+      "name": "Kennit",
+      "repo": "Kennit-App",
+      "full_name": "harmonic-systems-home/Kennit-App",
+      "url": "https://github.com/harmonic-systems-home/Kennit-App",
+      "last_commit": "2026-07-27T09:15:15-07:00",
+      "bundle_id": "com.popperbiz.kennit",
+      "version": "1.0",
+      "build": "1",
+      "platforms": [
+        "iOS",
+        "macOS"
+      ],
+      "icon": "app_icons/Kennit-App.png",
+      "xcodeproj": "Kennit.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": true,
+        "testflight": true,
+        "screenshots": false,
+        "metadata": false
+      },
       "store": {
-        "state": "READY_FOR_SALE",
-        "version": "1.0",
-        "url": "https://apps.apple.com/app/id6780239795"
+        "state": "PREPARE_FOR_SUBMISSION",
+        "version": "1.0"
       },
       "testflight": {
-        "external": "READY_FOR_BETA_SUBMISSION",
+        "external": "IN_BETA_TESTING",
         "internal": "IN_BETA_TESTING"
       },
       "status": {
-        "label": "Released",
-        "category": "released"
+        "label": "TestFlight",
+        "category": "testflight"
       }
     },
     {
@@ -36,6 +129,7 @@
       "repo": "pbs-bbo-extension",
       "full_name": "bridge-craftwork/pbs-bbo-extension",
       "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
+      "last_commit": "2026-03-20T11:35:41-07:00",
       "bundle_id": "com.rickwilson.PBS-with-BBA-Compare",
       "version": "1.0.0",
       "build": "3",
@@ -44,6 +138,13 @@
       ],
       "icon": "app_icons/pbs-bbo-extension.png",
       "xcodeproj": "safari/PBS with BBA Compare/PBS with BBA Compare.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": true,
+        "testflight": true,
+        "screenshots": false,
+        "metadata": false
+      },
       "store": {
         "state": "READY_FOR_SALE",
         "version": "1.0",
@@ -59,93 +160,40 @@
       }
     },
     {
-      "name": "Kennit",
-      "repo": "Kennit-App",
-      "full_name": "harmonic-systems-home/Kennit-App",
-      "url": "https://github.com/harmonic-systems-home/Kennit-App",
-      "bundle_id": "com.popperbiz.kennit",
+      "name": "BTLabel",
+      "repo": "BT-Label-Printing-App",
+      "full_name": "harmonic-systems-home/BT-Label-Printing-App",
+      "url": "https://github.com/harmonic-systems-home/BT-Label-Printing-App",
+      "last_commit": "2026-06-23T17:42:19-07:00",
+      "bundle_id": "com.popperbiz.BTLabel",
       "version": "1.0",
-      "build": "1",
-      "platforms": [
-        "iOS",
-        "macOS"
-      ],
-      "icon": "app_icons/Kennit-App.png",
-      "xcodeproj": "Kennit.xcodeproj",
-      "store": {
-        "state": "PREPARE_FOR_SUBMISSION",
-        "version": "1.0"
-      },
-      "testflight": {
-        "external": "IN_BETA_TESTING",
-        "internal": "IN_BETA_TESTING"
-      },
-      "status": {
-        "label": "TestFlight",
-        "category": "testflight"
-      }
-    },
-    {
-      "name": "ACBL Live Fetch and Analyze",
-      "repo": "acbl-live-fetch",
-      "full_name": "bridge-craftwork/acbl-live-fetch",
-      "url": "https://github.com/bridge-craftwork/acbl-live-fetch",
-      "bundle_id": "org.bridge-classroom.acbl-live-fetch",
-      "version": "1.0",
-      "build": "1",
-      "platforms": [
-        "iOS",
-        "macOS"
-      ],
-      "icon": null,
-      "xcodeproj": "safari/ACBL Live Fetch and Analyze/ACBL Live Fetch and Analyze.xcodeproj",
-      "store": null,
-      "testflight": null,
-      "status": {
-        "label": "Development",
-        "category": "development"
-      }
-    },
-    {
-      "name": "IceQueue",
-      "repo": "ice-queue",
-      "full_name": "harmonic-systems-home/ice-queue",
-      "url": "https://github.com/harmonic-systems-home/ice-queue",
-      "bundle_id": "com.github.rick-wilson.IceQueue",
-      "version": "1.0",
-      "build": "1",
+      "build": "5",
       "platforms": [
         "iOS",
         "macOS",
         "visionOS"
       ],
-      "icon": null,
-      "xcodeproj": "IceQueue/IceQueue.xcodeproj",
-      "store": null,
-      "testflight": null,
+      "icon": "app_icons/BT-Label-Printing-App.png",
+      "xcodeproj": "BTLabel/BTLabel.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": true,
+        "testflight": true,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": {
+        "state": "READY_FOR_SALE",
+        "version": "1.0",
+        "url": "https://apps.apple.com/app/id6780239795"
+      },
+      "testflight": {
+        "external": "READY_FOR_BETA_SUBMISSION",
+        "internal": "IN_BETA_TESTING"
+      },
       "status": {
-        "label": "Development",
-        "category": "development"
-      }
-    },
-    {
-      "name": "LessonStage",
-      "repo": "lesson-stage",
-      "full_name": "bridge-craftwork/lesson-stage",
-      "url": "https://github.com/bridge-craftwork/lesson-stage",
-      "bundle_id": "com.popperbiz.LessonStage",
-      "version": "0.1.0",
-      "build": "1",
-      "platforms": [
-        "iOS"
-      ],
-      "icon": null,
-      "xcodeproj": "app/LessonStage.xcodeproj",
-      "store": null,
-      "testflight": null,
-      "status": {
-        "label": "Development",
-        "category": "development"
+        "label": "Released",
+        "category": "released"
       }
     }
   ]
