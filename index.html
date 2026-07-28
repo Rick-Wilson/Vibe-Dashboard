@@ -94,6 +94,8 @@
                                 <option value="30">30 days</option>
                                 <option value="60">60 days</option>
                                 <option value="90" selected>90 days</option>
+                                <option value="180">6 months</option>
+                                <option value="365">1 year</option>
                             </select>
                         </div>
                         <canvas id="commitChart" height="100"></canvas>
@@ -208,10 +210,18 @@
         // URL parameter helpers
         function getUrlParams() {
             const params = new URLSearchParams(window.location.search);
+            const daysParam = parseInt(params.get('days'));
+            const monthsParam = parseInt(params.get('months'));
+            // Commit Activity is driven by ?days=N. As a convenience, ?months=N
+            // also drives it (≈30 days/month, capped to the 1-year data window)
+            // so a single param can widen both time-based panels.
+            let commitDays = 90;
+            if (daysParam) commitDays = daysParam;
+            else if (monthsParam) commitDays = Math.min(monthsParam * 30, 365);
             return {
                 repo: params.get('repo') || 'all',
-                commitDays: parseInt(params.get('days')) || 90,
-                growthMonths: parseInt(params.get('months')) || 12,
+                commitDays: commitDays,
+                growthMonths: monthsParam || 12,
                 tab: params.get('tab') || 'overview'
             };
         }

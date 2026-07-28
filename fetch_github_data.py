@@ -405,7 +405,7 @@ class LocalRepoScanner:
         return ""
 
 
-def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_loc: bool = False, exclude_dirs: list = None) -> dict:
+def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_loc: bool = False, exclude_dirs: list = None, commit_days: int = 365) -> dict:
     """Fetch all data for a single local project."""
     fork_indicator = " (fork)" if skip_loc else ""
     print(f"\n📊 Processing {repo_path.name}{fork_indicator}...")
@@ -420,10 +420,10 @@ def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_lo
     else:
         loc = count_lines_of_code(str(repo_path), CONFIG["loc_tool"], exclude_dirs=exclude_dirs)
 
-    # Commits (last 90 days)
-    since = datetime.now() - timedelta(days=90)
+    # Commits (configurable window; default 1 year)
+    since = datetime.now() - timedelta(days=commit_days)
     commits = scanner.get_commits_since(repo_path, since)
-    commit_history = process_commit_history(commits)
+    commit_history = process_commit_history(commits, days=commit_days)
 
     # Total commits
     total_commits = scanner.get_commit_count(repo_path)
@@ -452,7 +452,7 @@ def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_lo
         "open_issues": 0,  # Not available locally
         "loc": loc,
         "commits": total_commits,
-        "recent_commits": sum(d["commits"] for d in commit_history),
+        "recent_commits": sum(d["commits"] for d in commit_history[-90:]),
         "last_commit": info.get("pushed_at", ""),
         "created_at": info.get("created_at", ""),
         "updated_at": info.get("updated_at", ""),
@@ -668,7 +668,7 @@ def fetch_project_data(fetcher: GitHubFetcher, owner: str, repo: str,
         "open_issues": info.get("open_issues_count", 0),
         "loc": loc,
         "commits": total_commits,
-        "recent_commits": sum(d["commits"] for d in commit_history),
+        "recent_commits": sum(d["commits"] for d in commit_history[-90:]),
         "last_commit": info.get("pushed_at", ""),
         "created_at": info.get("created_at", ""),
         "updated_at": info.get("updated_at", ""),
@@ -930,6 +930,7 @@ def main():
     parser.add_argument("--exclude-lang", nargs="+", help="Exclude languages from specific repos (format: repo:language, e.g. my-repo:C#)")
     parser.add_argument("--exclude-dir", nargs="+", help="Exclude directories from LOC counting for specific repos (format: repo:path, e.g. my-repo:vendor/)")
     parser.add_argument("--clone", action="store_true", help="Clone repos for accurate LOC counting")
+    parser.add_argument("--commit-days", type=int, default=365, help="Days of commit history to include in commit_history (default 365)")
     parser.add_argument("--output", default=CONFIG["output_file"], help="Output JSON file")
     parser.add_argument("--token", help="GitHub token (or set GITHUB_TOKEN env var)")
     args = parser.parse_args()
@@ -1022,7 +1023,7 @@ def main():
             try:
                 is_fork = repo_path.name.lower() in fork_repos
                 repo_exclude_dirs = exclude_dirs.get(repo_path.name.lower(), None)
-                project = fetch_local_project_data(scanner, repo_path, skip_loc=is_fork, exclude_dirs=repo_exclude_dirs)
+                project = fetch_local_project_data(scanner, repo_path, skip_loc=is_fork, exclude_dirs=repo_exclude_dirs, commit_days=args.commit_days)
                 project["is_fork"] = is_fork
 
                 # Exclude specific languages from LOC
