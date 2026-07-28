@@ -425,6 +425,14 @@ def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_lo
     commits = scanner.get_commits_since(repo_path, since)
     commit_history = process_commit_history(commits, days=commit_days)
 
+    # recent = last 90 days (computed before sparsifying below)
+    recent_commits_90 = sum(d["commits"] for d in commit_history[-90:])
+    # Store only days with activity to keep dashboard_data.json small; the
+    # frontend fills zero-days by date lookup, and the aggregate series is
+    # rebuilt continuous in aggregate_commit_history().
+    commit_history = [d for d in commit_history
+                      if d.get("commits") or d.get("additions") or d.get("deletions")]
+
     # Total commits
     total_commits = scanner.get_commit_count(repo_path)
 
@@ -452,7 +460,7 @@ def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_lo
         "open_issues": 0,  # Not available locally
         "loc": loc,
         "commits": total_commits,
-        "recent_commits": sum(d["commits"] for d in commit_history[-90:]),
+        "recent_commits": recent_commits_90,
         "last_commit": info.get("pushed_at", ""),
         "created_at": info.get("created_at", ""),
         "updated_at": info.get("updated_at", ""),
@@ -732,19 +740,29 @@ def calculate_progress(project: dict) -> int:
     return min(100, code_score + activity_score + issue_score)
 
 
-def aggregate_commit_history(projects: list) -> list:
-    """Aggregate commit history across all projects."""
+def aggregate_commit_history(projects: list, days: int = 365) -> list:
+    """Aggregate commit history across all projects into a continuous daily
+    series over the last `days` days.
+
+    Per-project histories are stored sparsely (activity days only), so this
+    seeds a full zero-filled skeleton and adds each project's commits into it,
+    guaranteeing a gap-free x-axis for the chart.
+    """
+    today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    start_date = today - timedelta(days=days)
     combined = {}
-    
+    for i in range(days):
+        date = (start_date + timedelta(days=i)).strftime("%Y-%m-%d")
+        combined[date] = {"date": date, "commits": 0, "additions": 0, "deletions": 0}
+
     for project in projects:
         for day in project.get("commit_history", []):
             date = day["date"]
-            if date not in combined:
-                combined[date] = {"date": date, "commits": 0, "additions": 0, "deletions": 0}
-            combined[date]["commits"] += day.get("commits", 0)
-            combined[date]["additions"] += day.get("additions", 0)
-            combined[date]["deletions"] += day.get("deletions", 0)
-    
+            if date in combined:  # ignore anything outside the window
+                combined[date]["commits"] += day.get("commits", 0)
+                combined[date]["additions"] += day.get("additions", 0)
+                combined[date]["deletions"] += day.get("deletions", 0)
+
     return sorted(combined.values(), key=lambda x: x["date"])
 
 
@@ -1123,8 +1141,8 @@ def main():
     total_commits = sum(p.get("commits", 0) for p in projects)  # Include all commits
     avg_progress = sum(p.get("progress", 0) for p in projects) // len(projects)
     
-    # Aggregate commit history
-    commit_history = aggregate_commit_history(projects)
+    # Aggregate commit history (continuous series over the configured window)
+    commit_history = aggregate_commit_history(projects, days=args.commit_days)
     
     # Calculate week-over-week trend
     this_week = sum(d["commits"] for d in commit_history[-7:])
