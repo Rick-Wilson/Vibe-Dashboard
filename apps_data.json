@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T01:13:52.765661+00:00",
+  "generated_at": "2026-07-28T01:21:52.795238+00:00",
   "count": 6,
   "apps": [
     {
@@ -21,11 +21,13 @@
         "version": "1.0",
         "url": "https://apps.apple.com/app/id6780239795"
       },
-      "testflight": null,
+      "testflight": {
+        "external": "READY_FOR_BETA_SUBMISSION",
+        "internal": "IN_BETA_TESTING"
+      },
       "status": {
         "label": "Released",
-        "category": "released",
-        "note": "testflight lookup failed: 400 Client Error: Bad Request for url: https://api.appstoreconnect.apple.com/v1/apps/6780239795/builds?limit=1&sort=-uploadedDate"
+        "category": "released"
       }
     },
     {
@@ -45,11 +47,39 @@
         "version": "1.0",
         "url": "https://apps.apple.com/app/id6760272056"
       },
-      "testflight": null,
+      "testflight": {
+        "external": "EXPIRED",
+        "internal": "EXPIRED"
+      },
       "status": {
         "label": "Released",
-        "category": "released",
-        "note": "testflight lookup failed: 400 Client Error: Bad Request for url: https://api.appstoreconnect.apple.com/v1/apps/6760272056/builds?limit=1&sort=-uploadedDate"
+        "category": "released"
+      }
+    },
+    {
+      "name": "Kennit",
+      "repo": "Kennit-App",
+      "full_name": "harmonic-systems-home/Kennit-App",
+      "url": "https://github.com/harmonic-systems-home/Kennit-App",
+      "bundle_id": "com.popperbiz.kennit",
+      "version": "1.0",
+      "build": "1",
+      "platforms": [
+        "iOS",
+        "macOS"
+      ],
+      "xcodeproj": "Kennit.xcodeproj",
+      "store": {
+        "state": "PREPARE_FOR_SUBMISSION",
+        "version": "1.0"
+      },
+      "testflight": {
+        "external": "IN_BETA_TESTING",
+        "internal": "IN_BETA_TESTING"
+      },
+      "status": {
+        "label": "TestFlight",
+        "category": "testflight"
       }
     },
     {
@@ -91,30 +121,6 @@
       "status": {
         "label": "Development",
         "category": "development"
-      }
-    },
-    {
-      "name": "Kennit",
-      "repo": "Kennit-App",
-      "full_name": "harmonic-systems-home/Kennit-App",
-      "url": "https://github.com/harmonic-systems-home/Kennit-App",
-      "bundle_id": "com.popperbiz.kennit",
-      "version": "1.0",
-      "build": "1",
-      "platforms": [
-        "iOS",
-        "macOS"
-      ],
-      "xcodeproj": "Kennit.xcodeproj",
-      "store": {
-        "state": "PREPARE_FOR_SUBMISSION",
-        "version": "1.0"
-      },
-      "testflight": null,
-      "status": {
-        "label": "Preparing",
-        "category": "development",
-        "note": "testflight lookup failed: 400 Client Error: Bad Request for url: https://api.appstoreconnect.apple.com/v1/apps/6775224401/builds?limit=1&sort=-uploadedDate"
       }
     },
     {
