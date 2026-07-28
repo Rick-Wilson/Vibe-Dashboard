@@ -114,10 +114,13 @@ def parse_pbxproj(pbxproj_path):
     }
 
 
-def discover_xcode_apps(base_path, repo_meta=None):
+def discover_xcode_apps(base_path, repo_meta=None, allowed_repos=None):
     """Find Xcode-project repos under base_path and extract their app metadata.
 
     repo_meta: optional {repo_name: {"full_name":..., "url":...}} to enrich rows.
+    allowed_repos: optional set of repo names to restrict discovery to (e.g. the
+        repos already in dashboard_data.json, which are the owner's own,
+        non-fork repos). When None, all cloned repos are scanned.
     """
     repo_meta = repo_meta or {}
     base = Path(base_path)
@@ -126,6 +129,8 @@ def discover_xcode_apps(base_path, repo_meta=None):
     for repo_dir in sorted(base.iterdir(), key=lambda p: p.name.lower()):
         if not repo_dir.is_dir() or not (repo_dir / ".git").exists():
             continue
+        if allowed_repos is not None and repo_dir.name not in allowed_repos:
+            continue  # not one of the owner's repos (co-worker's / fork)
         # find the top-most .xcodeproj (avoid nested Pods/Carthage checkouts)
         projects = [p for p in repo_dir.rglob("*.xcodeproj")
                     if "Pods" not in p.parts and "Carthage" not in p.parts
@@ -323,8 +328,13 @@ def main():
         return 1
 
     repo_meta = load_repo_meta(args.dashboard_data)
-    apps = discover_xcode_apps(base, repo_meta)
-    print(f"📱 Found {len(apps)} repo(s) with an Xcode project")
+    # Restrict to the owner's own repos (those in dashboard_data.json) so
+    # co-workers' repos and forks with Xcode projects don't appear as "my apps".
+    # If dashboard_data.json is absent/empty, fall back to scanning everything.
+    allowed_repos = set(repo_meta) or None
+    apps = discover_xcode_apps(base, repo_meta, allowed_repos=allowed_repos)
+    print(f"📱 Found {len(apps)} repo(s) with an Xcode project"
+          + (f" (restricted to {len(allowed_repos)} owner repos)" if allowed_repos else ""))
     for a in apps:
         print(f"   • {a['name']} ({a['repo']}) bundle={a['bundle_id']} v{a['version']}")
 
