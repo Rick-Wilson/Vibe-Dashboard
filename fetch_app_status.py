@@ -233,10 +233,11 @@ class ASCClient:
 
     def testflight_state(self, app_id):
         # Two-step to keep each request simple/well-formed: fetch the latest
-        # build, then its beta detail. (The combined include+fields+sort form
-        # returns 400 from the builds endpoint.)
-        builds = self._get(f"/apps/{app_id}/builds",
-                           {"limit": 1, "sort": "-uploadedDate"}).get("data", [])
+        # build, then its beta detail. Use the primary /v1/builds endpoint with
+        # filter[app] (the /v1/apps/{id}/builds relationship endpoint rejects
+        # sort with a 400).
+        builds = self._get("/builds",
+                           {"filter[app]": app_id, "limit": 1, "sort": "-version"}).get("data", [])
         if not builds:
             return None
         build_id = builds[0]["id"]
