@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T15:20:11.086189+00:00",
+  "generated_at": "2026-08-07T15:32:46.444851+00:00",
   "count": 6,
   "apps": [
     {
@@ -8,6 +8,7 @@
       "full_name": "harmonic-systems-home/ice-queue",
       "url": "https://github.com/harmonic-systems-home/ice-queue",
       "last_commit": "2026-03-28T10:55:36-07:00",
+      "manifest": {},
       "bundle_id": "com.github.rick-wilson.IceQueue",
       "version": "1.0",
       "build": "1",
@@ -38,6 +39,7 @@
       "full_name": "bridge-craftwork/acbl-live-fetch",
       "url": "https://github.com/bridge-craftwork/acbl-live-fetch",
       "last_commit": "2026-06-01T16:50:12-07:00",
+      "manifest": {},
       "bundle_id": "org.bridge-classroom.acbl-live-fetch",
       "version": "1.0",
       "build": "1",
@@ -67,6 +69,7 @@
       "full_name": "bridge-craftwork/lesson-stage",
       "url": "https://github.com/bridge-craftwork/lesson-stage",
       "last_commit": "2026-07-28T17:47:43-07:00",
+      "manifest": {},
       "bundle_id": "com.popperbiz.LessonStage",
       "version": "0.1.0",
       "build": "1",
@@ -94,7 +97,13 @@
       "repo": "Kennit-App",
       "full_name": "harmonic-systems-home/Kennit-App",
       "url": "https://github.com/harmonic-systems-home/Kennit-App",
-      "last_commit": "2026-08-06T23:03:50-07:00",
+      "last_commit": "2026-08-07T08:30:26-07:00",
+      "manifest": {
+        "tagline": "Learn names, remember faces",
+        "priority": "high",
+        "target": "2026-08",
+        "next_step": "Release 1.0 when approved, then start 1.1: repair existing duplicate subjects (needs createdAt on Person/Pet, so it rides a schema promotion) and give custom relationship links an inverse label"
+      },
       "bundle_id": "com.popperbiz.kennit",
       "version": "1.0",
       "build": "1",
@@ -130,6 +139,7 @@
       "full_name": "bridge-craftwork/pbs-bbo-extension",
       "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
       "last_commit": "2026-03-20T11:35:41-07:00",
+      "manifest": {},
       "bundle_id": "com.rickwilson.PBS-with-BBA-Compare",
       "version": "1.0.0",
       "build": "3",
@@ -165,6 +175,7 @@
       "full_name": "harmonic-systems-home/BT-Label-Printing-App",
       "url": "https://github.com/harmonic-systems-home/BT-Label-Printing-App",
       "last_commit": "2026-06-23T17:42:19-07:00",
+      "manifest": {},
       "bundle_id": "com.popperbiz.BTLabel",
       "version": "1.0",
       "build": "5",

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-07T15:20:08.206603+00:00",
+  "generated_at": "2026-08-07T15:32:43.572284+00:00",
   "stats": {
-    "total_loc": 220454,
-    "total_commits": 3507,
+    "total_loc": 220487,
+    "total_commits": 3509,
     "avg_progress": 64,
     "this_week_commits": 191,
     "last_week_commits": 456,
@@ -16,7 +16,7 @@
     "JavaScript": 46802,
     "Swift": 22835,
     "INI": 78,
-    "Python": 25784,
+    "Python": 25817,
     "C": 119,
     "MSBuild": 144,
     "Visual Studio Solution": 31,
@@ -2274,7 +2274,7 @@
     },
     {
       "month": "Aug",
-      "loc": 220454
+      "loc": 220487
     }
   ],
   "loc_history_by_repo": {
@@ -3122,6 +3122,24 @@
         "created_at": "2026-08-06T20:25:35-07:00"
       },
       {
+        "name": "Vibe-Dashboard",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          972,
+          1168,
+          1201,
+          1262,
+          1262,
+          1289,
+          1720,
+          1763
+        ],
+        "created_at": "2026-08-07T08:25:41-07:00"
+      },
+      {
         "name": "Kennit-App",
         "data": [
           0,
@@ -3137,25 +3155,7 @@
           6876,
           11232
         ],
-        "created_at": "2026-08-06T23:03:50-07:00"
-      },
-      {
-        "name": "Vibe-Dashboard",
-        "data": [
-          0,
-          0,
-          0,
-          0,
-          972,
-          1168,
-          1201,
-          1262,
-          1262,
-          1289,
-          1720,
-          1730
-        ],
-        "created_at": "2026-08-07T08:12:44-07:00"
+        "created_at": "2026-08-07T08:30:26-07:00"
       },
       {
         "name": "bridge-wrangler",
@@ -3179,7 +3179,7 @@
   },
   "projects": [
     {
-      "id": 3273713085,
+      "id": 3520908291,
       "name": "ABS-Lessons",
       "full_name": "bridge-craftwork/ABS-Lessons",
       "description": "ABS-Lessons",
@@ -3407,7 +3407,7 @@
       "is_fork": false
     },
     {
-      "id": 911807917,
+      "id": 686250271,
       "name": "acbl-live-fetch",
       "full_name": "bridge-craftwork/acbl-live-fetch",
       "description": "ACBL Live Fetch",
@@ -3655,7 +3655,7 @@
       "is_fork": false
     },
     {
-      "id": 3517164557,
+      "id": 17346895,
       "name": "acbl-proxy",
       "full_name": "bridge-craftwork/acbl-proxy",
       "description": "acbl-proxy",
@@ -3841,7 +3841,7 @@
       "is_fork": false
     },
     {
-      "id": 3759774986,
+      "id": 3101549369,
       "name": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
       "description": "Baker Bridge",
@@ -4210,7 +4210,7 @@
       "is_fork": false
     },
     {
-      "id": 1884654832,
+      "id": 3990165348,
       "name": "bba-mac-private",
       "full_name": "bridge-craftwork/bba-mac-private",
       "description": "EPBotWrapper \u2014 Native macOS Bridge Bidding Engine",
@@ -4400,7 +4400,7 @@
       "is_fork": false
     },
     {
-      "id": 2113674259,
+      "id": 318744553,
       "name": "bba-native-libraries",
       "full_name": "bridge-craftwork/bba-native-libraries",
       "description": "BBA Native Libraries",
@@ -4590,7 +4590,7 @@
       "is_fork": false
     },
     {
-      "id": 196429527,
+      "id": 335836662,
       "name": "ben-service",
       "full_name": "bridge-craftwork/ben-service",
       "description": "Repository: ben-service",
@@ -4788,7 +4788,7 @@
       "is_fork": false
     },
     {
-      "id": 1254269950,
+      "id": 3636844550,
       "name": "Better-BBO-Convention-Card",
       "full_name": "bridge-craftwork/Better-BBO-Convention-Card",
       "description": "Repository: Better-BBO-Convention-Card",
@@ -4966,7 +4966,7 @@
       "is_fork": false
     },
     {
-      "id": 1346470936,
+      "id": 2634117487,
       "name": "Bridge-Attendance",
       "full_name": "bridge-craftwork/Bridge-Attendance",
       "description": "Bridge Class Attendance System",
@@ -5187,7 +5187,7 @@
       "is_fork": false
     },
     {
-      "id": 1835609864,
+      "id": 510714073,
       "name": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
       "description": "Repository: Bridge-Classroom",
@@ -5747,23 +5747,23 @@
         },
         {
           "date": "2026-06-19",
-          "additions": 170,
-          "deletions": 22
+          "additions": 194,
+          "deletions": 35
         },
         {
           "date": "2026-06-26",
-          "additions": 12857,
-          "deletions": 2496
+          "additions": 12833,
+          "deletions": 2483
         },
         {
           "date": "2026-07-03",
-          "additions": 19167,
-          "deletions": 6112
+          "additions": 19177,
+          "deletions": 6116
         },
         {
           "date": "2026-07-10",
-          "additions": 17489,
-          "deletions": 3050
+          "additions": 17479,
+          "deletions": 3046
         },
         {
           "date": "2026-07-17",
@@ -5874,7 +5874,7 @@
       "is_fork": false
     },
     {
-      "id": 4107670562,
+      "id": 2199940,
       "name": "bridge-classroom-bug-artifacts",
       "full_name": "bridge-craftwork/bridge-classroom-bug-artifacts",
       "description": "bridge-classroom-bug-artifacts",
@@ -6160,7 +6160,7 @@
       "is_fork": false
     },
     {
-      "id": 786892473,
+      "id": 348631273,
       "name": "bridge-craftwork-platform",
       "full_name": "bridge-craftwork/bridge-craftwork-platform",
       "description": "bridge-craftwork-platform",
@@ -6423,7 +6423,7 @@
       "is_fork": false
     },
     {
-      "id": 3903911785,
+      "id": 2278869042,
       "name": "Bridge-Dealer-Scripts",
       "full_name": "bridge-craftwork/Bridge-Dealer-Scripts",
       "description": "Bridge-Dealer-Scripts",
@@ -6596,7 +6596,7 @@
       "is_fork": false
     },
     {
-      "id": 4128740983,
+      "id": 43283771,
       "name": "Bridge-Dealer-Service",
       "full_name": "bridge-craftwork/Bridge-Dealer-Service",
       "description": "bridge-dealer-service",
@@ -6796,7 +6796,7 @@
       "is_fork": false
     },
     {
-      "id": 1358711412,
+      "id": 4289750942,
       "name": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
       "description": "bridge-encodings",
@@ -7026,7 +7026,7 @@
       "is_fork": false
     },
     {
-      "id": 4137447703,
+      "id": 380393819,
       "name": "Bridge-Event-Parser-Service",
       "full_name": "bridge-craftwork/Bridge-Event-Parser-Service",
       "description": "Repository: Bridge-Event-Parser-Service",
@@ -7227,7 +7227,7 @@
       "is_fork": false
     },
     {
-      "id": 2906312337,
+      "id": 1912956510,
       "name": "Bridge-Game-Analysis",
       "full_name": "bridge-craftwork/Bridge-Game-Analysis",
       "description": "Repository: Bridge-Game-Analysis",
@@ -7563,7 +7563,7 @@
       "is_fork": false
     },
     {
-      "id": 735149712,
+      "id": 2438165819,
       "name": "bridge-lesson-packaging",
       "full_name": "bridge-craftwork/bridge-lesson-packaging",
       "description": "bridge-lesson-packaging",
@@ -7752,7 +7752,7 @@
       "is_fork": false
     },
     {
-      "id": 132822032,
+      "id": 2212877991,
       "name": "Bridge-Lessons-Advanced",
       "full_name": "bridge-craftwork/Bridge-Lessons-Advanced",
       "description": "Repository: Bridge-Lessons-Advanced",
@@ -7930,7 +7930,7 @@
       "is_fork": false
     },
     {
-      "id": 3262412076,
+      "id": 3520307809,
       "name": "Bridge-Lessons-by-Andrew-Rowberg",
       "full_name": "bridge-craftwork/Bridge-Lessons-by-Andrew-Rowberg",
       "description": "Repository: Bridge-Lessons-by-Andrew-Rowberg",
@@ -8122,7 +8122,7 @@
       "is_fork": false
     },
     {
-      "id": 3559593840,
+      "id": 4094506050,
       "name": "Bridge-Lessons-by-Grant-Robinson",
       "full_name": "bridge-craftwork/Bridge-Lessons-by-Grant-Robinson",
       "description": "Repository: Bridge-Lessons-by-Grant-Robinson",
@@ -8316,7 +8316,7 @@
       "is_fork": false
     },
     {
-      "id": 2530920271,
+      "id": 1033518571,
       "name": "Bridge-OCR",
       "full_name": "bridge-craftwork/Bridge-OCR",
       "description": "Repository: Bridge-OCR",
@@ -8500,7 +8500,7 @@
       "is_fork": false
     },
     {
-      "id": 301300234,
+      "id": 2179466740,
       "name": "Bridge-Offline-Practice",
       "full_name": "bridge-craftwork/Bridge-Offline-Practice",
       "description": "Bridge Bidding Practice",
@@ -8693,7 +8693,7 @@
       "is_fork": false
     },
     {
-      "id": 858176517,
+      "id": 803828742,
       "name": "Bridge-Parsers",
       "full_name": "bridge-craftwork/Bridge-Parsers",
       "description": "Bridge-Parsers",
@@ -8953,7 +8953,7 @@
       "is_fork": false
     },
     {
-      "id": 4083672452,
+      "id": 3794883670,
       "name": "bridge-rulebot",
       "full_name": "bridge-craftwork/bridge-rulebot",
       "description": "bridge-rulebot",
@@ -9147,7 +9147,7 @@
       "is_fork": false
     },
     {
-      "id": 2414616833,
+      "id": 2834291344,
       "name": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
       "description": "Repository: bridge-solver",
@@ -9388,7 +9388,7 @@
       "is_fork": false
     },
     {
-      "id": 1336467557,
+      "id": 1984487709,
       "name": "bridge-solver-service",
       "full_name": "bridge-craftwork/bridge-solver-service",
       "description": "bridge-solver-service",
@@ -9583,7 +9583,7 @@
       "is_fork": false
     },
     {
-      "id": 3882335848,
+      "id": 2736361520,
       "name": "bridge-table-service",
       "full_name": "bridge-craftwork/bridge-table-service",
       "description": "bridge-table-service",
@@ -9832,7 +9832,7 @@
       "is_fork": false
     },
     {
-      "id": 3630354373,
+      "id": 3227130648,
       "name": "bridge-tools",
       "full_name": "harmonic-systems-home/bridge-tools",
       "description": "Bridge Tools",
@@ -10014,7 +10014,7 @@
       "is_fork": false
     },
     {
-      "id": 3398016312,
+      "id": 2930495674,
       "name": "bridge-types",
       "full_name": "bridge-craftwork/bridge-types",
       "description": "bridge-types",
@@ -10243,7 +10243,7 @@
       "is_fork": false
     },
     {
-      "id": 3872881404,
+      "id": 2998407900,
       "name": "bridge-wrangler",
       "full_name": "bridge-craftwork/bridge-wrangler",
       "description": "bridge-wrangler",
@@ -10576,7 +10576,7 @@
       "is_fork": false
     },
     {
-      "id": 3461340116,
+      "id": 2871243039,
       "name": "BT-Label-Printing-App",
       "full_name": "harmonic-systems-home/BT-Label-Printing-App",
       "description": "BTLabel",
@@ -10805,7 +10805,7 @@
       "is_fork": false
     },
     {
-      "id": 1587475134,
+      "id": 3991563629,
       "name": "claude-bridge-plugins",
       "full_name": "bridge-craftwork/claude-bridge-plugins",
       "description": "bridge-craftwork Claude Code plugins",
@@ -10985,7 +10985,7 @@
       "is_fork": false
     },
     {
-      "id": 188211510,
+      "id": 3440208931,
       "name": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
       "description": "dealer3",
@@ -11304,7 +11304,7 @@
       "is_fork": false
     },
     {
-      "id": 263114713,
+      "id": 74805535,
       "name": "EDGAR-Defense-Toolkit",
       "full_name": "bridge-craftwork/EDGAR-Defense-Toolkit",
       "description": "EDGAR Defense Toolkit",
@@ -11578,7 +11578,7 @@
       "is_fork": false
     },
     {
-      "id": 3870542685,
+      "id": 3362706966,
       "name": "Home-Assistant",
       "full_name": "harmonic-systems-home/Home-Assistant",
       "description": "Home Assistant Configuration",
@@ -11917,7 +11917,7 @@
       "is_fork": false
     },
     {
-      "id": 3336694559,
+      "id": 1130592776,
       "name": "ice-queue",
       "full_name": "harmonic-systems-home/ice-queue",
       "description": "Repository: ice-queue",
@@ -12111,7 +12111,7 @@
       "is_fork": false
     },
     {
-      "id": 4250923072,
+      "id": 2743892481,
       "name": "Justin-s-Pool",
       "full_name": "harmonic-systems-home/Justin-s-Pool",
       "description": "Justin's Pool \u2014 System Map",
@@ -12342,7 +12342,7 @@
       "is_fork": false
     },
     {
-      "id": 924984823,
+      "id": 2672293705,
       "name": "Justin-s-Pool-data",
       "full_name": "harmonic-systems-home/Justin-s-Pool-data",
       "description": "Justin-s-Pool-data",
@@ -12544,7 +12544,7 @@
       "is_fork": false
     },
     {
-      "id": 508659888,
+      "id": 3453413924,
       "name": "Kennit-App",
       "full_name": "harmonic-systems-home/Kennit-App",
       "description": "Repository: Kennit-App",
@@ -12559,11 +12559,11 @@
         "Shell": 62,
         "Swift": 9104
       },
-      "commits": 162,
+      "commits": 163,
       "recent_commits": 162,
-      "last_commit": "2026-08-06T23:03:50-07:00",
-      "created_at": "2026-08-06T23:03:50-07:00",
-      "updated_at": "2026-08-06T23:03:50-07:00",
+      "last_commit": "2026-08-07T08:30:26-07:00",
+      "created_at": "2026-08-07T08:30:26-07:00",
+      "updated_at": "2026-08-07T08:30:26-07:00",
       "url": "https://github.com/harmonic-systems-home/Kennit-App",
       "commit_history": [
         {
@@ -12697,7 +12697,7 @@
         },
         {
           "date": "2026-07-31",
-          "additions": 12734,
+          "additions": 12753,
           "deletions": 4554
         }
       ],
@@ -12782,9 +12782,9 @@
         {
           "month": "Aug 2026",
           "month_short": "Aug",
-          "additions": 12734,
+          "additions": 12753,
           "deletions": 4554,
-          "net": 8180
+          "net": 8199
         }
       ],
       "releases": [],
@@ -12794,7 +12794,7 @@
       "is_fork": false
     },
     {
-      "id": 722443147,
+      "id": 2996824357,
       "name": "kennit-decks",
       "full_name": "harmonic-systems-home/kennit-decks",
       "description": "Kennit decks",
@@ -13017,7 +13017,7 @@
       "is_fork": false
     },
     {
-      "id": 1678044226,
+      "id": 386382499,
       "name": "lesson-library",
       "full_name": "bridge-craftwork/lesson-library",
       "description": "lesson-library",
@@ -13207,7 +13207,7 @@
       "is_fork": false
     },
     {
-      "id": 4036647574,
+      "id": 2575135255,
       "name": "lesson-stage",
       "full_name": "bridge-craftwork/lesson-stage",
       "description": "lesson-stage",
@@ -13416,7 +13416,7 @@
       "is_fork": false
     },
     {
-      "id": 17721547,
+      "id": 2471414102,
       "name": "lesson-studio",
       "full_name": "bridge-craftwork/lesson-studio",
       "description": "lesson-studio",
@@ -13635,7 +13635,7 @@
       "is_fork": false
     },
     {
-      "id": 3272808899,
+      "id": 3143304647,
       "name": "map-generation-toolset",
       "full_name": "harmonic-systems-home/map-generation-toolset",
       "description": "maptool",
@@ -13849,7 +13849,7 @@
       "is_fork": false
     },
     {
-      "id": 4218970258,
+      "id": 1450957546,
       "name": "pbn-to-pdf",
       "full_name": "bridge-craftwork/pbn-to-pdf",
       "description": "pbn-to-pdf",
@@ -14041,13 +14041,13 @@
       "code_changes": [
         {
           "date": "2026-05-15",
-          "additions": 0,
-          "deletions": 0
+          "additions": 190,
+          "deletions": 10
         },
         {
           "date": "2026-05-22",
-          "additions": 218,
-          "deletions": 17
+          "additions": 28,
+          "deletions": 7
         },
         {
           "date": "2026-05-29",
@@ -14254,7 +14254,7 @@
       "is_fork": false
     },
     {
-      "id": 675524826,
+      "id": 3774297583,
       "name": "pbs-bbo-extension",
       "full_name": "bridge-craftwork/pbs-bbo-extension",
       "description": "PBS for BBO - Browser Extension",
@@ -14460,7 +14460,7 @@
       "is_fork": false
     },
     {
-      "id": 2556365647,
+      "id": 1790778543,
       "name": "pdf-handouts",
       "full_name": "bridge-craftwork/pdf-handouts",
       "description": "PDF Handouts",
@@ -14728,7 +14728,7 @@
       "is_fork": false
     },
     {
-      "id": 433885514,
+      "id": 2505810803,
       "name": "Vibe-Dashboard",
       "full_name": "harmonic-systems-home/Vibe-Dashboard",
       "description": "Vibe Dashboard",
@@ -14737,14 +14737,14 @@
       "forks": 0,
       "open_issues": 0,
       "loc": {
-        "Python": 1716,
+        "Python": 1749,
         "Shell": 14
       },
-      "commits": 181,
+      "commits": 182,
       "recent_commits": 54,
-      "last_commit": "2026-08-07T08:12:44-07:00",
-      "created_at": "2026-08-07T08:12:44-07:00",
-      "updated_at": "2026-08-07T08:12:44-07:00",
+      "last_commit": "2026-08-07T08:25:41-07:00",
+      "created_at": "2026-08-07T08:25:41-07:00",
+      "updated_at": "2026-08-07T08:25:41-07:00",
       "url": "https://github.com/harmonic-systems-home/Vibe-Dashboard",
       "commit_history": [
         {
@@ -15532,8 +15532,8 @@
         },
         {
           "date": "2026-07-31",
-          "additions": 98,
-          "deletions": 39
+          "additions": 240,
+          "deletions": 46
         }
       ],
       "monthly_loc_changes": [
@@ -15617,9 +15617,9 @@
         {
           "month": "Aug 2026",
           "month_short": "Aug",
-          "additions": 87,
-          "deletions": 34,
-          "net": 53
+          "additions": 229,
+          "deletions": 41,
+          "net": 188
         }
       ],
       "releases": [],
