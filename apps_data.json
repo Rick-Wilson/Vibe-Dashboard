@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T12:46:30.417444+00:00",
+  "generated_at": "2026-08-07T15:20:11.086189+00:00",
   "count": 6,
   "apps": [
     {
@@ -108,8 +108,8 @@
         "icon": true,
         "asc_registered": true,
         "testflight": true,
-        "screenshots": false,
-        "metadata": false
+        "screenshots": true,
+        "metadata": true
       },
       "store": {
         "state": "WAITING_FOR_REVIEW",
@@ -142,8 +142,8 @@
         "icon": true,
         "asc_registered": true,
         "testflight": true,
-        "screenshots": false,
-        "metadata": false
+        "screenshots": true,
+        "metadata": true
       },
       "store": {
         "state": "READY_FOR_SALE",
@@ -179,8 +179,8 @@
         "icon": true,
         "asc_registered": true,
         "testflight": true,
-        "screenshots": false,
-        "metadata": false
+        "screenshots": true,
+        "metadata": true
       },
       "store": {
         "state": "READY_FOR_SALE",
