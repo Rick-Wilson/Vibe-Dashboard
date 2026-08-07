@@ -235,6 +235,16 @@ STORE_STATE_LABELS = {
 TESTFLIGHT_ACTIVE = {"READY_FOR_BETA_TESTING", "IN_BETA_TESTING", "BETA_APPROVED"}
 TESTFLIGHT_REVIEW = {"WAITING_FOR_BETA_REVIEW", "IN_BETA_REVIEW"}
 
+# Store states at/past submission. Reaching any of these means Apple accepted
+# the required screenshots + metadata, so treat those checklist items as done
+# even when they aren't kept as fastlane files in the repo.
+STORE_SUBMITTED_STATES = {
+    "WAITING_FOR_REVIEW", "IN_REVIEW", "PENDING_DEVELOPER_RELEASE",
+    "PENDING_APPLE_RELEASE", "PROCESSING_FOR_APP_STORE", "READY_FOR_SALE",
+    "REPLACED_WITH_NEW_VERSION", "WAITING_FOR_EXPORT_COMPLIANCE",
+    "PENDING_CONTRACT",
+}
+
 
 class ASCClient:
     BASE = "https://api.appstoreconnect.apple.com/v1"
@@ -367,7 +377,14 @@ def enrich_with_asc(apps, client):
 
         app["store"] = store
         app["testflight"] = testflight
-        app.setdefault("readiness", {})["testflight"] = bool(testflight)
+        r = app.setdefault("readiness", {})
+        r["testflight"] = bool(testflight)
+        # Submission to the store implies screenshots + metadata exist in ASC
+        # (Apple requires them), regardless of whether they're mirrored as
+        # fastlane files in the repo.
+        if store and store.get("state") in STORE_SUBMITTED_STATES:
+            r["screenshots"] = True
+            r["metadata"] = True
         app["status"] = derive_status(store, testflight, True)
         if store and store.get("state") in ("READY_FOR_SALE", "REPLACED_WITH_NEW_VERSION"):
             app["store"]["url"] = f"https://apps.apple.com/app/id{app_id}"
