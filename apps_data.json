@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T13:49:29.317304+00:00",
+  "generated_at": "2026-08-07T12:46:30.417444+00:00",
   "count": 6,
   "apps": [
     {
@@ -94,7 +94,7 @@
       "repo": "Kennit-App",
       "full_name": "harmonic-systems-home/Kennit-App",
       "url": "https://github.com/harmonic-systems-home/Kennit-App",
-      "last_commit": "2026-08-05T23:57:41-07:00",
+      "last_commit": "2026-08-06T23:03:50-07:00",
       "bundle_id": "com.popperbiz.kennit",
       "version": "1.0",
       "build": "1",
@@ -112,7 +112,7 @@
         "metadata": false
       },
       "store": {
-        "state": "PREPARE_FOR_SUBMISSION",
+        "state": "WAITING_FOR_REVIEW",
         "version": "1.0"
       },
       "testflight": {
@@ -120,8 +120,8 @@
         "internal": "IN_BETA_TESTING"
       },
       "status": {
-        "label": "TestFlight",
-        "category": "testflight"
+        "label": "Waiting for Review",
+        "category": "review"
       }
     },
     {
