@@ -1136,6 +1136,26 @@
             return `${repoUrl}/releases/tag/${tag}`;
         }
 
+        // Format a manifest target ("YYYY-MM" or "YYYY-MM-DD") into label + countdown.
+        function fmtTarget(target) {
+            if (!target) return null;
+            const m = String(target).match(/^(\d{4})-(\d{2})(?:-(\d{2}))?$/);
+            const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            if (!m) return { label: String(target), delta: '', overdue: false };
+            const y = +m[1], mo = +m[2], day = m[3] ? +m[3] : null;
+            const label = day ? `${MON[mo-1]} ${day}, ${y}` : `${MON[mo-1]} ${y}`;
+            // month-only targets use end-of-month as the deadline
+            const deadline = day ? new Date(y, mo-1, day) : new Date(y, mo, 0);
+            const days = Math.ceil((deadline.getTime() - Date.now()) / 86400000);
+            let delta;
+            if (days < 0) delta = 'overdue';
+            else if (days === 0) delta = 'today';
+            else if (days < 14) delta = `${days}d left`;
+            else if (days < 70) delta = `~${Math.round(days/7)} wks left`;
+            else delta = `~${Math.round(days/30)} mo left`;
+            return { label, delta, overdue: days < 0 };
+        }
+
         // Apps Tab Rendering
         const APP_STATUS_STYLES = {
             released:    { badge: 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30', dot: 'bg-emerald-400' },
@@ -1250,17 +1270,35 @@
                 const isReleased = status.category === 'released';
                 const borderCls = isReleased ? 'border-slate-800/50' : 'border-violet-500/25';
                 const staleness = stalenessHtml(a.last_commit);
+                // Manifest (.dashboard-app.json) fields — planning/intent ASC can't provide
+                const m = a.manifest || {};
+                const subtitle = m.tagline || a.bundle_id || a.full_name || a.repo;
+                const prioPill = m.priority === 'high'
+                    ? `<span class="text-[10px] px-1.5 py-0.5 rounded bg-red-500/15 text-red-400 border border-red-500/30 uppercase tracking-wide shrink-0">High</span>`
+                    : m.priority === 'low'
+                    ? `<span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-600/20 text-slate-500 uppercase tracking-wide shrink-0">Low</span>` : '';
+                const t = fmtTarget(m.target);
+                const targetHtml = t ? `<span class="text-xs ${t.overdue ? 'text-red-400' : 'text-slate-400'}">🎯 ${esc(t.label)}${t.delta ? ` · ${t.delta}` : ''}</span>` : '';
+                const nextHtml = m.next_step ? `<div class="mt-2 text-xs text-emerald-300/90"><span class="text-emerald-500">→</span> ${esc(m.next_step)}</div>` : '';
+                const blockedHtml = m.blocked_on ? `<div class="mt-1 text-xs text-amber-400">⚠ ${esc(m.blocked_on)}</div>` : '';
+                const metaRow = (staleness || targetHtml)
+                    ? `<div class="mt-2 flex items-center gap-3 flex-wrap">${staleness}${targetHtml}</div>` : '';
                 return `
                 <div class="bg-slate-900/50 border ${borderCls} rounded-xl p-5 hover:border-emerald-500/40 transition-all flex flex-col">
                     <div class="flex items-start gap-3">
                         ${icon}
                         <div class="min-w-0 flex-1">
-                            <h3 class="font-medium text-slate-200 truncate">${esc(a.name)}</h3>
-                            <p class="text-xs text-slate-500 truncate">${esc(a.bundle_id || a.full_name || a.repo)}</p>
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-medium text-slate-200 truncate">${esc(a.name)}</h3>
+                                ${prioPill}
+                            </div>
+                            <p class="text-xs text-slate-500 truncate">${esc(subtitle)}</p>
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">${platforms}${version ? `<span class="text-xs text-slate-500">${version}</span>` : ''}</div>
                         </div>
                     </div>
-                    ${staleness ? `<div class="mt-2">${staleness}</div>` : ''}
+                    ${metaRow}
+                    ${nextHtml}
+                    ${blockedHtml}
                     ${readinessHtml(a)}
                     <div class="mt-auto pt-4 flex items-center justify-between gap-2">
                         <span class="text-xs px-3 py-1 rounded-full ${style.badge}">${esc(status.label)} ${note}</span>

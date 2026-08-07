@@ -78,4 +78,7 @@ python fetch_github_data.py --repos owner/repo1 owner/repo2   # Specific repos
 - `index.html` - Dashboard UI (single-page app)
 - `fetch_github_data.py` - Data collection script
 - `dashboard_data.json` - Generated data file
+- `fetch_app_status.py` - Apps tab: scans repos for Xcode projects + pulls live App Store Connect status (needs `ASC_*` secrets)
+- `apps_data.json` - Generated Apps tab data
+- `APP_MANIFEST.md` - `.dashboard-app.json` schema for per-app-repo planning breadcrumbs
 - `.github/workflows/update-dashboard.yml` - Automation workflow

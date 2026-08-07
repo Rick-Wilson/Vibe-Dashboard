@@ -115,6 +115,35 @@ def parse_pbxproj(pbxproj_path):
     }
 
 
+def read_app_manifest(repo_dir):
+    """Read an optional .dashboard-app.json manifest of planning/intent fields
+    that App Store Connect can't know: tagline, priority, target date, the next
+    concrete step to ship, what it's blocked on, and an optional bundle_id
+    override for ASC lookup. Returns a dict with only recognized keys.
+    """
+    path = repo_dir / ".dashboard-app.json"
+    if not path.exists():
+        return {}
+    try:
+        with open(path) as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, IOError):
+        return {}
+    if not isinstance(data, dict):
+        return {}
+    priority = str(data.get("priority", "")).strip().lower() or None
+    if priority not in (None, "high", "medium", "low"):
+        priority = None
+    return {
+        "tagline": data.get("tagline"),
+        "priority": priority,
+        "target": data.get("target"),
+        "next_step": data.get("next_step"),
+        "blocked_on": data.get("blocked_on"),
+        "bundle_id": data.get("bundle_id"),  # optional ASC-lookup override
+    }
+
+
 def detect_ship_signals(repo_dir):
     """Detect repo-side 'ready to ship' signals: App Store screenshots and
     store metadata (fastlane deliver). Returns (has_screenshots, has_metadata).
@@ -185,13 +214,18 @@ def discover_xcode_apps(base_path, repo_meta=None, allowed_repos=None, icon_dir=
         rmeta = repo_meta.get(repo_dir.name, {})
         icon = extract_app_icon(repo_dir, icon_dir, repo_dir.name) if icon_dir else None
         has_screenshots, has_metadata = detect_ship_signals(repo_dir)
+        manifest = read_app_manifest(repo_dir)
+        # A manifest bundle_id overrides the one parsed from project.pbxproj
+        # (useful when the .xcodeproj id doesn't match the app's ASC registration).
+        bundle_id = manifest.get("bundle_id") or meta.get("bundle_id")
         apps.append({
             "name": app_name,
             "repo": repo_dir.name,
             "full_name": rmeta.get("full_name", repo_dir.name),
             "url": rmeta.get("url", ""),
             "last_commit": rmeta.get("last_commit", ""),
-            "bundle_id": meta.get("bundle_id"),
+            "manifest": {k: v for k, v in manifest.items() if k != "bundle_id" and v},
+            "bundle_id": bundle_id,
             "version": meta.get("version"),
             "build": meta.get("build"),
             "platforms": meta.get("platforms") or [],
@@ -461,9 +495,15 @@ def main():
     # shipped apps last.
     order = {"development": 0, "review": 1, "rejected": 2, "testflight": 3,
              "released": 4, "removed": 5, "other": 6}
-    apps.sort(key=lambda a: (order.get(a.get("status", {}).get("category", "other"), 9),
-                             a.get("last_commit") or "9999",  # oldest last-commit first within a group
-                             a["name"].lower()))
+    prio_rank = {"high": 0, "medium": 1, "low": 2}
+
+    def sort_key(a):
+        cat = a.get("status", {}).get("category", "other")
+        prio = prio_rank.get((a.get("manifest") or {}).get("priority"), 1)
+        # within a status group: manifest priority, then most-stale first
+        return (order.get(cat, 9), prio, a.get("last_commit") or "9999", a["name"].lower())
+
+    apps.sort(key=sort_key)
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
