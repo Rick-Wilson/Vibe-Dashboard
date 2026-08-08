@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T15:32:46.444851+00:00",
+  "generated_at": "2026-08-08T12:34:22.276697+00:00",
   "count": 6,
   "apps": [
     {
@@ -34,21 +34,20 @@
       }
     },
     {
-      "name": "ACBL Live Fetch and Analyze",
-      "repo": "acbl-live-fetch",
-      "full_name": "bridge-craftwork/acbl-live-fetch",
-      "url": "https://github.com/bridge-craftwork/acbl-live-fetch",
-      "last_commit": "2026-06-01T16:50:12-07:00",
+      "name": "LessonStage",
+      "repo": "lesson-stage",
+      "full_name": "bridge-craftwork/lesson-stage",
+      "url": "https://github.com/bridge-craftwork/lesson-stage",
+      "last_commit": "2026-07-28T17:47:43-07:00",
       "manifest": {},
-      "bundle_id": "org.bridge-classroom.acbl-live-fetch",
-      "version": "1.0",
+      "bundle_id": "com.popperbiz.LessonStage",
+      "version": "0.1.0",
       "build": "1",
       "platforms": [
-        "iOS",
-        "macOS"
+        "iOS"
       ],
       "icon": null,
-      "xcodeproj": "safari/ACBL Live Fetch and Analyze/ACBL Live Fetch and Analyze.xcodeproj",
+      "xcodeproj": "app/LessonStage.xcodeproj",
       "readiness": {
         "icon": false,
         "asc_registered": false,
@@ -64,20 +63,21 @@
       }
     },
     {
-      "name": "LessonStage",
-      "repo": "lesson-stage",
-      "full_name": "bridge-craftwork/lesson-stage",
-      "url": "https://github.com/bridge-craftwork/lesson-stage",
-      "last_commit": "2026-07-28T17:47:43-07:00",
+      "name": "ACBL Live Fetch and Analyze",
+      "repo": "acbl-live-fetch",
+      "full_name": "bridge-craftwork/acbl-live-fetch",
+      "url": "https://github.com/bridge-craftwork/acbl-live-fetch",
+      "last_commit": "2026-08-07T21:26:40-07:00",
       "manifest": {},
-      "bundle_id": "com.popperbiz.LessonStage",
-      "version": "0.1.0",
+      "bundle_id": "org.bridge-classroom.acbl-live-fetch",
+      "version": "1.0",
       "build": "1",
       "platforms": [
-        "iOS"
+        "iOS",
+        "macOS"
       ],
       "icon": null,
-      "xcodeproj": "app/LessonStage.xcodeproj",
+      "xcodeproj": "safari/ACBL Live Fetch and Analyze/ACBL Live Fetch and Analyze.xcodeproj",
       "readiness": {
         "icon": false,
         "asc_registered": false,
