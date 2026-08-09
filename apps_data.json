@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T12:34:22.276697+00:00",
+  "generated_at": "2026-08-09T12:36:08.658133+00:00",
   "count": 6,
   "apps": [
     {
@@ -63,13 +63,13 @@
       }
     },
     {
-      "name": "ACBL Live Fetch and Analyze",
-      "repo": "acbl-live-fetch",
-      "full_name": "bridge-craftwork/acbl-live-fetch",
-      "url": "https://github.com/bridge-craftwork/acbl-live-fetch",
-      "last_commit": "2026-08-07T21:26:40-07:00",
+      "name": "Bridge Classroom Fetch",
+      "repo": "bridge-classroom-fetch",
+      "full_name": "bridge-craftwork/bridge-classroom-fetch",
+      "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
+      "last_commit": "2026-08-08T23:19:52-07:00",
       "manifest": {},
-      "bundle_id": "org.bridge-classroom.acbl-live-fetch",
+      "bundle_id": "org.bridge-classroom.bridge-classroom-fetch",
       "version": "1.0",
       "build": "1",
       "platforms": [
@@ -77,7 +77,7 @@
         "macOS"
       ],
       "icon": null,
-      "xcodeproj": "safari/ACBL Live Fetch and Analyze/ACBL Live Fetch and Analyze.xcodeproj",
+      "xcodeproj": "safari/Bridge Classroom Fetch/Bridge Classroom Fetch.xcodeproj",
       "readiness": {
         "icon": false,
         "asc_registered": false,
