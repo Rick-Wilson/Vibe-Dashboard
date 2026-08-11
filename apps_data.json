@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T12:55:42.865948+00:00",
+  "generated_at": "2026-08-11T12:47:34.406132+00:00",
   "count": 6,
   "apps": [
     {
@@ -67,22 +67,22 @@
       "repo": "bridge-classroom-fetch",
       "full_name": "bridge-craftwork/bridge-classroom-fetch",
       "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
-      "last_commit": "2026-08-09T08:25:41-07:00",
+      "last_commit": "2026-08-10T23:29:17-07:00",
       "manifest": {},
       "bundle_id": "org.bridge-classroom.bridge-classroom-fetch",
-      "version": "1.0",
+      "version": "1.0.0",
       "build": "1",
       "platforms": [
         "iOS",
         "macOS"
       ],
-      "icon": null,
+      "icon": "app_icons/bridge-classroom-fetch.png",
       "xcodeproj": "safari/Bridge Classroom Fetch/Bridge Classroom Fetch.xcodeproj",
       "readiness": {
-        "icon": false,
+        "icon": true,
         "asc_registered": false,
         "testflight": false,
-        "screenshots": false,
+        "screenshots": true,
         "metadata": false
       },
       "store": null,

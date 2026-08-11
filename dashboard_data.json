@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-10T12:55:39.647470+00:00",
+  "generated_at": "2026-08-11T12:47:31.059891+00:00",
   "stats": {
-    "total_loc": 223362,
-    "total_commits": 3610,
-    "avg_progress": 65,
-    "this_week_commits": 240,
-    "last_week_commits": 424,
-    "week_trend": -184,
-    "project_count": 49,
+    "total_loc": 224759,
+    "total_commits": 3644,
+    "avg_progress": 64,
+    "this_week_commits": 264,
+    "last_week_commits": 390,
+    "week_trend": -126,
+    "project_count": 50,
     "fork_count": 0
   },
   "languages": {
     "Shell": 6617,
-    "JavaScript": 49734,
-    "CSS": 2284,
+    "JavaScript": 50186,
+    "CSS": 2285,
     "INI": 78,
     "Python": 25607,
     "C": 119,
@@ -25,9 +25,9 @@
     "Rust": 89570,
     "SQL": 124,
     "TOML": 1087,
-    "TypeScript": 5777,
-    "Vue": 4170,
-    "XML": 16,
+    "TypeScript": 6170,
+    "Vue": 4178,
+    "XML": 559,
     "Swift": 22835,
     "Dockerfile": 159,
     "Objective-C++": 812,
@@ -36,12 +36,6 @@
     "JSX": 2967
   },
   "commit_history": [
-    {
-      "date": "2025-08-10",
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
-    },
     {
       "date": "2025-08-11",
       "commits": 0,
@@ -2225,6 +2219,12 @@
       "commits": 15,
       "additions": 0,
       "deletions": 0
+    },
+    {
+      "date": "2026-08-10",
+      "commits": 34,
+      "additions": 0,
+      "deletions": 0
     }
   ],
   "loc_history": [
@@ -2274,7 +2274,7 @@
     },
     {
       "month": "Aug",
-      "loc": 223362
+      "loc": 224759
     }
   ],
   "loc_history_by_repo": {
@@ -2690,24 +2690,6 @@
         "created_at": "2026-07-28T17:47:43-07:00"
       },
       {
-        "name": "lesson-studio",
-        "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          5008,
-          5008
-        ],
-        "created_at": "2026-07-29T14:01:13-07:00"
-      },
-      {
         "name": "Bridge-Dealer-Service",
         "data": [
           0,
@@ -3104,24 +3086,6 @@
         "created_at": "2026-08-08T23:20:08-07:00"
       },
       {
-        "name": "bridge-classroom-fetch",
-        "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          9232
-        ],
-        "created_at": "2026-08-09T08:25:41-07:00"
-      },
-      {
         "name": "bridge-classroom-bug-artifacts",
         "data": [
           0,
@@ -3155,7 +3119,61 @@
           1884,
           1884
         ],
-        "created_at": "2026-08-09T12:33:53Z"
+        "created_at": "2026-08-10T12:51:43Z"
+      },
+      {
+        "name": "lesson-studio",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5008,
+          5410
+        ],
+        "created_at": "2026-08-10T16:20:41-07:00"
+      },
+      {
+        "name": "bridge-master",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          704
+        ],
+        "created_at": "2026-08-10T17:29:25-07:00"
+      },
+      {
+        "name": "bridge-classroom-fetch",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9523
+        ],
+        "created_at": "2026-08-10T23:29:17-07:00"
       },
       {
         "name": "Vibe-Dashboard",
@@ -3173,13 +3191,13 @@
           1720,
           1763
         ],
-        "created_at": "2026-08-10T02:00:07-07:00"
+        "created_at": "2026-08-11T02:00:07-07:00"
       }
     ]
   },
   "projects": [
     {
-      "id": 4202530124,
+      "id": 834237760,
       "name": "ABS-Lessons",
       "full_name": "bridge-craftwork/ABS-Lessons",
       "description": "ABS-Lessons",
@@ -3254,62 +3272,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -3407,7 +3425,7 @@
       "is_fork": false
     },
     {
-      "id": 2392660573,
+      "id": 1248036972,
       "name": "acbl-proxy",
       "full_name": "bridge-craftwork/acbl-proxy",
       "description": "acbl-proxy",
@@ -3440,62 +3458,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -3593,7 +3611,7 @@
       "is_fork": false
     },
     {
-      "id": 1208893282,
+      "id": 4023093059,
       "name": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
       "description": "Baker Bridge",
@@ -3809,62 +3827,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 303,
           "deletions": 166
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 107,
           "deletions": 105
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
-          "additions": 237,
-          "deletions": 232
+          "date": "2026-06-09",
+          "additions": 342,
+          "deletions": 337
         },
         {
-          "date": "2026-06-15",
-          "additions": 208,
-          "deletions": 208
+          "date": "2026-06-16",
+          "additions": 103,
+          "deletions": 103
         },
         {
-          "date": "2026-06-22",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-06-29",
+          "date": "2026-06-23",
           "additions": 3,
           "deletions": 3
         },
         {
-          "date": "2026-07-06",
-          "additions": 9552,
-          "deletions": 113
+          "date": "2026-06-30",
+          "additions": 1723,
+          "deletions": 103
         },
         {
-          "date": "2026-07-13",
-          "additions": 2399510,
-          "deletions": 3874599
+          "date": "2026-07-07",
+          "additions": 8321,
+          "deletions": 303
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-14",
+          "additions": 2399018,
+          "deletions": 3874306
+        },
+        {
+          "date": "2026-07-21",
           "additions": 25746,
           "deletions": 25746
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -3962,7 +3980,7 @@
       "is_fork": false
     },
     {
-      "id": 4187595199,
+      "id": 1816910879,
       "name": "bba-mac-private",
       "full_name": "bridge-craftwork/bba-mac-private",
       "description": "EPBotWrapper \u2014 Native macOS Bridge Bidding Engine",
@@ -3999,62 +4017,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -4152,7 +4170,7 @@
       "is_fork": false
     },
     {
-      "id": 3743616777,
+      "id": 2560000650,
       "name": "bba-native-libraries",
       "full_name": "bridge-craftwork/bba-native-libraries",
       "description": "BBA Native Libraries",
@@ -4182,62 +4200,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -4342,7 +4360,7 @@
       "is_fork": false
     },
     {
-      "id": 838853278,
+      "id": 3561746967,
       "name": "ben-service",
       "full_name": "bridge-craftwork/ben-service",
       "description": "Repository: ben-service",
@@ -4387,62 +4405,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
-          "additions": 101,
-          "deletions": 0
-        },
-        {
-          "date": "2026-05-25",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-23",
           "additions": 1,
           "deletions": 1
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-07-28",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -4540,7 +4558,7 @@
       "is_fork": false
     },
     {
-      "id": 488081850,
+      "id": 4011668370,
       "name": "Better-BBO-Convention-Card",
       "full_name": "bridge-craftwork/Better-BBO-Convention-Card",
       "description": "Repository: Better-BBO-Convention-Card",
@@ -4565,62 +4583,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 24,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -4718,7 +4736,7 @@
       "is_fork": false
     },
     {
-      "id": 3147821657,
+      "id": 1968261136,
       "name": "Bridge-Attendance",
       "full_name": "bridge-craftwork/Bridge-Attendance",
       "description": "Bridge Class Attendance System",
@@ -4786,62 +4804,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 2754,
           "deletions": 83
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 23,
           "deletions": 31
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 238,
           "deletions": 70
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -4939,7 +4957,7 @@
       "is_fork": false
     },
     {
-      "id": 3000838434,
+      "id": 4277130733,
       "name": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
       "description": "Repository: Bridge-Classroom",
@@ -5478,62 +5496,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
-          "additions": 45433,
-          "deletions": 1160
+          "date": "2026-05-19",
+          "additions": 45387,
+          "deletions": 1296
         },
         {
-          "date": "2026-05-25",
-          "additions": 323,
-          "deletions": 154
+          "date": "2026-05-26",
+          "additions": 0,
+          "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 12,
           "deletions": 2
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 2162,
           "deletions": 316
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 11,
           "deletions": 11
         },
         {
-          "date": "2026-06-22",
-          "additions": 1110,
-          "deletions": 123
+          "date": "2026-06-23",
+          "additions": 1233,
+          "deletions": 200
         },
         {
-          "date": "2026-06-29",
-          "additions": 21582,
-          "deletions": 6309
+          "date": "2026-06-30",
+          "additions": 23777,
+          "deletions": 6457
         },
         {
-          "date": "2026-07-06",
-          "additions": 22989,
-          "deletions": 4349
+          "date": "2026-07-07",
+          "additions": 21790,
+          "deletions": 4314
         },
         {
-          "date": "2026-07-13",
-          "additions": 4155,
-          "deletions": 925
+          "date": "2026-07-14",
+          "additions": 3036,
+          "deletions": 735
         },
         {
-          "date": "2026-07-20",
-          "additions": 10977,
-          "deletions": 3247
+          "date": "2026-07-21",
+          "additions": 11210,
+          "deletions": 3314
         },
         {
-          "date": "2026-07-27",
-          "additions": 9169,
-          "deletions": 1602
+          "date": "2026-07-28",
+          "additions": 8936,
+          "deletions": 1535
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 1117,
           "deletions": 310
         }
@@ -5631,7 +5649,7 @@
       "is_fork": false
     },
     {
-      "id": 653694416,
+      "id": 2868746467,
       "name": "bridge-classroom-bug-artifacts",
       "full_name": "bridge-craftwork/bridge-classroom-bug-artifacts",
       "description": "bridge-classroom-bug-artifacts",
@@ -5782,62 +5800,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
-          "additions": 1250,
-          "deletions": 103
+          "date": "2026-07-07",
+          "additions": 3329,
+          "deletions": 106
         },
         {
-          "date": "2026-07-13",
-          "additions": 9142,
+          "date": "2026-07-14",
+          "additions": 7063,
+          "deletions": 17
+        },
+        {
+          "date": "2026-07-21",
+          "additions": 3011,
+          "deletions": 5
+        },
+        {
+          "date": "2026-07-28",
+          "additions": 15384,
           "deletions": 20
         },
         {
-          "date": "2026-07-20",
-          "additions": 2640,
-          "deletions": 4
-        },
-        {
-          "date": "2026-07-27",
-          "additions": 15755,
-          "deletions": 21
-        },
-        {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 9710,
           "deletions": 0
         }
@@ -5935,7 +5953,7 @@
       "is_fork": false
     },
     {
-      "id": 1142835318,
+      "id": 300563533,
       "name": "bridge-classroom-fetch",
       "full_name": "bridge-craftwork/bridge-classroom-fetch",
       "description": "Bridge Classroom Fetch",
@@ -5945,15 +5963,15 @@
       "open_issues": 0,
       "loc": {
         "CSS": 47,
-        "JavaScript": 8925,
+        "JavaScript": 9216,
         "Shell": 150,
         "Swift": 110
       },
-      "commits": 114,
-      "recent_commits": 57,
-      "last_commit": "2026-08-09T08:25:41-07:00",
-      "created_at": "2026-08-09T08:25:41-07:00",
-      "updated_at": "2026-08-09T08:25:41-07:00",
+      "commits": 138,
+      "recent_commits": 81,
+      "last_commit": "2026-08-10T23:29:17-07:00",
+      "created_at": "2026-08-10T23:29:17-07:00",
+      "updated_at": "2026-08-10T23:29:17-07:00",
       "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
       "commit_history": [
         {
@@ -6069,68 +6087,74 @@
           "commits": 10,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-08-10",
+          "commits": 24,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
-          "additions": 215,
-          "deletions": 55
+          "date": "2026-05-26",
+          "additions": 1053,
+          "deletions": 70
         },
         {
-          "date": "2026-06-01",
-          "additions": 838,
-          "deletions": 15
-        },
-        {
-          "date": "2026-06-08",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-16",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-06-23",
           "additions": 94,
           "deletions": 63
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 30,
           "deletions": 25
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 1159,
           "deletions": 92
         },
         {
-          "date": "2026-08-03",
-          "additions": 6155,
-          "deletions": 1029
+          "date": "2026-08-04",
+          "additions": 7642,
+          "deletions": 1341
         }
       ],
       "monthly_loc_changes": [
@@ -6214,9 +6238,9 @@
         {
           "month": "Aug 2026",
           "month_short": "Aug",
-          "additions": 7182,
-          "deletions": 1083,
-          "net": 6099
+          "additions": 8669,
+          "deletions": 1395,
+          "net": 7274
         }
       ],
       "releases": [],
@@ -6226,7 +6250,7 @@
       "is_fork": false
     },
     {
-      "id": 1448054886,
+      "id": 1334911334,
       "name": "bridge-craftwork-platform",
       "full_name": "bridge-craftwork/bridge-craftwork-platform",
       "description": "bridge-craftwork-platform",
@@ -6336,62 +6360,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
-          "additions": 17,
-          "deletions": 0
-        },
-        {
-          "date": "2026-05-25",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
-          "additions": 409,
-          "deletions": 117
+          "date": "2026-06-23",
+          "additions": 68,
+          "deletions": 92
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-06-30",
+          "additions": 341,
+          "deletions": 25
+        },
+        {
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 26,
           "deletions": 9
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -6489,7 +6513,7 @@
       "is_fork": false
     },
     {
-      "id": 2745732467,
+      "id": 2830460807,
       "name": "Bridge-Dealer-Scripts",
       "full_name": "bridge-craftwork/Bridge-Dealer-Scripts",
       "description": "Bridge-Dealer-Scripts",
@@ -6509,62 +6533,62 @@
       "commit_history": [],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -6662,7 +6686,7 @@
       "is_fork": false
     },
     {
-      "id": 1134444875,
+      "id": 1163384362,
       "name": "Bridge-Dealer-Service",
       "full_name": "bridge-craftwork/Bridge-Dealer-Service",
       "description": "bridge-dealer-service",
@@ -6709,62 +6733,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
+          "additions": 4,
+          "deletions": 4
+        },
+        {
+          "date": "2026-06-30",
+          "additions": 24,
+          "deletions": 52
+        },
+        {
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
-          "additions": 28,
-          "deletions": 56
-        },
-        {
-          "date": "2026-07-06",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 3,
           "deletions": 3
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -6862,7 +6886,7 @@
       "is_fork": false
     },
     {
-      "id": 3803288665,
+      "id": 1815621943,
       "name": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
       "description": "bridge-encodings",
@@ -6939,62 +6963,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
+          "additions": 12,
+          "deletions": 13
+        },
+        {
+          "date": "2026-06-30",
+          "additions": 179,
+          "deletions": 24
+        },
+        {
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
-          "additions": 191,
-          "deletions": 37
-        },
-        {
-          "date": "2026-07-06",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 416,
           "deletions": 73
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 54,
           "deletions": 19
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 4,
           "deletions": 4
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -7092,7 +7116,7 @@
       "is_fork": false
     },
     {
-      "id": 142477616,
+      "id": 2790117147,
       "name": "Bridge-Event-Parser-Service",
       "full_name": "bridge-craftwork/Bridge-Event-Parser-Service",
       "description": "Repository: Bridge-Event-Parser-Service",
@@ -7140,62 +7164,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
+          "additions": 7,
+          "deletions": 7
+        },
+        {
+          "date": "2026-06-30",
+          "additions": 337,
+          "deletions": 315
+        },
+        {
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
-          "additions": 344,
-          "deletions": 322
-        },
-        {
-          "date": "2026-07-06",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 3,
           "deletions": 3
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -7293,7 +7317,7 @@
       "is_fork": false
     },
     {
-      "id": 4265148906,
+      "id": 3276351889,
       "name": "Bridge-Game-Analysis",
       "full_name": "bridge-craftwork/Bridge-Game-Analysis",
       "description": "Repository: Bridge-Game-Analysis",
@@ -7483,62 +7507,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
-          "additions": 283,
-          "deletions": 3
+          "date": "2026-05-19",
+          "additions": 302,
+          "deletions": 9
         },
         {
-          "date": "2026-05-25",
-          "additions": 19,
-          "deletions": 6
+          "date": "2026-05-26",
+          "additions": 54,
+          "deletions": 52
         },
         {
-          "date": "2026-06-01",
-          "additions": 179,
-          "deletions": 76
+          "date": "2026-06-02",
+          "additions": 125,
+          "deletions": 24
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "date": "2026-06-30",
+          "additions": 177,
+          "deletions": 177
+        },
+        {
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
-          "additions": 179,
-          "deletions": 179
-        },
-        {
-          "date": "2026-07-06",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 826,
           "deletions": 48
         }
@@ -7636,7 +7660,7 @@
       "is_fork": false
     },
     {
-      "id": 539801997,
+      "id": 653082295,
       "name": "bridge-lesson-packaging",
       "full_name": "bridge-craftwork/bridge-lesson-packaging",
       "description": "bridge-lesson-packaging",
@@ -7672,62 +7696,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 6152,
           "deletions": 566
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 278,
           "deletions": 110
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -7825,7 +7849,7 @@
       "is_fork": false
     },
     {
-      "id": 4098864199,
+      "id": 1884133259,
       "name": "Bridge-Lessons-Advanced",
       "full_name": "bridge-craftwork/Bridge-Lessons-Advanced",
       "description": "Repository: Bridge-Lessons-Advanced",
@@ -7850,62 +7874,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -8003,7 +8027,7 @@
       "is_fork": false
     },
     {
-      "id": 199898056,
+      "id": 537277316,
       "name": "Bridge-Lessons-by-Andrew-Rowberg",
       "full_name": "bridge-craftwork/Bridge-Lessons-by-Andrew-Rowberg",
       "description": "Repository: Bridge-Lessons-by-Andrew-Rowberg",
@@ -8042,62 +8066,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -8195,7 +8219,7 @@
       "is_fork": false
     },
     {
-      "id": 4080844433,
+      "id": 3708925075,
       "name": "Bridge-Lessons-by-Grant-Robinson",
       "full_name": "bridge-craftwork/Bridge-Lessons-by-Grant-Robinson",
       "description": "Repository: Bridge-Lessons-by-Grant-Robinson",
@@ -8236,62 +8260,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-06-29",
+          "date": "2026-06-23",
           "additions": 4,
           "deletions": 4
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-07-28",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -8389,7 +8413,188 @@
       "is_fork": false
     },
     {
-      "id": 3695653339,
+      "id": 1627188849,
+      "name": "bridge-master",
+      "full_name": "bridge-craftwork/bridge-master",
+      "description": "bridge-master",
+      "language": "XML",
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "loc": {
+        "JavaScript": 161,
+        "XML": 543
+      },
+      "commits": 1,
+      "recent_commits": 1,
+      "last_commit": "2026-08-10T17:29:25-07:00",
+      "created_at": "2026-08-10T17:29:25-07:00",
+      "updated_at": "2026-08-10T17:29:25-07:00",
+      "url": "https://github.com/bridge-craftwork/bridge-master",
+      "commit_history": [
+        {
+          "date": "2026-08-10",
+          "commits": 1,
+          "additions": 0,
+          "deletions": 0
+        }
+      ],
+      "code_changes": [
+        {
+          "date": "2026-05-19",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-05-26",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-06-02",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-06-09",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-06-16",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-06-23",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-06-30",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-07-07",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-07-14",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-07-21",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-07-28",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-08-04",
+          "additions": 1510,
+          "deletions": 0
+        }
+      ],
+      "monthly_loc_changes": [
+        {
+          "month": "Sep 2025",
+          "month_short": "Sep",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Oct 2025",
+          "month_short": "Oct",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Nov 2025",
+          "month_short": "Nov",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Dec 2025",
+          "month_short": "Dec",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Jan 2026",
+          "month_short": "Jan",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Feb 2026",
+          "month_short": "Feb",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Mar 2026",
+          "month_short": "Mar",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Apr 2026",
+          "month_short": "Apr",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "May 2026",
+          "month_short": "May",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Jun 2026",
+          "month_short": "Jun",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Jul 2026",
+          "month_short": "Jul",
+          "additions": 0,
+          "deletions": 0,
+          "net": 0
+        },
+        {
+          "month": "Aug 2026",
+          "month_short": "Aug",
+          "additions": 1510,
+          "deletions": 0,
+          "net": 1510
+        }
+      ],
+      "releases": [],
+      "progress": 45,
+      "goals": [],
+      "completed_goals": [],
+      "is_fork": false
+    },
+    {
+      "id": 26515544,
       "name": "Bridge-OCR",
       "full_name": "bridge-craftwork/Bridge-OCR",
       "description": "Repository: Bridge-OCR",
@@ -8420,62 +8625,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -8573,7 +8778,7 @@
       "is_fork": false
     },
     {
-      "id": 2317057306,
+      "id": 1311474874,
       "name": "Bridge-Offline-Practice",
       "full_name": "bridge-craftwork/Bridge-Offline-Practice",
       "description": "Bridge Bidding Practice",
@@ -8613,62 +8818,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -8766,7 +8971,7 @@
       "is_fork": false
     },
     {
-      "id": 3182401263,
+      "id": 2640235299,
       "name": "Bridge-Parsers",
       "full_name": "bridge-craftwork/Bridge-Parsers",
       "description": "Bridge-Parsers",
@@ -8873,62 +9078,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
+          "additions": 10,
+          "deletions": 11
+        },
+        {
+          "date": "2026-06-30",
+          "additions": 394,
+          "deletions": 489
+        },
+        {
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
-          "additions": 404,
-          "deletions": 500
-        },
-        {
-          "date": "2026-07-06",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 56,
           "deletions": 560
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 4,
           "deletions": 4
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -9026,7 +9231,7 @@
       "is_fork": false
     },
     {
-      "id": 2877736852,
+      "id": 232037864,
       "name": "bridge-rulebot",
       "full_name": "bridge-craftwork/bridge-rulebot",
       "description": "bridge-rulebot",
@@ -9067,62 +9272,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 2818,
           "deletions": 94
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 343,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 6,
           "deletions": 5
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -9220,7 +9425,7 @@
       "is_fork": false
     },
     {
-      "id": 2692681243,
+      "id": 4175767598,
       "name": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
       "description": "Repository: bridge-solver",
@@ -9301,62 +9506,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
+          "additions": 16,
+          "deletions": 17
+        },
+        {
+          "date": "2026-06-30",
+          "additions": 170,
+          "deletions": 39
+        },
+        {
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
-          "additions": 186,
-          "deletions": 56
-        },
-        {
-          "date": "2026-07-06",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 364,
           "deletions": 11
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 19403,
           "deletions": 1371
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -9461,7 +9666,7 @@
       "is_fork": false
     },
     {
-      "id": 648986474,
+      "id": 1450420130,
       "name": "bridge-solver-service",
       "full_name": "bridge-craftwork/bridge-solver-service",
       "description": "bridge-solver-service",
@@ -9503,62 +9708,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 4187,
           "deletions": 85
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 1412,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 16,
           "deletions": 876
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -9656,7 +9861,7 @@
       "is_fork": false
     },
     {
-      "id": 138061167,
+      "id": 1587497618,
       "name": "bridge-table-service",
       "full_name": "bridge-craftwork/bridge-table-service",
       "description": "bridge-table-service",
@@ -9752,62 +9957,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
-          "additions": 11185,
-          "deletions": 727
+          "date": "2026-06-30",
+          "additions": 11195,
+          "deletions": 733
         },
         {
-          "date": "2026-07-06",
-          "additions": 1415,
-          "deletions": 358
+          "date": "2026-07-07",
+          "additions": 1405,
+          "deletions": 352
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 800,
           "deletions": 32
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 190,
           "deletions": 207
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -9905,7 +10110,7 @@
       "is_fork": false
     },
     {
-      "id": 3966778198,
+      "id": 497595546,
       "name": "bridge-tools",
       "full_name": "harmonic-systems-home/bridge-tools",
       "description": "Bridge Tools",
@@ -9934,62 +10139,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-07-27",
+          "date": "2026-07-21",
           "additions": 8573,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-07-28",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -10087,7 +10292,7 @@
       "is_fork": false
     },
     {
-      "id": 2275838476,
+      "id": 2848475666,
       "name": "bridge-types",
       "full_name": "bridge-craftwork/bridge-types",
       "description": "bridge-types",
@@ -10163,62 +10368,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
+          "additions": 5,
+          "deletions": 5
+        },
+        {
+          "date": "2026-06-30",
+          "additions": 25,
+          "deletions": 1
+        },
+        {
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
-          "additions": 30,
-          "deletions": 6
-        },
-        {
-          "date": "2026-07-06",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 29,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 138,
           "deletions": 50
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 104,
           "deletions": 5
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -10316,7 +10521,7 @@
       "is_fork": false
     },
     {
-      "id": 2967660349,
+      "id": 3837051720,
       "name": "bridge-wrangler",
       "full_name": "bridge-craftwork/bridge-wrangler",
       "description": "bridge-wrangler",
@@ -10331,9 +10536,9 @@
       },
       "commits": 39,
       "recent_commits": 9,
-      "last_commit": "2026-08-09T12:33:53Z",
-      "created_at": "2026-08-09T12:33:53Z",
-      "updated_at": "2026-08-09T12:33:53Z",
+      "last_commit": "2026-08-10T12:51:43Z",
+      "created_at": "2026-08-10T12:51:43Z",
+      "updated_at": "2026-08-10T12:51:43Z",
       "url": "https://github.com/bridge-craftwork/bridge-wrangler",
       "commit_history": [
         {
@@ -10435,62 +10640,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 26,
           "deletions": 13
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 5,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 1,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
+          "additions": 12,
+          "deletions": 12
+        },
+        {
+          "date": "2026-06-30",
+          "additions": 156,
+          "deletions": 26
+        },
+        {
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
-          "additions": 168,
-          "deletions": 38
-        },
-        {
-          "date": "2026-07-06",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 2,
           "deletions": 2
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -10583,6 +10788,12 @@
       ],
       "releases": [
         {
+          "tag": "v0.9.79",
+          "date": "2026-08-10T12:51:43Z",
+          "message": "Release v0.9.79 (dependency update)",
+          "repo": "bridge-wrangler"
+        },
+        {
           "tag": "v0.9.78",
           "date": "2026-08-09T12:33:53Z",
           "message": "Release v0.9.78 (dependency update)",
@@ -10635,12 +10846,6 @@
           "date": "2026-08-01T13:03:55Z",
           "message": "Release v0.9.70 (dependency update)",
           "repo": "bridge-wrangler"
-        },
-        {
-          "tag": "v0.9.69",
-          "date": "2026-07-31T13:50:56Z",
-          "message": "Release v0.9.69 (dependency update)",
-          "repo": "bridge-wrangler"
         }
       ],
       "progress": 60,
@@ -10649,7 +10854,7 @@
       "is_fork": false
     },
     {
-      "id": 13847458,
+      "id": 4182228943,
       "name": "BT-Label-Printing-App",
       "full_name": "harmonic-systems-home/BT-Label-Printing-App",
       "description": "BTLabel",
@@ -10725,62 +10930,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
+          "additions": 2601,
+          "deletions": 180
+        },
+        {
+          "date": "2026-06-09",
+          "additions": 4842,
+          "deletions": 1215
+        },
+        {
+          "date": "2026-06-16",
+          "additions": 118,
+          "deletions": 50
+        },
+        {
+          "date": "2026-06-23",
+          "additions": 26,
+          "deletions": 12
+        },
+        {
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
-          "additions": 7443,
-          "deletions": 1395
-        },
-        {
-          "date": "2026-06-15",
-          "additions": 49,
-          "deletions": 13
-        },
-        {
-          "date": "2026-06-22",
-          "additions": 95,
-          "deletions": 49
-        },
-        {
-          "date": "2026-06-29",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -10878,7 +11083,7 @@
       "is_fork": false
     },
     {
-      "id": 1998061835,
+      "id": 1508897205,
       "name": "claude-bridge-plugins",
       "full_name": "bridge-craftwork/claude-bridge-plugins",
       "description": "bridge-craftwork Claude Code plugins",
@@ -10905,62 +11110,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 1142,
           "deletions": 241
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -11058,7 +11263,7 @@
       "is_fork": false
     },
     {
-      "id": 2497691372,
+      "id": 1161310283,
       "name": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
       "description": "dealer3",
@@ -11193,62 +11398,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
+          "additions": 28,
+          "deletions": 29
+        },
+        {
+          "date": "2026-06-30",
+          "additions": 142,
+          "deletions": 16
+        },
+        {
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
-          "additions": 170,
-          "deletions": 45
-        },
-        {
-          "date": "2026-07-06",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 2,
           "deletions": 1
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -11377,7 +11582,7 @@
       "is_fork": false
     },
     {
-      "id": 2615620968,
+      "id": 2083815331,
       "name": "EDGAR-Defense-Toolkit",
       "full_name": "bridge-craftwork/EDGAR-Defense-Toolkit",
       "description": "EDGAR Defense Toolkit",
@@ -11485,62 +11690,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
+          "additions": 14,
+          "deletions": 14
+        },
+        {
+          "date": "2026-06-30",
+          "additions": 730,
+          "deletions": 776
+        },
+        {
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
-          "additions": 744,
-          "deletions": 790
-        },
-        {
-          "date": "2026-07-06",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 29,
           "deletions": 8
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -11651,7 +11856,7 @@
       "is_fork": false
     },
     {
-      "id": 1648857073,
+      "id": 4034862873,
       "name": "Home-Assistant",
       "full_name": "harmonic-systems-home/Home-Assistant",
       "description": "Home Assistant Configuration",
@@ -11837,62 +12042,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 1194,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 562,
           "deletions": 95
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 11,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-07-06",
+          "date": "2026-06-30",
           "additions": 16,
           "deletions": 13
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-07",
           "additions": 57,
           "deletions": 64
         },
         {
-          "date": "2026-07-20",
-          "additions": 7,
+          "date": "2026-07-14",
+          "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
-          "additions": 512,
-          "deletions": 63
+          "date": "2026-07-21",
+          "additions": 75,
+          "deletions": 55
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-07-28",
+          "additions": 444,
+          "deletions": 8
+        },
+        {
+          "date": "2026-08-04",
           "additions": 449,
           "deletions": 141
         }
@@ -11990,7 +12195,7 @@
       "is_fork": false
     },
     {
-      "id": 3087786725,
+      "id": 1194350845,
       "name": "ice-queue",
       "full_name": "harmonic-systems-home/ice-queue",
       "description": "Repository: ice-queue",
@@ -12031,62 +12236,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -12184,7 +12389,7 @@
       "is_fork": false
     },
     {
-      "id": 3234473154,
+      "id": 4048721219,
       "name": "Justin-s-Pool",
       "full_name": "harmonic-systems-home/Justin-s-Pool",
       "description": "Justin's Pool \u2014 System Map",
@@ -12262,62 +12467,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
-          "additions": 3911,
-          "deletions": 212
+          "date": "2026-07-14",
+          "additions": 4334,
+          "deletions": 312
         },
         {
-          "date": "2026-07-20",
-          "additions": 4995,
-          "deletions": 1328
+          "date": "2026-07-21",
+          "additions": 4705,
+          "deletions": 2156
         },
         {
-          "date": "2026-07-27",
-          "additions": 223,
-          "deletions": 938
+          "date": "2026-07-28",
+          "additions": 90,
+          "deletions": 10
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 524,
           "deletions": 419
         }
@@ -12415,7 +12620,7 @@
       "is_fork": false
     },
     {
-      "id": 1159209494,
+      "id": 487914169,
       "name": "Justin-s-Pool-data",
       "full_name": "harmonic-systems-home/Justin-s-Pool-data",
       "description": "Justin-s-Pool-data",
@@ -12464,62 +12669,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
-          "additions": 494,
-          "deletions": 60
+          "date": "2026-07-21",
+          "additions": 510,
+          "deletions": 68
         },
         {
-          "date": "2026-07-27",
-          "additions": 132,
-          "deletions": 124
+          "date": "2026-07-28",
+          "additions": 116,
+          "deletions": 116
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 16,
           "deletions": 8
         }
@@ -12617,7 +12822,7 @@
       "is_fork": false
     },
     {
-      "id": 3678830720,
+      "id": 2342710321,
       "name": "Kennit-App",
       "full_name": "harmonic-systems-home/Kennit-App",
       "description": "Repository: Kennit-App",
@@ -12720,64 +12925,64 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 19309,
           "deletions": 6818
         },
         {
-          "date": "2026-06-01",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-06-08",
-          "additions": 463,
+          "date": "2026-06-02",
+          "additions": 168,
           "deletions": 71
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-09",
+          "additions": 295,
+          "deletions": 0
+        },
+        {
+          "date": "2026-06-16",
           "additions": 73,
           "deletions": 8
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 402,
           "deletions": 91
         },
         {
-          "date": "2026-07-20",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-07-27",
+          "date": "2026-07-21",
           "additions": 35,
           "deletions": 5
         },
         {
-          "date": "2026-08-03",
-          "additions": 12753,
-          "deletions": 4554
+          "date": "2026-07-28",
+          "additions": 2999,
+          "deletions": 369
+        },
+        {
+          "date": "2026-08-04",
+          "additions": 9754,
+          "deletions": 4185
         }
       ],
       "monthly_loc_changes": [
@@ -12873,7 +13078,7 @@
       "is_fork": false
     },
     {
-      "id": 3286734802,
+      "id": 1091897285,
       "name": "kennit-decks",
       "full_name": "harmonic-systems-home/kennit-decks",
       "description": "Kennit decks",
@@ -12906,62 +13111,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 3444,
           "deletions": 263
         }
@@ -13096,7 +13301,7 @@
       "is_fork": false
     },
     {
-      "id": 3729463193,
+      "id": 1371833903,
       "name": "lesson-library",
       "full_name": "bridge-craftwork/lesson-library",
       "description": "lesson-library",
@@ -13133,62 +13338,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 464,
           "deletions": 54
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 83,
           "deletions": 17
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -13286,7 +13491,7 @@
       "is_fork": false
     },
     {
-      "id": 855656914,
+      "id": 1072302344,
       "name": "lesson-stage",
       "full_name": "bridge-craftwork/lesson-stage",
       "description": "lesson-stage",
@@ -13342,62 +13547,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
-          "additions": 13940,
-          "deletions": 693
+          "date": "2026-07-21",
+          "additions": 13983,
+          "deletions": 695
         },
         {
-          "date": "2026-07-27",
-          "additions": 469,
-          "deletions": 117
+          "date": "2026-07-28",
+          "additions": 426,
+          "deletions": 115
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -13495,7 +13700,7 @@
       "is_fork": false
     },
     {
-      "id": 3793394238,
+      "id": 3575224774,
       "name": "lesson-studio",
       "full_name": "bridge-craftwork/lesson-studio",
       "description": "lesson-studio",
@@ -13504,16 +13709,16 @@
       "forks": 0,
       "open_issues": 0,
       "loc": {
-        "CSS": 247,
+        "CSS": 248,
         "JavaScript": 600,
-        "TypeScript": 3903,
-        "Vue": 258
+        "TypeScript": 4296,
+        "Vue": 266
       },
-      "commits": 68,
-      "recent_commits": 68,
-      "last_commit": "2026-07-29T14:01:13-07:00",
-      "created_at": "2026-07-29T14:01:13-07:00",
-      "updated_at": "2026-07-29T14:01:13-07:00",
+      "commits": 76,
+      "recent_commits": 76,
+      "last_commit": "2026-08-10T16:20:41-07:00",
+      "created_at": "2026-08-10T16:20:41-07:00",
+      "updated_at": "2026-08-10T16:20:41-07:00",
       "url": "https://github.com/bridge-craftwork/lesson-studio",
       "commit_history": [
         {
@@ -13557,68 +13762,74 @@
           "commits": 3,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-08-10",
+          "commits": 8,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 14288,
           "deletions": 637
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
-          "additions": 5171,
-          "deletions": 542
+          "date": "2026-07-21",
+          "additions": 7659,
+          "deletions": 1018
         },
         {
-          "date": "2026-07-27",
-          "additions": 4418,
-          "deletions": 657
+          "date": "2026-07-28",
+          "additions": 1930,
+          "deletions": 181
         },
         {
-          "date": "2026-08-03",
-          "additions": 0,
-          "deletions": 0
+          "date": "2026-08-04",
+          "additions": 945,
+          "deletions": 73
         }
       ],
       "monthly_loc_changes": [
@@ -13702,9 +13913,9 @@
         {
           "month": "Aug 2026",
           "month_short": "Aug",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
+          "additions": 945,
+          "deletions": 73,
+          "net": 872
         }
       ],
       "releases": [],
@@ -13714,7 +13925,7 @@
       "is_fork": false
     },
     {
-      "id": 849914314,
+      "id": 4267914046,
       "name": "map-generation-toolset",
       "full_name": "harmonic-systems-home/map-generation-toolset",
       "description": "maptool",
@@ -13775,62 +13986,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 5228,
           "deletions": 400
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 879,
           "deletions": 179
         },
         {
-          "date": "2026-06-22",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-06-29",
+          "date": "2026-06-23",
           "additions": 1,
           "deletions": 1
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-07-28",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-08-04",
           "additions": 2314,
           "deletions": 453
         }
@@ -13895,9 +14106,9 @@
         {
           "month": "May 2026",
           "month_short": "May",
-          "additions": 3868,
-          "deletions": 374,
-          "net": 3494
+          "additions": 3816,
+          "deletions": 342,
+          "net": 3474
         },
         {
           "month": "Jun 2026",
@@ -13928,7 +14139,7 @@
       "is_fork": false
     },
     {
-      "id": 2047970069,
+      "id": 2811360970,
       "name": "pbn-to-pdf",
       "full_name": "bridge-craftwork/pbn-to-pdf",
       "description": "pbn-to-pdf",
@@ -14119,62 +14330,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 218,
           "deletions": 17
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 565,
           "deletions": 23
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "date": "2026-06-30",
+          "additions": 791,
+          "deletions": 243
+        },
+        {
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
-          "additions": 792,
-          "deletions": 244
-        },
-        {
-          "date": "2026-07-06",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 36,
           "deletions": 37
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -14333,7 +14544,7 @@
       "is_fork": false
     },
     {
-      "id": 2987438295,
+      "id": 2502088947,
       "name": "pbs-bbo-extension",
       "full_name": "bridge-craftwork/pbs-bbo-extension",
       "description": "PBS for BBO - Browser Extension",
@@ -14386,62 +14597,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-07-21",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-27",
+          "date": "2026-07-28",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -14539,7 +14750,7 @@
       "is_fork": false
     },
     {
-      "id": 3905371394,
+      "id": 3340711520,
       "name": "pdf-handouts",
       "full_name": "bridge-craftwork/pdf-handouts",
       "description": "PDF Handouts",
@@ -14629,62 +14840,62 @@
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-29",
+          "date": "2026-06-30",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-13",
+          "date": "2026-07-14",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-07-20",
-          "additions": 818,
-          "deletions": 528
+          "date": "2026-07-21",
+          "additions": 3180,
+          "deletions": 596
         },
         {
-          "date": "2026-07-27",
-          "additions": 3994,
-          "deletions": 483
+          "date": "2026-07-28",
+          "additions": 1632,
+          "deletions": 415
         },
         {
-          "date": "2026-08-03",
+          "date": "2026-08-04",
           "additions": 0,
           "deletions": 0
         }
@@ -14807,7 +15018,7 @@
       "is_fork": false
     },
     {
-      "id": 594019370,
+      "id": 3734307517,
       "name": "Vibe-Dashboard",
       "full_name": "harmonic-systems-home/Vibe-Dashboard",
       "description": "Vibe Dashboard",
@@ -14819,11 +15030,11 @@
         "Python": 1749,
         "Shell": 14
       },
-      "commits": 185,
-      "recent_commits": 59,
-      "last_commit": "2026-08-10T02:00:07-07:00",
-      "created_at": "2026-08-10T02:00:07-07:00",
-      "updated_at": "2026-08-10T02:00:07-07:00",
+      "commits": 186,
+      "recent_commits": 60,
+      "last_commit": "2026-08-11T02:00:07-07:00",
+      "created_at": "2026-08-11T02:00:07-07:00",
+      "updated_at": "2026-08-11T02:00:07-07:00",
       "url": "https://github.com/harmonic-systems-home/Vibe-Dashboard",
       "commit_history": [
         {
@@ -15569,68 +15780,74 @@
           "commits": 1,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-08-10",
+          "commits": 1,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-05-18",
+          "date": "2026-05-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-25",
+          "date": "2026-05-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-08",
+          "date": "2026-06-09",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-15",
+          "date": "2026-06-16",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-22",
-          "additions": 0,
-          "deletions": 0
+          "date": "2026-06-23",
+          "additions": 807,
+          "deletions": 336
         },
         {
-          "date": "2026-06-29",
-          "additions": 926,
-          "deletions": 368
+          "date": "2026-06-30",
+          "additions": 132,
+          "deletions": 39
         },
         {
-          "date": "2026-07-06",
+          "date": "2026-07-07",
+          "additions": 87,
+          "deletions": 44
+        },
+        {
+          "date": "2026-07-14",
+          "additions": 62,
+          "deletions": 26
+        },
+        {
+          "date": "2026-07-21",
+          "additions": 818,
+          "deletions": 111
+        },
+        {
+          "date": "2026-07-28",
           "additions": 84,
-          "deletions": 41
-        },
-        {
-          "date": "2026-07-13",
-          "additions": 68,
-          "deletions": 32
-        },
-        {
-          "date": "2026-07-20",
-          "additions": 73,
-          "deletions": 31
-        },
-        {
-          "date": "2026-07-27",
-          "additions": 829,
-          "deletions": 122
-        },
-        {
-          "date": "2026-08-03",
-          "additions": 236,
           "deletions": 42
+        },
+        {
+          "date": "2026-08-04",
+          "additions": 237,
+          "deletions": 43
         }
       ],
       "monthly_loc_changes": [
@@ -15714,9 +15931,9 @@
         {
           "month": "Aug 2026",
           "month_short": "Aug",
-          "additions": 262,
-          "deletions": 56,
-          "net": 206
+          "additions": 273,
+          "deletions": 61,
+          "net": 212
         }
       ],
       "releases": [],
@@ -15727,6 +15944,12 @@
     }
   ],
   "releases": [
+    {
+      "tag": "v0.9.79",
+      "date": "2026-08-10T12:51:43Z",
+      "message": "Release v0.9.79 (dependency update)",
+      "repo": "bridge-wrangler"
+    },
     {
       "tag": "v0.9.78",
       "date": "2026-08-09T12:33:53Z",
@@ -15815,12 +16038,6 @@
       "tag": "v0.9.70",
       "date": "2026-08-01T13:03:55Z",
       "message": "Release v0.9.70 (dependency update)",
-      "repo": "bridge-wrangler"
-    },
-    {
-      "tag": "v0.9.69",
-      "date": "2026-07-31T13:50:56Z",
-      "message": "Release v0.9.69 (dependency update)",
       "repo": "bridge-wrangler"
     },
     {
