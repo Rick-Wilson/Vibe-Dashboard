@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T12:30:37.333974+00:00",
+  "generated_at": "2026-08-20T12:36:09.897844+00:00",
   "count": 6,
   "apps": [
     {
@@ -100,12 +100,12 @@
       "repo": "Kennit-App",
       "full_name": "harmonic-systems-home/Kennit-App",
       "url": "https://github.com/harmonic-systems-home/Kennit-App",
-      "last_commit": "2026-08-07T08:30:26-07:00",
+      "last_commit": "2026-08-19T12:38:42-07:00",
       "manifest": {
         "tagline": "Learn names, remember faces",
         "priority": "high",
         "target": "2026-08",
-        "next_step": "Release 1.0 when approved, then start 1.1: repair existing duplicate subjects (needs createdAt on Person/Pet, so it rides a schema promotion) and give custom relationship links an inverse label"
+        "next_step": "Waiting on iOS review (submitted 2026-08-07; macOS took 8 days). Once it ships, 1.1: repair existing duplicate subjects (needs createdAt on Person/Pet, so it rides a schema promotion) and give custom relationship links an inverse label"
       },
       "bundle_id": "com.popperbiz.kennit",
       "version": "1.0",
@@ -124,16 +124,17 @@
         "metadata": true
       },
       "store": {
-        "state": "WAITING_FOR_REVIEW",
-        "version": "1.0"
+        "state": "READY_FOR_SALE",
+        "version": "1.0",
+        "url": "https://apps.apple.com/app/id6775224401"
       },
       "testflight": {
         "external": "IN_BETA_TESTING",
         "internal": "IN_BETA_TESTING"
       },
       "status": {
-        "label": "Waiting for Review",
-        "category": "review"
+        "label": "Released",
+        "category": "released"
       }
     },
     {
