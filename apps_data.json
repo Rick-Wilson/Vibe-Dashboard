@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T15:33:55.200992+00:00",
+  "generated_at": "2026-09-05T14:23:22.475028+00:00",
   "count": 6,
   "apps": [
     {
@@ -19,35 +19,6 @@
       ],
       "icon": null,
       "xcodeproj": "IceQueue/IceQueue.xcodeproj",
-      "readiness": {
-        "icon": false,
-        "asc_registered": false,
-        "testflight": false,
-        "screenshots": false,
-        "metadata": false
-      },
-      "store": null,
-      "testflight": null,
-      "status": {
-        "label": "Development",
-        "category": "development"
-      }
-    },
-    {
-      "name": "LessonStage",
-      "repo": "lesson-stage",
-      "full_name": "bridge-craftwork/lesson-stage",
-      "url": "https://github.com/bridge-craftwork/lesson-stage",
-      "last_commit": "2026-08-11T19:20:35-07:00",
-      "manifest": {},
-      "bundle_id": "com.popperbiz.LessonStage",
-      "version": "0.1.0",
-      "build": "1",
-      "platforms": [
-        "iOS"
-      ],
-      "icon": null,
-      "xcodeproj": "app/LessonStage.xcodeproj",
       "readiness": {
         "icon": false,
         "asc_registered": false,
@@ -92,6 +63,35 @@
       "testflight": null,
       "status": {
         "label": "Preparing",
+        "category": "development"
+      }
+    },
+    {
+      "name": "LessonStage",
+      "repo": "lesson-stage",
+      "full_name": "bridge-craftwork/lesson-stage",
+      "url": "https://github.com/bridge-craftwork/lesson-stage",
+      "last_commit": "2026-09-04T20:16:34-07:00",
+      "manifest": {},
+      "bundle_id": "com.popperbiz.LessonStage",
+      "version": "0.1.0",
+      "build": "1",
+      "platforms": [
+        "iOS"
+      ],
+      "icon": "app_icons/lesson-stage.png",
+      "xcodeproj": "app/LessonStage.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
         "category": "development"
       }
     },
